@@ -60,7 +60,7 @@ body {
 
 #center_content {
   width: 912px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 20px auto;
   text-align: center;
 }
 
@@ -84,7 +84,7 @@ img.logo {
 .column-thin {
   width: 168px;
   float: left;
-  margin: 0 4px 0 0;
+  margin: -4px 4px 0 0;
 }
 
 .cover {
@@ -104,17 +104,6 @@ h2.left {
   position: absolute;
   bottom: 3px;
   left: 4px;
-  color: #FFF;
-  font-size: 10px;
-  font-weight: bold;
-  background: 0;
-}
-
-h2.right {
-  z-index: 9999;
-  position: absolute;
-  bottom: 3px;
-  right: 4px;
   color: #FFF;
   font-size: 10px;
   font-weight: bold;
@@ -186,6 +175,7 @@ h2.right {
 
 p#copyright {
   text-align: center;
+  padding-bottom: 20px;
   color: #000;
 }
 
@@ -201,5 +191,9 @@ p#copyright {
 
   #center_content {
     width: 228px;
+  }
+
+  #hideonmobile {
+    display: none;
   }
 }
