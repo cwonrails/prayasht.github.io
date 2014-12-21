@@ -9,23 +9,39 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     vertical-align: baseline;
 }
 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+*, 
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;     
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
 a {
   border: 0px;
   text-decoration: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
 }
 
 html {
   overflow-y: scroll;
   padding: 0;
   margin: 0;
-}
-
-.clear {
-  clear: both;
 }
 
 #wrapper {
