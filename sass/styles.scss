@@ -52,9 +52,10 @@ html {
 }
 
 #wrapper {
-    position: relative;
-    max-width: 960px;
-    margin: 0 auto;
+    // position: relative;
+    // max-width: 960px;
+    // margin: 0 auto;
+    @include grid-span(12, 1);
 }
 
 body {
@@ -89,7 +90,7 @@ img.logo {
 }
 
 .column-thin {
-  width: 168px;
+  width: 225px;
   float: left;
   margin: -4px 4px 0 0;
 }
