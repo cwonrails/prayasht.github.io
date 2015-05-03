@@ -52,7 +52,7 @@ html {
 
 body {
   background: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif !important;
   font-style:  normal;
   font-size: 10px;
   letter-spacing: .5em;
