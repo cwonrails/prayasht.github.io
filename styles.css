@@ -184,16 +184,16 @@ p#copyright {
  ============================================= */
 
 @media screen and (max-width:480px) {
-/*  img.logo {
+  img.logo {
     width: 200px;
     margin: 20px auto 10px auto;
   }
 
   #center_content {
     width: 228px;
-  }*/
+  }
 
-/*  #hideonmobile {
+  #hideonmobile {
     display: none;
-  }*/
+  }
 }
