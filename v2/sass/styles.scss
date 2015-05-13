@@ -1,0 +1,38 @@
+@import "compass";
+@import "singularitygs";
+@import "breakpoint";
+
+$w: 35vw;
+$h: $w / 1.73205;
+
+@mixin rectangle($w, $h, $deg) {
+  @include rotate($deg);
+  position: relative;
+  display: block;
+  width: $w;
+  height: $h;
+}
+
+.rectTwo {
+  @include rectangle(17vw, 10vw, 0deg);
+  margin: -25% 50% auto 32%;
+  background: blue;
+}
+
+.rectThree {
+  @include rectangle(10vw, 25vw, 0deg);
+  margin: 1vmin 50% auto 39%;
+  background: blue;
+}
+
+.rectOne {
+  @include rectangle(12.5vw, 23vw, 0deg);
+  margin: 5vh 50% auto 50%;
+  background: blue;
+}
+
+.rectFour {
+  @include rectangle(17vw, 8.5vw, 0deg);
+  margin: 0.75% 50% auto 50%;
+  background: blue;
+}
