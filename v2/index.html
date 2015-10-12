@@ -168,7 +168,6 @@
           </paper-item>
         </a>
       </section>
-
     </core-header-panel>
 
     <core-header-panel main>
@@ -189,8 +188,7 @@
       </core-toolbar>
 
       <div class="container" main>
-      <prayash-works></prayash-works>
-
+        <prayash-works></prayash-works>
       </div>
 
     </core-header-panel>
@@ -200,7 +198,8 @@
   <script>
     var tabs = document.querySelector('paper-tabs');
     var works = document.querySelector('prayash-works');
-
+    
+    tabs.selected = 'featured';
     page('/', function() { works.show = tabs.selected = 'featured'; });
     page('/all', function() { works.show = tabs.selected =  'all'; });
     page({hashbang: true});
