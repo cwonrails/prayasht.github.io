@@ -58,7 +58,8 @@ body {
 #center_content {
   width: 460px;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  padding-top: 5%; }
 
 img.logo {
   width: 350px;
@@ -86,8 +87,8 @@ h1 {
 h2.left {
   z-index: 8000;
   position: absolute;
-  bottom: 0px;
-  left: 4px;
+  top: 25px;
+  left: 6px;
   color: #FFF;
   font-size: 10px;
   font-weight: bold;
@@ -159,6 +160,7 @@ p#copyright {
   overflow: hidden; }
 
 .videoWrapper iframe {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -179,11 +181,14 @@ p#copyright {
   .imagesofessence, .distance {
     display: none; }
 
-  h1.titleName {
-    text-indent: 0;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 15% 0; } }
+  .titleName {
+    text-indent: 0px !important;
+    font-size: 0.85em;
+    font-weight: 100;
+    padding: 15% 0; }
+
+  .videoWrapper iframe {
+    display: block; } }
 /* ==========================================================================
   Helper classes
   ========================================================================== */
