@@ -1,7 +1,3 @@
-require 'sass-globbing'
-require 'breakpoint'
-require 'singularitygs'
-
 project_type = :stand_alone
 http_path = "/"
 sass_dir = "sass"

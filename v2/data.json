@@ -1,0 +1,17 @@
+[
+{
+  "id":"Alpine Labs",
+  "image":"img/logos/alpineLabs.png",
+	"featured":true,
+	"size":4,
+	"completion": "done",
+	"seriousness":"serious",
+	"type":"code",
+	"participation":"contribution",
+	"title":"Alpine Labs",
+	"category": "startup",
+	"date": 2015,
+	"description": "Mobile Application Developer",
+	"link": {"href":"https://alpinelaboratories.com/", "value":"Alpine Labs website"}
+}
+]
