@@ -188,7 +188,10 @@ p#copyright {
     padding: 15% 0; }
 
   .videoWrapper iframe {
-    display: block; } }
+    display: block; }
+
+  .hideonmobile {
+    display: none; } }
 /* ==========================================================================
   Helper classes
   ========================================================================== */
