@@ -166,35 +166,35 @@ p#copyright {
   MEDIA QUERIES
   ============================================= */
 
-@media screen and (max-width:480px) {
-  img.logo {
-    width: 200px;
-    margin: 20px auto 10px auto;
-  }
+// @media screen and (max-width:480px) {
+//   img.logo {
+//     width: 200px;
+//     margin: 20px auto 10px auto;
+//   }
 
-  #center_content {
-    width: 228px;
-  }
+//   #center_content {
+//     width: 228px;
+//   }
 
-  .imagesofessence, .distance {
-    display: none;
-  }
+//   .imagesofessence, .distance {
+//     display: none;
+//   }
 
-  .titleName {
-    text-indent: 0px !important;
-    font-size: 0.85em;
-    font-weight: 100;
-    padding: 15% 0;
-  }
+//   .titleName {
+//     text-indent: 0px !important;
+//     font-size: 0.85em;
+//     font-weight: 100;
+//     padding: 15% 0;
+//   }
 
-  .videoWrapper iframe {
-    display: block;
-  }
+//   .videoWrapper iframe {
+//     display: block;
+//   }
 
-  .hideonmobile {
-    display: none;
-  }
-}
+//   .hideonmobile {
+//     display: none;
+//   }
+// }
 
 /* ==========================================================================
   Helper classes

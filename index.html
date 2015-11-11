@@ -37,6 +37,12 @@
   </div>
 
   <!-- Illumine -->
+  <div class="box110x110 video videoDesktop">
+    <div class="videoWrapper">
+      <iframe src="https://www.youtube.com/embed/CPMwYzgbtH8" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  
   <a class="fancybox fancybox.iframe illumine" style="border:0px;"  href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/135173097">
     <div class="box224x140 fade">
       <img src="images/ibanez.jpg" class="cover">
@@ -72,6 +78,7 @@
     </div>
   </a> 
 
+  <span class="links" style="display: block !important;">
   <!-- Behance -->
   <a href="https://www.behance.net/effulgence" style="border:0px;"  target="_blank">
       <div class="box55x55 animated4 fade">
@@ -139,6 +146,7 @@
       <h2 class="left">_YT</h2>
     </div>
   </a>
+  </span>
 
   <!-- Dummy Block -->
 
@@ -167,13 +175,15 @@
       $(".fancybox").fancybox({
       'height'    : 200,
       });
+      // $('.links').hide();
+
     });
     $("a.group").fancybox({
-    'transitionIn'  : 'elastic',
-    'transitionOut' : 'elastic',
-    'speedIn'   : 600, 
-    'speedOut'    : 200, 
-    'overlayShow' : false
+      'transitionIn'  : 'elastic',
+      'transitionOut' : 'elastic',
+      'speedIn'   : 600, 
+      'speedOut'    : 200, 
+      'overlayShow' : false
     });
     $(function() {
       $('.fade').hover(function() {

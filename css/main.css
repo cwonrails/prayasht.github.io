@@ -157,7 +157,8 @@ p#copyright {
   padding-bottom: 56.25%;
   /*padding-top: 50px;*/
   height: 0;
-  overflow: hidden; }
+  overflow: hidden; 
+}
 
 .videoWrapper iframe {
   display: none;
@@ -167,6 +168,13 @@ p#copyright {
   width: 100%;
   height: 100%; }
 
+.videoDesktop .videoWrapper iframe {
+  display: block !important;
+}
+
+.illumine {
+  display: none !important;
+}
 /* =========================================
   MEDIA QUERIES
   ============================================= */
@@ -191,7 +199,17 @@ p#copyright {
     display: block; }
 
   .hideonmobile {
-    display: none; } }
+    display: none; 
+  } 
+
+  .videoDesktop {
+    display: none !important;
+  }
+
+  .illumine {
+    display: block !important;
+  }
+}
 /* ==========================================================================
   Helper classes
   ========================================================================== */
