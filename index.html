@@ -32,7 +32,7 @@
   <!-- 110 x 110 -->
   <div class="box110x110 video">
     <div class="videoWrapper">
-      <iframe src="https://www.youtube.com/embed/CPMwYzgbtH8" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/CPMwYzgbtH8" frameborder="0" allowfullscreen delete controls=0></iframe>
     </div>
   </div>
 
@@ -170,8 +170,14 @@
 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.fancybox.js"></script>
 <link rel="stylesheet" type="text/css" href="js/jquery.fancybox.css" media="screen" />
+<script src='js/fastclick.js' type='application/javascript'></script>
 <script type="text/javascript">
     $(document).ready(function() {
+      // Instantiate FastClick to remedy touch delays
+    window.addEventListener('load', function() {
+        new FastClick(document.body);
+    }, false);
+    
       $(".fancybox").fancybox({
       'height'    : 200,
       });
