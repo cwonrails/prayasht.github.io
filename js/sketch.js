@@ -9,9 +9,8 @@ function setup() {
   var myCanvas = createCanvas(windowWidth, windowHeight);
   myCanvas.parent("canvas");
   frameRate(30);
-  if (windowWidth > 960) {
-    num = 75;
-  }
+  if (windowWidth >= 780) num = 75;
+  else num = 0;
 
   // Fragments
   for (var i = 0; i < num; i++) {
