@@ -97,15 +97,6 @@
     </div>
   </a>
 
-  <!--  Github -->
-<!--   <a href="https://github.com/prayashthapa" style="border:0px;"  target="_blank">
-    <div class="box55x55 animated7 fade">
-      <img src="images/github.jpg" class="cover">
-      <h2 class="left">_GH</h2>
-    </div>
-  </a> -->
-
-
   <!-- LinkedIn -->
   <a href="https://www.linkedin.com/in/prayasht" style="border:0px;"  target="_blank">
     <div class="box55x55 animated3 fade">
@@ -114,14 +105,7 @@
     </div>
   </a>
 
-  <!-- Resumé -->
-<!--   <a href="http://prayashthapa.com/resume.pdf" style="border:0px;"  target="_blank">
-    <div class="box55x55 animated3 fade hideonmobile">
-      <img src="images/resume.jpg" class="cover">
-      <h2 class="left">_Ré</h2>
-    </div>
-  </a> -->
-
+  <!-- Dummy Block -->
   <div class="box55x55 hideonmobile"></div>
 
   <!-- SoundCloud -->
@@ -140,6 +124,7 @@
     </div>
   </a>
 
+  <!-- Dummy Block -->
   <div class="box55x55 hideonmobile"></div>
   <div class="box55x55 hideonmobile"></div>
 
@@ -153,10 +138,8 @@
   </span>
 
   <!-- Dummy Block -->
-
   <div class="box55x55">
   </div>
-
 
 </div>
 
@@ -176,33 +159,33 @@
 <link rel="stylesheet" type="text/css" href="js/jquery.fancybox.css" media="screen" />
 <script src='js/fastclick.js' type='application/javascript'></script>
 <script type="text/javascript">
-    $(document).ready(function() {
-      // Instantiate FastClick to remedy touch delays
+  $(document).ready(function() {
+    // Instantiate FastClick to remedy touch delays
     window.addEventListener('load', function() {
-        new FastClick(document.body);
-    }, false);
+    new FastClick(document.body);
+  }, false);
+    $(".fancybox").fancybox({
+    'height'    : 200,
+    });
+    // $('.links').hide();
+  });
 
-      $(".fancybox").fancybox({
-      'height'    : 200,
-      });
-      // $('.links').hide();
+  $("a.group").fancybox({
+    'transitionIn'  : 'elastic',
+    'transitionOut' : 'elastic',
+    'speedIn'   : 600,
+    'speedOut'    : 200,
+    'overlayShow' : false
+  });
 
+  $(function() {
+    $('.fade').hover(function() {
+      $(this).find('.cover').animate({opacity: 0.5},{duration:200});
+    },
+    function() {
+      $(this).find('.cover').animate({opacity: 1},{duration:200});
     });
-    $("a.group").fancybox({
-      'transitionIn'  : 'elastic',
-      'transitionOut' : 'elastic',
-      'speedIn'   : 600,
-      'speedOut'    : 200,
-      'overlayShow' : false
-    });
-    $(function() {
-      $('.fade').hover(function() {
-        $(this).find('.cover').animate({opacity: 0.5},{duration:200});
-      },
-      function() {
-        $(this).find('.cover').animate({opacity: 1},{duration:200});
-      });
-    });
+  });
 </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
