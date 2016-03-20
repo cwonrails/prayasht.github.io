@@ -167,7 +167,7 @@ p#copyright {
   padding-bottom: 56.25%;
   /*padding-top: 50px;*/
   height: 0;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .videoWrapper iframe {
@@ -188,7 +188,7 @@ p#copyright {
 /* =========================================
   MEDIA QUERIES
   ============================================= */
-@media screen and (max-width: 480px) {
+/*@media screen and (max-width: 480px) {
   img.logo {
     width: 200px;
     margin: 20px auto 10px auto; }
@@ -209,8 +209,8 @@ p#copyright {
     display: block; }
 
   .hideonmobile {
-    display: none; 
-  } 
+    display: none;
+  }
 
   .videoDesktop {
     display: none !important;
@@ -219,7 +219,7 @@ p#copyright {
   .illumine {
     display: block !important;
   }
-}
+}*/
 /* ==========================================================================
   Helper classes
   ========================================================================== */
