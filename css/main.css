@@ -71,6 +71,7 @@ body {
   text-align: center;
   padding-top: 2.5%;
 }
+
 img.logo {
   width: 350px;
   margin: 50px auto 40px auto;
@@ -154,39 +155,9 @@ h2.left {
   border: 0px;
 }
 
-/* =========================================
-  ELEMENTS
-  ============================================ */
-
-p#copyright {
-  text-align: center;
-  padding-bottom: 20px;
-  color: #000;
-}
-.video {
-  height: 100%;
-  width: 100%;
-}
-.videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  /*padding-top: 50px;*/
-  height: 0;
-  overflow: hidden;
-}
-.videoWrapper iframe {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.videoDesktop .videoWrapper iframe {
-  display: block !important;
-}
-.illumine {
-  display: none !important;
+svg {
+  display: block;
+  margin: 0 auto;
 }
 
 /* =========================================
@@ -194,38 +165,11 @@ p#copyright {
   ============================================= */
 
 
-/*@media screen and (max-width: 480px) {
-  img.logo {
-    width: 200px;
-    margin: 20px auto 10px auto; }
-
-  #center_content {
-    width: 228px; }
-
-  .imagesofessence, .distance {
-    display: none; }
-
-  .titleName {
-    text-indent: 0px !important;
-    font-size: 0.85em;
-    font-weight: 100;
-    padding: 15% 0; }
-
-  .videoWrapper iframe {
-    display: block; }
-
-  .hideonmobile {
-    display: none;
+@media screen and (max-width: 480px) {
+  svg {
+    width: 100%;
   }
-
-  .videoDesktop {
-    display: none !important;
-  }
-
-  .illumine {
-    display: block !important;
-  }
-}*/
+}
 
 
 /* ==========================================================================
