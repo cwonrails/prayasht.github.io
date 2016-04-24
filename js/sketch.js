@@ -10,7 +10,7 @@ function setup() {
   myCanvas.parent("canvas");
   frameRate(30);
   if (windowWidth >= 780) num = 75;
-  else num = 0;
+  else num = 25;
 
   // Fragments
   for (var i = 0; i < num; i++) {
@@ -58,18 +58,18 @@ function Fragment(_x, _y) {
   offSet = random(TWO_PI);
   radius = random(5, 10);
   dir = random(1) > .5 ? 1 : -1;
- 
+
   this.run = function() {
     this.update();
     this.display();
   };
- 
+
   this.update = function() {
     var vari = map(sin(theta + offSet), -1, 1, -2, -2);
     px = map(sin(theta + offSet) , -1, 1, 0, width);
     py = this.y + sin(theta * dir) * radius * vari;
   }
- 
+
   this.display = function() {
     for (var i = 0; i < fragments.length; i++) {
       var distance = dist(px, py, fragments[i].px, fragments[i].py);
