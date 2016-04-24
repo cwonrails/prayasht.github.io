@@ -92,8 +92,8 @@ img.logo {
 h1 {
   margin: 0;
 }
-.titleName {
-  text-indent: -999em;
+#title {
+  text-indent: -111em;
   /*rgba(0, 0, 0, 0.5);*/
 }
 h2.left {
@@ -105,6 +105,15 @@ h2.left {
   font-size: 10px;
   font-weight: bold;
   background: 0;
+}
+
+path {
+  -webkit-transition: fill-opacity 0.5s;
+  transition: fill-opacity 0.5s;
+}
+
+path:hover {
+  fill-opacity: 0.5;
 }
 
 /* =========================================
@@ -160,6 +169,29 @@ svg {
   margin: 0 auto;
 }
 
+#behance {
+  fill: #0955ff;
+}
+
+#blog {
+  fill: #c12354;
+}
+
+#facebook {
+  fill: #3b5999;
+}
+
+#soundcloud {
+  fill: #cb5923;
+}
+
+#twitter {
+  fill: #54acec;
+}
+
+#youtube {
+  fill: #cd181f;
+}
 /* =========================================
   MEDIA QUERIES
   ============================================= */
