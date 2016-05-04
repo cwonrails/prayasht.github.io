@@ -93,7 +93,7 @@ svg:not(:root) {
 }
 
 #main path {
-  fill: #202020;
+  /*fill: #202020;*/
   -webkit-transition: fill-opacity 0.5s;
   transition: fill-opacity 0.5s;
 }
@@ -832,7 +832,7 @@ header#header .toggle-nav.active span {
   -ms-transition: background 0.4s;
   -o-transition: background 0.4s;
   transition: background 0.4s;
-  background: #dcdcdc
+  background: #dcdcdc !important;
 }
 @media only screen and (max-width: 799px) {
   header#header {
@@ -1594,6 +1594,7 @@ body.index header#header nav ul.main-nav a {
 body.index header#header .toggle-nav span {
   background: #202020;
 }
+
 body.index header#header h2.index-site-title {
   position: relative;
   color: #dcdcdc;
