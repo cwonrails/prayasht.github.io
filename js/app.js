@@ -1,4 +1,13 @@
 $(document).ready(function() {
+  // Instantiate FastClick to remedy touch delays
+  window.addEventListener('load', function() {
+    new FastClick(document.body);
+  }, false);
+
+  $('a').click(function() {
+    // alert('hi');
+  });
+
   $("#toggle").click(function() {
     $("nav").toggleClass("visible");
     $("nav").toggleClass("transition-dismiss");
