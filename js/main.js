@@ -1,6 +1,4 @@
 $(document).ready(function() {
-  $(".video-container").fitVids({ customSelector: "iframe[src^='player.vimeo.com']" });
-
   $("#toggle").click(function() {
     $("nav").toggleClass("visible");
     $("nav").toggleClass("transition-dismiss");
@@ -16,18 +14,15 @@ $(document).ready(function() {
   });
 
   $("#additional").click(function() {
-    // alert("lol");
     $(".additional").toggleClass("visible");
   });
 
   $("#toggle-text").click(function() {
-    // alert("lol");
     $("section.more").toggleClass("visible");
     $("article.studio header").toggleClass("margin");
   });
 
   $(".site-title").mouseover(function() {
-    // alert("lol");
     $("nav li").toggleClass("rollout");
   });
 });
