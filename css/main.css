@@ -1,51 +1,37 @@
-@import url("http://fast.fonts.net/lt/1.css?apiType=css&c=c3279897-a2a3-45d6-8338-705b91a078f5&fontids=706733,706736");
+@font-face {
+  font-family: "Neuzeit S LT W01 Book";
+  src: url("../fonts/840b8bdf-7d26-449a-9620-8cb6663f18cc.eot?#iefix");
+  src: url("../fonts/840b8bdf-7d26-449a-9620-8cb6663f18cc.eot?#iefix") format("eot"), url("../fonts/d741af6b-26f4-4e34-b55d-432ccade3280.woff2") format("woff2"), url("../fonts/77aaeb7b-86f4-47a1-8196-74a660dd0919.woff") format("woff"), url("../fonts/efdf74e6-bfd4-466d-93fd-4f8f4d55b80c.ttf") format("truetype"), url("../fonts/be8d3917-a4cf-4d8f-b767-4e84bcbe300c.svg#be8d3917-a4cf-4d8f-b767-4e84bcbe300c") format("svg")
+}
+@font-face {
+  font-family: "NeuzeitSLTW01-BookHeavy";
+  src: url("../fonts/74c31844-4217-4fe8-82f7-88a5075de2e8.eot?#iefix");
+  src: url("../fonts/74c31844-4217-4fe8-82f7-88a5075de2e8.eot?#iefix") format("eot"), url("../fonts/3da0a3e3-3dff-405c-a0b2-0b0050b21771.woff2") format("woff2"), url("../fonts/a1476bae-b118-4e9d-b711-c84091d9bc16.woff") format("woff"), url("../fonts/096111d9-3ba2-4828-ae9a-29fb4e03c0b1.ttf") format("truetype"), url("../fonts/74a8e701-bffc-464e-a60b-63169debd492.svg#74a8e701-bffc-464e-a60b-63169debd492") format("svg")
+}
+
 body {
   -webkit-animation: fadein 2s;
   -moz-animation: fadein 2s;
   -ms-animation: fadein 2s;
   -o-animation: fadein 2s;
   animation: fadein 2s
+
+  margin: 0;
+  padding: 0;
+  background: #ebebeb;
+  position: relative;
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column
 }
-@keyframes fadein {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
-}
-@-moz-keyframes fadein {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
-}
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
-}
-@-ms-keyframes fadein {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
-}
-@-o-keyframes fadein {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
-}
+
 body.work img {
   opacity: 0;
   -moz-transition: opacity 2s;
@@ -53,40 +39,16 @@ body.work img {
   -o-transition: opacity 2s;
   transition: opacity 2s
 }
-@-ms-keyframes fadein {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
-}
-@-o-keyframes fadein {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
-}
-@font-face {
-  font-family: "Neuzeit S LT W01 Book";
-  src: url("../fonts/706733/840b8bdf-7d26-449a-9620-8cb6663f18cc.eot?#iefix");
-  src: url("../fonts/706733/840b8bdf-7d26-449a-9620-8cb6663f18cc.eot?#iefix") format("eot"), url("../fonts/706733/d741af6b-26f4-4e34-b55d-432ccade3280.woff2") format("woff2"), url("../fonts/706733/77aaeb7b-86f4-47a1-8196-74a660dd0919.woff") format("woff"), url("../fonts/706733/efdf74e6-bfd4-466d-93fd-4f8f4d55b80c.ttf") format("truetype"), url("../fonts/706733/be8d3917-a4cf-4d8f-b767-4e84bcbe300c.svg#be8d3917-a4cf-4d8f-b767-4e84bcbe300c") format("svg")
-}
-@font-face {
-  font-family: "NeuzeitSLTW01-BookHeavy";
-  src: url("../fonts/706736/74c31844-4217-4fe8-82f7-88a5075de2e8.eot?#iefix");
-  src: url("../fonts/706736/74c31844-4217-4fe8-82f7-88a5075de2e8.eot?#iefix") format("eot"), url("../fonts/706736/3da0a3e3-3dff-405c-a0b2-0b0050b21771.woff2") format("woff2"), url("../fonts/706736/a1476bae-b118-4e9d-b711-c84091d9bc16.woff") format("woff"), url("../fonts/706736/096111d9-3ba2-4828-ae9a-29fb4e03c0b1.ttf") format("truetype"), url("../fonts/706736/74a8e701-bffc-464e-a60b-63169debd492.svg#74a8e701-bffc-464e-a60b-63169debd492") format("svg")
-}
+
 body, h1, h2, h3, p {
   font-size: 14px;
   line-height: 1.4em;
   font-family: Neuzeit S LT W01 Book, Helvetica Neue, Helvetica, Arial, sans;
   font-weight: normal;
   color: #282828;
-  letter-spacing: .02em
+  letter-spacing: .02em;
 }
+
 b, .exhibitions h4, .talks-box h4 {
   font-family: NeuzeitSLTW01-BookHeavy, Helvetica Neue, Helvetica, Arial, sans
 }
@@ -254,10 +216,7 @@ section.work--single a:not(.no-bb), section.interviews a:not(.no-bb), article.co
     margin-bottom: 15px
   }
 }
-body {
-  background: #ebebeb;
-  position: relative
-}
+
 img {
   max-width: 100%;
   margin-bottom: 0;
@@ -394,63 +353,7 @@ body.dark.dark-background h1 {
 body.dark.dark-background h2, body.dark.dark-background .smooth {
   color: #5a5a5a
 }
-body {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column
 
-  -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -ms-animation: fadein 2s;
-  -o-animation: fadein 2s;
-  animation: fadein 2s
-}
-@keyframes fadein {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
-}
-@-moz-keyframes fadein {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
-}
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
-}
-@-ms-keyframes fadein {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
-}
-@-o-keyframes fadein {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
-}
 body.work img {
   opacity: 0;
   -moz-transition: opacity 2s;
@@ -458,22 +361,7 @@ body.work img {
   -o-transition: opacity 2s;
   transition: opacity 2s
 }
-@-ms-keyframes fadein {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
-}
-@-o-keyframes fadein {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
-}
+
 .rslides {
   position: relative;
   list-style: none;
@@ -915,10 +803,7 @@ main#content {
   -ms-flex: 1;
   flex: 1
 }
-body {
-  margin: 0;
-  padding: 0
-}
+
 body.index footer#footer {
   position: fixed;
   bottom: 0;
@@ -1485,141 +1370,7 @@ ol, ul {
   -ms-animation-delay: -7s;
   animation-delay: -7s
 }
-@-webkit-keyframes imageAnimation {
-  0% {
-    opacity: 0
-  }
-  10% {
-    opacity: 0
-  }
-  20% {
-    opacity: 0
-  }
-  70% {
-    opacity: 0;
-    -webkit-animation-timing-function: ease-in;
-    -webkit-transform: scale(1)
-  }
-  80% {
-    opacity: 1
-  }
-  90% {
-    opacity: 1;
-    -webkit-animation-timing-function: ease-out
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(1.07)
-  }
-}
-@-moz-keyframes imageAnimation {
-  0% {
-    opacity: 0
-  }
-  10% {
-    opacity: 0
-  }
-  20% {
-    opacity: 0
-  }
-  70% {
-    opacity: 0;
-    -moz-animation-timing-function: ease-in;
-    -moz-transform: scale(1)
-  }
-  80% {
-    opacity: 1
-  }
-  90% {
-    opacity: 1;
-    -moz-animation-timing-function: ease-out
-  }
-  100% {
-    opacity: 0;
-    -moz-transform: scale(1.07)
-  }
-}
-@-o-keyframes imageAnimation {
-  0% {
-    opacity: 0
-  }
-  10% {
-    opacity: 0
-  }
-  20% {
-    opacity: 0
-  }
-  70% {
-    opacity: 0;
-    -o-animation-timing-function: ease-in;
-    -o-transform: scale(1)
-  }
-  80% {
-    opacity: 1
-  }
-  90% {
-    opacity: 1;
-    -o-animation-timing-function: ease-out
-  }
-  100% {
-    opacity: 0;
-    -o-transform: scale(1.07)
-  }
-}
-@-ms-keyframes imageAnimation {
-  0% {
-    opacity: 0
-  }
-  10% {
-    opacity: 0
-  }
-  20% {
-    opacity: 0
-  }
-  70% {
-    opacity: 0;
-    -o-animation-timing-function: ease-in;
-    -o-transform: scale(1)
-  }
-  80% {
-    opacity: 1
-  }
-  90% {
-    opacity: 1;
-    -o-animation-timing-function: ease-out
-  }
-  100% {
-    opacity: 0;
-    -o-transform: scale(1.07)
-  }
-}
-@keyframes imageAnimation {
-  0% {
-    opacity: 0
-  }
-  10% {
-    opacity: 0
-  }
-  20% {
-    opacity: 0
-  }
-  70% {
-    opacity: 0;
-    animation-timing-function: ease-in;
-    transform: scale(1)
-  }
-  80% {
-    opacity: 1
-  }
-  90% {
-    opacity: 1;
-    animation-timing-function: ease-out
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1.07)
-  }
-}
+
 .featured-title li:nth-child(1) p {
   opacity: 1;
   animation-delay: -38s;
@@ -1704,104 +1455,11 @@ ul.featured-title li p {
   -ms-animation: titleAnimation 35s linear infinite 0s;
   animation: titleAnimation 35s linear infinite 0s
 }
+
 .featured-title li p a {
   color: #dcdcdc !important
 }
-@-webkit-keyframes titleAnimation {
-  0% {
-    opacity: 0
-  }
-  3% {
-    opacity: 1;
-    z-index: 999
-  }
-  19.5% {
-    opacity: 1;
-    z-index: 999
-  }
-  22.5% {
-    opacity: 0
-  }
-  100% {
-    opacity: 0
-  }
-}
-@-moz-keyframes titleAnimation {
-  0% {
-    opacity: 0
-  }
-  3% {
-    opacity: 1;
-    z-index: 999
-  }
-  19.5% {
-    opacity: 1;
-    z-index: 999
-  }
-  22.5% {
-    opacity: 0
-  }
-  100% {
-    opacity: 0
-  }
-}
-@-o-keyframes titleAnimation {
-  0% {
-    opacity: 0
-  }
-  3% {
-    opacity: 1;
-    z-index: 999
-  }
-  19.5% {
-    opacity: 1;
-    z-index: 999
-  }
-  22.5% {
-    opacity: 0
-  }
-  100% {
-    opacity: 0
-  }
-}
-@-ms-keyframes titleAnimation {
-  0% {
-    opacity: 0
-  }
-  3% {
-    opacity: 1;
-    z-index: 999
-  }
-  19.5% {
-    opacity: 1;
-    z-index: 999
-  }
-  22.5% {
-    opacity: 0
-  }
-  100% {
-    opacity: 0
-  }
-}
-@keyframes titleAnimation {
-  0% {
-    opacity: 0
-  }
-  3% {
-    opacity: 1;
-    z-index: 999
-  }
-  19.5% {
-    opacity: 1;
-    z-index: 999
-  }
-  22.5% {
-    opacity: 0
-  }
-  100% {
-    opacity: 0
-  }
-}
+
 .cb-slideshow {
   -webkit-animation: introFade 2s ease-in;
   -moz-animation: introFade 2s ease-in;
@@ -1809,46 +1467,7 @@ ul.featured-title li p {
   -ms-animation: introFade 2s ease-in;
   animation: introFade 2s ease-in
 }
-@-webkit-keyframes introFade {
-  0% {
-    opacity: 0
-  }
-  100% {
-    opacity: 1
-  }
-}
-@-moz-keyframes introFade {
-  0% {
-    opacity: 0
-  }
-  100% {
-    opacity: 1
-  }
-}
-@-o-keyframes introFade {
-  0% {
-    opacity: 0
-  }
-  100% {
-    opacity: 1
-  }
-}
-@-ms-keyframes introFade {
-  0% {
-    opacity: 0
-  }
-  100% {
-    opacity: 1
-  }
-}
-@keyframes introFade {
-  0% {
-    opacity: 0
-  }
-  100% {
-    opacity: 1
-  }
-}
+
 .no-cssanimations .cb-slideshow li span {
   opacity: 1
 }
