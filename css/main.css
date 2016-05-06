@@ -1674,3 +1674,32 @@ article.lost header {
     width: 100%;
   }
 }
+
+.work--overview__project {
+  margin-bottom: 30px
+}
+@media only screen and (min-width: 1000px) {
+  .work--overview__project {
+    margin-bottom: 60px
+  }
+}
+.work--overview__project:last-child {
+  margin-bottom: 0
+}
+.work--overview__project a {
+  text-decoration: none
+}
+.work--overview__project .project-title {
+  text-align: center;
+  margin-top: 10px
+}
+@media only screen and (min-width: 1000px) {
+  .work--overview__project .project-title {
+    margin-top: 15px
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .work--overview__project figure {
+    height: 540px
+  }
+}

@@ -4,24 +4,9 @@ $(document).ready(function() {
     new FastClick(document.body);
   }, false);
 
-  // * User Agent Detection
-  if(navigator.userAgent.match(/iPhone|iPad|iPod|Android/ig)) {
-    $('#visuals').click(function() {
-      OpenInNewTab("http://youtube.com/iameffulgence");
-    });
-
-    $('#video').click(function() {
-      OpenInNewTab("http://youtube.com/iameffulgence");
-    });
-
-    $('#musica').click(function() {
-      OpenInNewTab("http://soundcloud.com/effulgence");
-    });
-
-    $('#code').click(function() {
-      OpenInNewTab("http://effulgence.io/Nucleactor");
-    });
-  }
+  $('a').click(function() {
+    // alert('hi');
+  });
 
   $("#toggle").click(function() {
     $("nav").toggleClass("visible");
@@ -102,8 +87,3 @@ $(document).ready(function() {
     $(".toggle-nav").addClass("no-scroll");
   }
 });
-
-function OpenInNewTab(url) {
-  var win = window.open(url, '_blank');
-  win.focus();
-}
