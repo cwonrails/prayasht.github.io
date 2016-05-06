@@ -18,7 +18,7 @@ body {
 
   margin: 0;
   padding: 0;
-  background: #ebebeb;
+  /*background: #ebebeb;*/
   position: relative;
 
   display: -webkit-flex;
@@ -1280,7 +1280,7 @@ article.team-member section.bio p {
   }
 }
 body.index {
-  background: #EBEBEB;
+  /*background: #EBEBEB;*/
   overflow-y: hidden;
   overflow-x: hidden;
   overflow: hidden;
@@ -1702,4 +1702,11 @@ article.lost header {
   .work--overview__project figure {
     height: 540px
   }
+}
+
+#defaultCanvas0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }

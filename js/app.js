@@ -5,7 +5,7 @@ $(document).ready(function() {
   }, false);
 
   // * User Agent Detection
-  if(navigator.userAgent.match(/iPhone|iPad|iPod|Android/ig)) {
+  if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/ig)) {
     $('#visuals').click(function() {
       OpenInNewTab("http://youtube.com/iameffulgence");
     });
