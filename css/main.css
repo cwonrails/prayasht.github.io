@@ -239,9 +239,9 @@ ul li {
   margin: 8vh 0 0 0;
 }
 
-@media only screen and (max-width: 600px) {
-  #container {
-    margin: 5vh 0 0 0;
+@media only screen and (max-width: 500px) {
+  .work {
+    margin: 45px 0 0 0;
   }
 }
 
@@ -534,9 +534,9 @@ header#header nav div {
 }
 header#header .toggle-nav {
   position: fixed;
-  right: 30px;
+  left: 30px;
   top: 25px;
-  z-index: 999999999
+  z-index: 999999999;
 }
 header#header .toggle-nav span {
   display: block;
