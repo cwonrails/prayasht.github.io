@@ -8,7 +8,8 @@ var theta = 0;
 function setup() {
   var canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent("content"); frameRate(30);
-
+  background('#EBEBEB');
+  
   if (windowWidth >= 780) num = 75;
   else num = 25;
 
@@ -25,7 +26,7 @@ function setup() {
 // ************************************************************************************
 
 function draw() {
-  background(255);
+  background('#EBEBEB');
 
   // ---------------
   // Fragments

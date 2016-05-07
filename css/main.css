@@ -236,14 +236,22 @@ ul li {
   }
 }
 #container {
-  margin: 25px 0 0px 0px;
+  margin: 8vh 0 0 0;
 }
+
+@media only screen and (max-width: 600px) {
+  #container {
+    margin: 5vh 0 0 0;
+  }
+}
+
 .narrow {
   margin: 0 30px
 }
 footer#footer {
   margin: 0 30px 30px
 }
+
 @media only screen and (min-width: 500px) {
   .narrow {
     margin: 0 40px
@@ -1281,9 +1289,9 @@ article.team-member section.bio p {
 }
 body.index {
   /*background: #EBEBEB;*/
-  overflow-y: hidden;
-  overflow-x: hidden;
-  overflow: hidden;
+  /*overflow-y: hidden;*/
+  /*overflow-x: hidden;*/
+  /*overflow: hidden;*/
   -webkit-font-smoothing: antialiased
 }
 body.index header#header nav ul.main-nav a {
@@ -1662,7 +1670,6 @@ article.lost header {
   margin: 0 auto;
 }
 #main path {
-  /*fill: #202020;*/
   -webkit-transition: fill-opacity 0.5s;
   transition: fill-opacity 0.5s;
 }
