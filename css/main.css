@@ -18,14 +18,13 @@ body {
 
   margin: 0;
   padding: 0;
-  /*background: #ebebeb;*/
   position: relative;
 
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: flex;
-  min-height: 100vh;
+  min-height: 150px;
   flex-direction: column;
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
@@ -236,7 +235,7 @@ ul li {
   }
 }
 #container {
-  margin: 8vh 0 0 0;
+  margin: 6vh 0 0 0;
 }
 
 @media only screen and (max-width: 500px) {
@@ -244,6 +243,8 @@ ul li {
     margin: 45px 0 0 0;
   }
 }
+
+a { cursor: pointer; }
 
 .narrow {
   margin: 0 30px
@@ -265,7 +266,7 @@ footer#footer {
 @media only screen and (min-width: 800px) {
   #container {
     width: 700px;
-    margin: 50px auto 80px
+    margin: 50px auto 0px;
   }
   #container.margin-top {
     margin-top: 123px
@@ -284,7 +285,7 @@ footer#footer {
 }
 @media only screen and (min-width: 1000px) {
   #container {
-    margin: 50px auto 80px;
+    margin: 50px auto 0px;
     width: 880px
   }
   header#header>div {
@@ -298,7 +299,7 @@ footer#footer {
 @media only screen and (min-width: 1200px) {
   #container {
     width: 1080px;
-    margin: 60px auto 90px
+    margin: 60px auto 0px;
   }
   header#header>div {
     width: 1080px
@@ -408,13 +409,22 @@ header#header a {
 header#header .site-title {
   display: none
 }
-header#header .logo {
+/*header#header .logo {
   position: absolute;
   width: 120px;
   left: 50%;
   margin-left: -60px;
   z-index: 9999
+}*/
+
+header#header .logo {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 9999;
 }
+
 header#header .logo.hide {
   display: none
 }
@@ -1288,12 +1298,16 @@ article.team-member section.bio p {
   }
 }
 body.index {
-  /*background: #EBEBEB;*/
-  /*overflow-y: hidden;*/
-  /*overflow-x: hidden;*/
-  /*overflow: hidden;*/
+  background: #EBEBEB;
   -webkit-font-smoothing: antialiased
 }
+
+.disable-scroll {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
 body.index header#header nav ul.main-nav a {
   color: #dcdcdc
 }
@@ -1716,4 +1730,17 @@ article.lost header {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.logo h1 {
+  margin-top: 0;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #202020;
+  opacity: 0.66;
+}
+
+.music iframe {
+  /*width: 90%;*/
+  /*padding: 0 5%;*/
 }

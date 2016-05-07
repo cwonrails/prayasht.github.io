@@ -19,33 +19,6 @@ $(document).ready(function() {
     //   openNewTab("http://effulgence.io/Nucleactor");
     // });
   }
-
-  $("#toggle").click(function() {
-    $("nav").toggleClass("visible");
-    $("nav").toggleClass("transition-dismiss");
-    $(".logo").toggleClass("hide");
-    $("#container").toggleClass("scroll");
-    $("#toggle").toggleClass("active");
-    $("#footer").toggleClass("hide");
-    $("body").toggleClass("transition-dismiss");
-    $("body, html").toggleClass("overflow");
-    if (navigator.userAgent.match('CriOS')) {
-      $("html").toggleClass("fixed");
-    }
-  });
-
-  $("#additional").click(function() {
-    $(".additional").toggleClass("visible");
-  });
-
-  $("#toggle-text").click(function() {
-    $("section.more").toggleClass("visible");
-    $("article.studio header").toggleClass("margin");
-  });
-
-  $(".site-title").mouseover(function() {
-    $("nav li").toggleClass("rollout");
-  });
 });
 
 // var $document = $(document);
@@ -106,41 +79,38 @@ function openNewTab(url) {
 }
 
 function init() {
+  if (!$('.home').is(':hidden')) $('body.index').addClass('disable-scroll');
+
   // Instantiate FastClick to remedy touch delays
   window.addEventListener('load', function() {
     new FastClick(document.body);
   }, false);
 
-  $('#wrapper').on('click', 'a', function () {
+  // Home Button
+  $('.logo').on('click', 'a', function() {
+    $('body.index').addClass('disable-scroll');
     var section = $(this).data('section');
-    loadSection(section);
-  });
+    var elem = $('#container .' + section);
+    console.log(elem);
 
-  $(window).on('popstate', function(event) {
-    if (window.location.hash) {
-      loadSection(getHash());
-    } else {
-      loadSection('home');
+    if (elem.is(':hidden')) {
+      $('#container div:visible').fadeOut('fast', function() {
+        elem.fadeIn('slow');
+      });
     }
   });
-}
 
-function getHash() {
-  return window.location.hash.substring(1);
-}
+  // Navigation
+  $('.home').on('click', 'a', function () {
+    var section = $(this).data('section');
+    var elem = $('#container .' + section);
+    console.log(elem);
 
-function loadSection(hash) {
-  var elem = $('#container .' + hash);
-  console.log(elem);
-
-  if (!elem.length) {
-    elem = $('#container .home');
-    hash = 'home';
-  }
-
-  if (elem.is(':hidden')) {
-    $('#container div:visible').fadeOut('fast', function() {
-      elem.fadeIn('fast');
-    });
-  }
+    if (elem.is(':hidden')) {
+      $('#container div:visible').fadeOut('fast', function() {
+        elem.fadeIn('slow');
+        $('body.index').removeClass('disable-scroll');
+      });
+    }
+  });
 }
