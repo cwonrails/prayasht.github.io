@@ -6,9 +6,9 @@ var theta = 0;
 // ************************************************************************************
 
 function setup() {
-  var myCanvas = createCanvas(windowWidth, windowHeight);
-  myCanvas.parent("content");
-  frameRate(30);
+  var canvas = createCanvas(windowWidth, windowHeight);
+  canvas.parent("content"); frameRate(30);
+
   if (windowWidth >= 780) num = 75;
   else num = 25;
 
@@ -33,18 +33,9 @@ function draw() {
   noFill();
   stroke(0, 25);
   strokeWeight(2);
-  for (var i = 0; i < fragments.length; i++) {
-    fragments[i].run();
-  }
+  for (var i = 0; i < fragments.length; i++) fragments[i].render();
   theta += TWO_PI/frames * (0.1);
 }
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
-
-// ************************************************************************************
-// Classes
 
 // Fragment
 function Fragment(_x, _y) {
@@ -59,7 +50,7 @@ function Fragment(_x, _y) {
   radius = random(5, 10);
   dir = random(1) > .5 ? 1 : -1;
 
-  this.run = function() {
+  this.render = function() {
     this.update();
     this.display();
   };
@@ -74,7 +65,7 @@ function Fragment(_x, _y) {
     for (var i = 0; i < fragments.length; i++) {
       var distance = dist(px, py, fragments[i].px, fragments[i].py);
 
-      if (distance > 0 && distance < 125) {
+      if (distance > 30 && distance < 125) {
         strokeCap(ROUND);
         line(px, py, fragments[i].px, fragments[i].py);
         // ellipse(px, py, 5, 5);
@@ -82,4 +73,8 @@ function Fragment(_x, _y) {
       }
     }
   }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }

@@ -1,26 +1,23 @@
 $(document).ready(function() {
-  // Instantiate FastClick to remedy touch delays
-  window.addEventListener('load', function() {
-    new FastClick(document.body);
-  }, false);
+  init();
 
   // * User Agent Detection
   if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/ig)) {
-    $('#visuals').click(function() {
-      OpenInNewTab("http://youtube.com/iameffulgence");
-    });
-
-    $('#video').click(function() {
-      OpenInNewTab("http://youtube.com/iameffulgence");
-    });
-
-    $('#musica').click(function() {
-      OpenInNewTab("http://soundcloud.com/effulgence");
-    });
-
-    $('#code').click(function() {
-      OpenInNewTab("http://effulgence.io/Nucleactor");
-    });
+    // $('#visuals').click(function() {
+    //   openNewTab("http://youtube.com/iameffulgence");
+    // });
+    //
+    // $('#video').click(function() {
+    //   openNewTab("http://youtube.com/iameffulgence");
+    // });
+    //
+    // $('#musica').click(function() {
+    //   openNewTab("http://soundcloud.com/effulgence");
+    // });
+    //
+    // $('#code').click(function() {
+    //   openNewTab("http://effulgence.io/Nucleactor");
+    // });
   }
 
   $("#toggle").click(function() {
@@ -103,7 +100,47 @@ $(document).ready(function() {
   }
 });
 
-function OpenInNewTab(url) {
+function openNewTab(url) {
   var win = window.open(url, '_blank');
   win.focus();
+}
+
+function init() {
+  // Instantiate FastClick to remedy touch delays
+  window.addEventListener('load', function() {
+    new FastClick(document.body);
+  }, false);
+
+  $('#wrapper').on('click', 'a', function () {
+    var section = $(this).data('section');
+    loadSection(section);
+  });
+
+  $(window).on('popstate', function(event) {
+    if (window.location.hash) {
+      loadSection(getHash(), true);
+    } else {
+      loadSection('home', true);
+    }
+  });
+}
+
+function getHash() {
+  return window.location.hash.substring(1);
+}
+
+function loadSection(section, firstLoad) {
+  var elem = $('#container .' + section);
+  console.log(elem);
+
+  if (!elem.length) {
+    elem = $('#container .home');
+    section = 'home';
+  }
+
+  if (elem.is(':hidden')) {
+    $('#container div:visible').fadeOut('fast', function() {
+      elem.fadeIn('fast');
+    });
+  }
 }
