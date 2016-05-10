@@ -1741,6 +1741,39 @@ article.lost header {
 }
 
 .music iframe {
-  /*width: 90%;*/
-  /*padding: 0 5%;*/
+  width: 90%;
+  padding: 1em 5%;
+}
+
+.about h1 {
+  margin-bottom: 0px;
+}
+
+.home {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#behance {
+  fill: #0955ff;
+}
+
+#blog {
+  fill: #c12354;
+}
+
+#facebook {
+  fill: #3b5999;
+}
+
+#soundcloud {
+  fill: #cb5923
+}
+
+#twitter {
+  fill: #55aded;
+}
+
+#youtube {
+  fill: #cd181f;
 }

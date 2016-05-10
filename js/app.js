@@ -3,21 +3,29 @@ $(document).ready(function() {
 
   // * User Agent Detection
   if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/ig)) {
-    // $('#visuals').click(function() {
-    //   openNewTab("http://youtube.com/iameffulgence");
-    // });
-    //
-    // $('#video').click(function() {
-    //   openNewTab("http://youtube.com/iameffulgence");
-    // });
-    //
-    // $('#musica').click(function() {
-    //   openNewTab("http://soundcloud.com/effulgence");
-    // });
-    //
-    // $('#code').click(function() {
-    //   openNewTab("http://effulgence.io/Nucleactor");
-    // });
+    $('#behance').click(function() {
+      openNewTab("http://behance.com/effulgence");
+    });
+
+    $('#blog').click(function() {
+      openNewTab("http://medium.com/effulgence");
+    });
+
+    $('#facebook').click(function() {
+      openNewTab("http://facebook.com/iameffulgence");
+    });
+
+    $('#soundcloud').click(function() {
+      openNewTab("http://soundcloud.com/effulgence");
+    });
+
+    $('#twitter').click(function() {
+      openNewTab("http://twitter.com/iameffulgence");
+    });
+
+    $('#youtube').click(function() {
+      openNewTab("http://youtube.com/iameffulgence");
+    });
   }
 });
 
