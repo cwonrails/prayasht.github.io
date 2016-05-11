@@ -235,7 +235,7 @@ ul li {
   }
 }
 #container {
-  margin: 6vh 0 0 0;
+  margin: 6vh auto 0;
 }
 
 @media only screen and (max-width: 500px) {
@@ -266,11 +266,9 @@ footer#footer {
 @media only screen and (min-width: 800px) {
   #container {
     width: 700px;
-    margin: 50px auto 0px;
+    margin: 20px auto 0;
   }
-  #container.margin-top {
-    margin-top: 123px
-  }
+
   header#header>div {
     width: 700px;
     margin: 0 auto;
@@ -285,7 +283,7 @@ footer#footer {
 }
 @media only screen and (min-width: 1000px) {
   #container {
-    margin: 50px auto 0px;
+    margin: 30px auto 0;
     width: 880px
   }
   header#header>div {
@@ -299,7 +297,7 @@ footer#footer {
 @media only screen and (min-width: 1200px) {
   #container {
     width: 1080px;
-    margin: 60px auto 0px;
+    margin: 30px auto 0px;
   }
   header#header>div {
     width: 1080px
