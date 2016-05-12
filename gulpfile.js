@@ -24,7 +24,7 @@ gulp.task('sass', function() {
     .pipe(browserSync.reload({ stream: true }))
 });
 
-gulp.task('watch', ['browserSync', 'sass', 'dist'], function() {
+gulp.task('serve', ['browserSync', 'sass', 'dist'], function() {
   gulp.watch('src/scss/**/*.scss', ['sass', 'dist']);
   gulp.watch('src/*.html', ['dist']);
   gulp.watch('src/*.js', ['dist']);
@@ -33,8 +33,8 @@ gulp.task('watch', ['browserSync', 'sass', 'dist'], function() {
 gulp.task('dist', function() {
   return gulp.src('src/index.html')
     .pipe(useref())
-    .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulpIf('*.css', minifyCss()))
+    // .pipe(gulpIf('*.js', uglify()))
+    // .pipe(gulpIf('*.css', minifyCss()))
     .pipe(gulp.dest(''))
     .pipe(browserSync.reload({ stream: true }))
 });
