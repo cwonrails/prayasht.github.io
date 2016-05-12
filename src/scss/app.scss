@@ -22,14 +22,14 @@ $desktop-width: 1200px;
 
 @font-face {
   font-family: "Neuzeit S LT W01 Book";
-  src: url(../fonts/840b8bdf-7d26-449a-9620-8cb6663f18cc.eot?#iefix);
-  src: url(../fonts/840b8bdf-7d26-449a-9620-8cb6663f18cc.eot?#iefix) format("eot"), url(../fonts/d741af6b-26f4-4e34-b55d-432ccade3280.woff2) format("woff2"), url(../fonts/77aaeb7b-86f4-47a1-8196-74a660dd0919.woff) format("woff"), url(../fonts/efdf74e6-bfd4-466d-93fd-4f8f4d55b80c.ttf) format("truetype"), url(../fonts/be8d3917-a4cf-4d8f-b767-4e84bcbe300c.svg#be8d3917-a4cf-4d8f-b767-4e84bcbe300c) format("svg");
+  src: url(../assets/fonts/840b8bdf-7d26-449a-9620-8cb6663f18cc.eot?#iefix);
+  src: url(../assets/fonts/840b8bdf-7d26-449a-9620-8cb6663f18cc.eot?#iefix) format("eot"), url(../assets/fonts/d741af6b-26f4-4e34-b55d-432ccade3280.woff2) format("woff2"), url(../assets/fonts/77aaeb7b-86f4-47a1-8196-74a660dd0919.woff) format("woff"), url(../assets/fonts/efdf74e6-bfd4-466d-93fd-4f8f4d55b80c.ttf) format("truetype"), url(../assets/fonts/be8d3917-a4cf-4d8f-b767-4e84bcbe300c.svg#be8d3917-a4cf-4d8f-b767-4e84bcbe300c) format("svg");
 }
 
 @font-face {
   font-family: "NeuzeitSLTW01-BookHeavy";
-  src: url(../fonts/74c31844-4217-4fe8-82f7-88a5075de2e8.eot?#iefix);
-  src: url(../fonts/74c31844-4217-4fe8-82f7-88a5075de2e8.eot?#iefix) format("eot"), url(../fonts/3da0a3e3-3dff-405c-a0b2-0b0050b21771.woff2) format("woff2"), url(../fonts/a1476bae-b118-4e9d-b711-c84091d9bc16.woff) format("woff"), url(../fonts/096111d9-3ba2-4828-ae9a-29fb4e03c0b1.ttf) format("truetype"), url(../fonts/74a8e701-bffc-464e-a60b-63169debd492.svg#74a8e701-bffc-464e-a60b-63169debd492) format("svg");
+  src: url(../assets/fonts/74c31844-4217-4fe8-82f7-88a5075de2e8.eot?#iefix);
+  src: url(../assets/fonts/74c31844-4217-4fe8-82f7-88a5075de2e8.eot?#iefix) format("eot"), url(../assets/fonts/3da0a3e3-3dff-405c-a0b2-0b0050b21771.woff2) format("woff2"), url(../assets/fonts/a1476bae-b118-4e9d-b711-c84091d9bc16.woff) format("woff"), url(../assets/fonts/096111d9-3ba2-4828-ae9a-29fb4e03c0b1.ttf) format("truetype"), url(../assets/fonts/74a8e701-bffc-464e-a60b-63169debd492.svg#74a8e701-bffc-464e-a60b-63169debd492) format("svg");
 }
 
 body {
@@ -252,7 +252,7 @@ ol, ul {
   }
 
   #container {
-    width: 1080px;
+    width: 80%;
     margin: 30px auto 0;
   }
 
@@ -405,6 +405,7 @@ header#header {
     margin: 0 auto;
     width: 100%;
     z-index: 9999;
+    text-align: center;
 
     &.hide {
       display: none;
