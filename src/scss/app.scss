@@ -3,7 +3,7 @@ $tablet-width: 768px;
 $desktop-width: 1200px;
 
 @mixin mobile {
-  @media (max-width: #{$mobile-width}) {
+  @media (min-width: 300px) and (max-width: #{$tablet-width - 1px}) {
     @content;
   }
 }
@@ -168,7 +168,7 @@ article {
     }
 
     header {
-      padding: 2em 30px 0;
+      padding: 2em 30px 0px;
       margin-bottom: 60px;
 
       @include desktop {
@@ -318,12 +318,8 @@ ul li {
   }
 }
 
-#container {
-  margin: 6vh auto 0;
-}
-
 @media only screen and (max-width: 500px) {
-  .work {
+  .work, .music article {
     margin: 45px 0 0;
   }
 }
@@ -389,7 +385,7 @@ iframe .video {
 
 header#header {
   position: relative;
-  padding-top: 18px;
+  @include mobile { height: 30px; }
 
   a {
     color: #282828;
@@ -407,8 +403,21 @@ header#header {
     z-index: 9999;
     text-align: center;
 
+    @include mobile {
+      font-size: 0.9em;
+    }
+
     &.hide {
       display: none;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.5em;
+      font-weight: 500;
+      color: #202020;
+      opacity: .66;
+      padding: 1em;
     }
   }
 
@@ -433,87 +442,6 @@ header#header {
       -o-transition: background .4s;
       transition: background .4s;
       background: #dcdcdc !important;
-    }
-  }
-}
-
-@media only screen and (max-width: 799px) {
-  header#header nav.transition-dismiss {
-    transition: opacity .5s;
-    -moz-transition: opacity .5s;
-    -webkit-transition: opacity .5s;
-    opacity: 0;
-    visibility: hidden;
-
-    ul, address {
-      visibility: hidden;
-    }
-  }
-}
-
-@media only screen and (max-width: 799px) {
-  header#header {
-    -webkit-overflow-scrolling: touch;
-
-    nav {
-      position: fixed;
-      -webkit-font-smoothing: antialiased;
-
-      ul.main-nav {
-        margin-top: 55px;
-
-        li {
-          font-size: 1.8em;
-          text-align: center;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 799px) and (orientation: portrait) and (min-width: 500px) {
-  header#header nav {
-    a {
-      -webkit-tap-highlight-color: #282828;
-    }
-
-    ul.main-nav li {
-      font-size: 2em;
-    }
-  }
-}
-
-@media only screen and (max-width: 799px) and (orientation: portrait) {
-  header#header nav address {
-    left: 30px;
-  }
-}
-
-@media only screen and (max-width: 799px) and (orientation: portrait) and (max-height: 450px) {
-  header#header nav ul.main-nav li {
-    font-size: 1.2em;
-  }
-}
-
-@media only screen and (max-width: 799px) and (orientation: portrait) and (max-height: 400px) {
-  header#header nav {
-    address, ul.social {
-      display: none;
-    }
-  }
-}
-
-@media only screen and (max-width: 799px) and (orientation: landscape) {
-  header#header nav {
-    ul.main-nav {
-      position: fixed;
-      bottom: 30px;
-      margin-bottom: 0;
-
-      li {
-        text-align: left;
-        padding: .8em 0 0 !important;
-      }
     }
   }
 }
@@ -716,14 +644,6 @@ main#content {
   top: 0;
   left: 0;
   z-index: -1;
-}
-
-.logo h1 {
-  margin-top: 0;
-  font-size: 1.5em;
-  font-weight: 500;
-  color: #202020;
-  opacity: .66;
 }
 
 .music iframe {
