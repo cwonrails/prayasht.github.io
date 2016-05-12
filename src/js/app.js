@@ -29,39 +29,6 @@ $(document).ready(function() {
   }
 });
 
-// var $document = $(document);
-// $document.scroll(function() {
-//   if ($document.scrollTop() >= 85) {
-//     // user scrolled 50 pixels or more;
-//     // do stuff
-//     $("header#header").addClass("notOnTop");
-//     $("#container").addClass("margin-top");
-//     $(".description-container").addClass("margin-top");
-//   } else {
-//     $("header#header").removeClass("notOnTop");
-//   }
-// });
-
-// var lastScrollTop = 0;
-// $(window).scroll(function(event) {
-//   var st = $(this).scrollTop();
-//   if (st > lastScrollTop) {
-//     $("header#header").removeClass("scrollup");
-//   } else {
-//     $("header#header").addClass("scrollup");
-//     $("header#header").addClass("opacity");
-//     $("header#header").removeClass("scrolldown");
-//   }
-//
-//   if (st < 55) {
-//     $("header#header").removeClass("scrollup");
-//     $("header#header").removeClass("opacity");
-//     $("#container").removeClass("margin-top");
-//     $(".description-container").removeClass("margin-top");
-//   }
-//   lastScrollTop = st;
-// });
-
 
 $(document).ready(function() {
   var bodyWidth = $("body").width();
