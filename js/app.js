@@ -99,7 +99,6 @@ function init() {
     $('body.index').addClass('disable-scroll');
     var section = $(this).data('section');
     var elem = $('#container .' + section);
-    console.log(elem);
 
     if (elem.is(':hidden')) {
       $('#container div:visible').fadeOut('fast', function() {
@@ -109,10 +108,9 @@ function init() {
   });
 
   // Navigation
-  $('.home').on('click', 'a', function () {
+  $('.home').on('click', 'a', function() {
     var section = $(this).data('section');
     var elem = $('#container .' + section);
-    console.log(elem);
 
     if (elem.is(':hidden')) {
       $('#container div:visible').fadeOut('fast', function() {
