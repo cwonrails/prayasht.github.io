@@ -409,6 +409,10 @@ header#header {
       font-size: 0.9em;
     }
 
+    &:hover, :active {
+      opacity: 0.6;
+    }
+
     &.hide {
       display: none;
     }
