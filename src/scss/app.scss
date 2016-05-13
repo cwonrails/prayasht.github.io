@@ -173,7 +173,7 @@ article {
       margin-bottom: 60px;
 
       @include desktop {
-        margin-bottom: 120px;
+        margin-bottom: 0px;
         padding: 0 0;
       }
 
@@ -255,7 +255,7 @@ ol, ul {
 
   #container {
     width: 80%;
-    margin: 30px auto 0;
+    margin: 0 auto;
   }
 
   header#header > div {
@@ -345,7 +345,7 @@ a {
 
 @media only screen and (min-width: 1000px) {
   #container {
-    margin: 30px auto 0;
+    margin: 0 auto;
     width: 880px;
   }
 
@@ -650,7 +650,7 @@ main#content {
 
 .music iframe {
   width: 90%;
-  padding: 1em 5%;
+  padding: 0 5%;
 }
 
 .about h1 {
