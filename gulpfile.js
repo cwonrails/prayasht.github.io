@@ -27,7 +27,7 @@ gulp.task('sass', function() {
 gulp.task('serve', ['browserSync', 'sass', 'dist'], function() {
   gulp.watch('src/scss/**/*.scss', ['sass', 'dist']);
   gulp.watch('src/*.html', ['dist']);
-  gulp.watch('src/*.js', ['dist']);
+  gulp.watch('src/js/*.js', ['dist']);
 });
 
 gulp.task('dist', function() {

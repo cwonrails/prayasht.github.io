@@ -157,6 +157,7 @@ article {
     }
 
     h1, h2, p {
+      opacity: 0.76;
       font-size: 1.8em;
       line-height: 1.3em;
       font-family: Neuzeit S LT W01 Book,Helvetica Neue,Helvetica,Arial,sans;
@@ -173,6 +174,7 @@ article {
 
       @include desktop {
         margin-bottom: 120px;
+        padding: 0 0;
       }
 
       &.margin {
@@ -244,7 +246,7 @@ ol, ul {
   article {
     &.studio header {
       h1, h2, p {
-        font-size: 2.8em;
+        font-size: 1.5em;
         line-height: 1.24em;
         letter-spacing: 0;
       }
