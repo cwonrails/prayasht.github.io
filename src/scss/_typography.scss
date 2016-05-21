@@ -1,0 +1,31 @@
+// -- Typography
+@import '_mixins';
+
+@font-face {
+  font-family: "Neuzeit-Book";
+  src: url(../assets/fonts/840b8bdf-7d26-449a-9620-8cb6663f18cc.eot?#iefix);
+  src: url(../assets/fonts/840b8bdf-7d26-449a-9620-8cb6663f18cc.eot?#iefix) format("eot"), url(../assets/fonts/d741af6b-26f4-4e34-b55d-432ccade3280.woff2) format("woff2"), url(../assets/fonts/be8d3917-a4cf-4d8f-b767-4e84bcbe300c.svg#be8d3917-a4cf-4d8f-b767-4e84bcbe300c) format("svg");
+}
+
+@include desktop {
+  body, h1, h2, h3, p, header#header nav ul li {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+}
+
+@include desktop {
+  article {
+    &.studio header {
+      h1, h2, p {
+        font-size: 2.2em;
+        line-height: 1.3em;
+      }
+    }
+
+    &.lost h1 {
+      font-size: 2.2em;
+      line-height: 1.3em;
+    }
+  }
+}
