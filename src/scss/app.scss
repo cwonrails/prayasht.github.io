@@ -1,67 +1,25 @@
-$mobile-width: 480px;
-$tablet-width: 768px;
-$desktop-width: 1200px;
-
-@mixin mobile {
-  @media (min-width: 300px) and (max-width: #{$tablet-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}
-
-@font-face {
-  font-family: "Neuzeit S LT W01 Book";
-  src: url(../assets/fonts/840b8bdf-7d26-449a-9620-8cb6663f18cc.eot?#iefix);
-  src: url(../assets/fonts/840b8bdf-7d26-449a-9620-8cb6663f18cc.eot?#iefix) format("eot"), url(../assets/fonts/d741af6b-26f4-4e34-b55d-432ccade3280.woff2) format("woff2"), url(../assets/fonts/77aaeb7b-86f4-47a1-8196-74a660dd0919.woff) format("woff"), url(../assets/fonts/efdf74e6-bfd4-466d-93fd-4f8f4d55b80c.ttf) format("truetype"), url(../assets/fonts/be8d3917-a4cf-4d8f-b767-4e84bcbe300c.svg#be8d3917-a4cf-4d8f-b767-4e84bcbe300c) format("svg");
-}
-
-@font-face {
-  font-family: "NeuzeitSLTW01-BookHeavy";
-  src: url(../assets/fonts/74c31844-4217-4fe8-82f7-88a5075de2e8.eot?#iefix);
-  src: url(../assets/fonts/74c31844-4217-4fe8-82f7-88a5075de2e8.eot?#iefix) format("eot"), url(../assets/fonts/3da0a3e3-3dff-405c-a0b2-0b0050b21771.woff2) format("woff2"), url(../assets/fonts/a1476bae-b118-4e9d-b711-c84091d9bc16.woff) format("woff"), url(../assets/fonts/096111d9-3ba2-4828-ae9a-29fb4e03c0b1.ttf) format("truetype"), url(../assets/fonts/74a8e701-bffc-464e-a60b-63169debd492.svg#74a8e701-bffc-464e-a60b-63169debd492) format("svg");
-}
+// -- Application
+@import '_mixins';
+@import '_typography';
+@import '_variables';
 
 body {
-  -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -ms-animation: fadein 2s;
-  -o-animation: fadein 2s;
+  font-family: Neuzeit-Book, Helvetica Neue, Helvetica, Arial, sans-serif;
   animation: fadein 2s;
   margin: 0;
   padding: 0;
   position: relative;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
   display: flex;
   min-height: 150px;
   flex-direction: column;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
   font-size: 14px;
   line-height: 1.4em;
-  font-family: Neuzeit S LT W01 Book,Helvetica Neue,Helvetica,Arial,sans;
   font-weight: 400;
   color: #282828;
   letter-spacing: .02em;
 
   &.work img {
     opacity: 0;
-    -moz-transition: opacity 2s;
-    -webkit-transition: opacity 2s;
-    -o-transition: opacity 2s;
     transition: opacity 2s;
   }
 
@@ -99,17 +57,18 @@ body {
 
   &.work img {
     opacity: 0;
-    -moz-transition: opacity 2s;
-    -webkit-transition: opacity 2s;
-    -o-transition: opacity 2s;
     transition: opacity 2s;
   }
+}
+
+main#content {
+  flex: 1;
 }
 
 h1, h2, h3, p {
   font-size: 14px;
   line-height: 1.4em;
-  font-family: Neuzeit S LT W01 Book,Helvetica Neue,Helvetica,Arial,sans;
+  font-family: Neuzeit-Book, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #282828;
   letter-spacing: .02em;
@@ -128,22 +87,28 @@ p {
   margin-bottom: 1em;
 }
 
-.small {
-  font-size: .8em;
-  line-height: 1.3em;
-  margin-bottom: 30px;
-}
-
 a {
   color: #282828;
   text-decoration: none;
 }
 
-section {
-  &.work--single a:not(.no-bb) {
-    padding-bottom: .03em;
-    border-bottom: solid 1px;
-  }
+body.index {
+  background: #EBEBEB;
+  -webkit-font-smoothing: antialiased;
+}
+
+.disable-scroll {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.ie7 body {
+  overflow: hidden;
+}
+
+ol, ul {
+  list-style: none;
 }
 
 article {
@@ -160,7 +125,7 @@ article {
       opacity: 0.76;
       font-size: 1.8em;
       line-height: 1.3em;
-      font-family: Neuzeit S LT W01 Book,Helvetica Neue,Helvetica,Arial,sans;
+      font-family: Neuzeit-Book, Helvetica Neue, Helvetica, Arial, sans-serif;
       letter-spacing: .02em;
 
       @include tablet {
@@ -192,53 +157,7 @@ article {
   }
 }
 
-body.index {
-  background: #EBEBEB;
-  -webkit-font-smoothing: antialiased;
-}
-
-.disable-scroll {
-  overflow-y: hidden;
-  overflow-x: hidden;
-  overflow: hidden;
-}
-
-.ie7 body {
-  overflow: hidden;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-@media only screen and (min-width: 750px) {
-  body, h1, h2, h3, p, header#header nav ul li {
-    font-size: 16px;
-    line-height: 1.5em;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  article {
-    &.studio header {
-      h1, h2, p {
-        font-size: 2.2em;
-        line-height: 1.3em;
-      }
-    }
-
-    &.lost h1 {
-      font-size: 2.2em;
-      line-height: 1.3em;
-    }
-  }
-}
-
 @include desktop {
-  .work--single header figure {
-    height: 607px;
-  }
-
   .work--overview__project figure {
     height: 540px;
   }
@@ -266,28 +185,6 @@ ol, ul {
     &.notOnTop, &.scrollup {
       margin-left: -540px;
     }
-  }
-
-  #container.margin-top {
-    margin-top: 125px;
-  }
-}
-
-.work figure, article.studio figure {
-  margin-bottom: 3px;
-}
-
-@media only screen and (min-width: 1000px) {
-  .work .body-text p, article.studio .body-text p {
-    width: 70%;
-  }
-
-  .work .body-text h3, article.studio .body-text h3 {
-    text-align: left;
-  }
-
-  .work figure, article.studio figure {
-    margin-bottom: 15px;
   }
 }
 
@@ -355,36 +252,6 @@ a {
   }
 }
 
-body.margintop #container {
-  margin: 73px auto;
-}
-
-@media only screen and (min-width: 800px) {
-  body.margintop #container {
-    margin: 105px auto 90px;
-  }
-}
-
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-
-  iframe, object, embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-iframe .video {
-  height: 112.6% !important;
-}
-
 header#header {
   position: relative;
   @include mobile { height: 30px; }
@@ -442,10 +309,6 @@ header#header {
     }
 
     &.active span {
-      -webkit-transition: background .4s;
-      -moz-transition: background .4s;
-      -ms-transition: background .4s;
-      -o-transition: background .4s;
       transition: background .4s;
       background: #dcdcdc !important;
     }
@@ -514,14 +377,12 @@ header#header {
 
     &.opacity {
       transition: top .2s linear;
-      -webkit-transition: top .2s linear;
       top: -60px;
     }
 
     &.scrollup {
       top: 0;
       transition: top .2s linear;
-      -webkit-transition: top .2s linear;
       z-index: 99999;
     }
   }
@@ -555,25 +416,11 @@ html:not(.no-touchevents).fixed header#header {
   }
 }
 
-main#content {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
 .work header:not(#header) {
   margin-bottom: 30px;
 
   h1, h2 {
     text-align: center;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  .work header:not(#header) figure {
-    margin-bottom: 20px;
   }
 }
 
@@ -616,7 +463,6 @@ main#content {
   }
 
   path {
-    -webkit-transition: fill-opacity .5s;
     transition: fill-opacity .5s;
 
     &:hover {
@@ -663,7 +509,6 @@ main#content {
 
 .home {
   user-select: none;
-  -webkit-user-select: none;
 }
 
 #behance {
