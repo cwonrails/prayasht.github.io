@@ -44,8 +44,8 @@ gulp.task('dist', function() {
   return gulp.src('src/index.html')
     .pipe(useref())
     // Uncomment these for full uglification
-    .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulpIf('*.css', minifyCss()))
+    // .pipe(gulpIf('*.js', uglify()))
+    // .pipe(gulpIf('*.css', minifyCss()))
     .pipe(gulp.dest(''))
     .pipe(browserSync.reload({ stream: true }))
 });

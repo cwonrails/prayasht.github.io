@@ -4,56 +4,13 @@
 @import '_variables';
 
 body {
-  font-family: Neuzeit-Book, Helvetica Neue, Helvetica, Arial, sans-serif;
-  animation: fadein 2s;
-  margin: 0;
-  padding: 0;
   position: relative;
   display: flex;
+  margin: 0;
+  padding: 0;
   min-height: 150px;
   flex-direction: column;
-  font-size: 14px;
-  line-height: 1.4em;
-  font-weight: 400;
-  color: #282828;
-  letter-spacing: .02em;
-
-  &.work img {
-    opacity: 0;
-    transition: opacity 2s;
-  }
-
-  &.dark.dark-background {
-    transition: background ease 0.7s,color ease .7s;
-    background: #282828;
-    color: #ebebeb;
-    -webkit-font-smoothing: antialiased;
-
-    header#header {
-      h1 a, h2, nav a {
-        transition: color ease .7s;
-        color: #ebebeb;
-        transition: font-family ease .7s;
-      }
-
-      h1 a, h2 {
-        -webkit-font-smoothing: antialiased;
-      }
-
-      .toggle-nav span {
-        transition: background ease .7s;
-        background: #ebebeb;
-      }
-    }
-
-    h1 {
-      color: #ebebeb;
-    }
-
-    h2, .smooth {
-      color: #5a5a5a;
-    }
-  }
+  animation: fadein 2s;
 
   &.work img {
     opacity: 0;
@@ -63,33 +20,6 @@ body {
 
 main#content {
   flex: 1;
-}
-
-h1, h2, h3, p {
-  font-size: 14px;
-  line-height: 1.4em;
-  font-family: Neuzeit-Book, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  color: #282828;
-  letter-spacing: .02em;
-}
-
-h2 {
-  text-align: center;
-  margin-top: 0;
-}
-
-h3 {
-  letter-spacing: .06em;
-}
-
-p {
-  margin-bottom: 1em;
-}
-
-a {
-  color: #282828;
-  text-decoration: none;
 }
 
 body.index {
@@ -111,65 +41,9 @@ ol, ul {
   list-style: none;
 }
 
-article {
-  &.studio {
-    h1, h2 {
-      text-align: left;
-    }
-
-    h3 {
-      margin-bottom: 1em;
-    }
-
-    h1, h2, p {
-      opacity: 0.76;
-      font-size: 1.8em;
-      line-height: 1.3em;
-      font-family: Neuzeit-Book, Helvetica Neue, Helvetica, Arial, sans-serif;
-      letter-spacing: .02em;
-
-      @include tablet {
-        font-size: 2em;
-      }
-    }
-
-    header {
-      padding: 2em 30px 0px;
-      margin-bottom: 60px;
-
-      @include desktop {
-        margin-bottom: 0px;
-        padding: 0 0;
-      }
-
-      &.margin {
-        margin-bottom: 0;
-      }
-
-      p {
-        margin-top: 1em;
-      }
-
-      #toggle-text {
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
 @include desktop {
-  .work--overview__project figure {
+  .project figure {
     height: 540px;
-  }
-
-  article {
-    &.studio header {
-      h1, h2, p {
-        font-size: 1.5em;
-        line-height: 1.24em;
-        letter-spacing: 0;
-      }
-    }
   }
 
   #container {
@@ -266,15 +140,9 @@ header#header {
 
   .logo {
     display: block;
-    text-align: center;
     margin: 0 auto;
     width: 100%;
     z-index: 9999;
-    text-align: center;
-
-    @include mobile {
-      font-size: 0.9em;
-    }
 
     &:hover, :active {
       opacity: 0.6;
@@ -430,7 +298,7 @@ html:not(.no-touchevents).fixed header#header {
   }
 }
 
-.work--overview__project {
+.project {
   margin-bottom: 30px;
   @include desktop { margin-bottom: 60px; }
 
@@ -471,7 +339,7 @@ html:not(.no-touchevents).fixed header#header {
   }
 }
 
-.work--overview__project {
+.project {
   margin-bottom: 30px;
   @include desktop { margin-bottom: 60px; }
 
@@ -490,6 +358,8 @@ html:not(.no-touchevents).fixed header#header {
     @include desktop { margin-top: 15px; }
   }
 }
+
+// -- Main
 
 #defaultCanvas0 {
   position: absolute;
