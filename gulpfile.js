@@ -3,6 +3,7 @@
 
 var gulp = require('gulp');
 var gulpIf = require('gulp-if');
+var argv = require('yargs').argv;
 var browserSync = require('browser-sync').create();
 
 // ************************************************************************************
@@ -41,11 +42,18 @@ gulp.task('dist', function() {
   var uglify = require('gulp-uglify');
   var minifyCss = require('gulp-minify-css');
 
-  return gulp.src('src/index.html')
-    .pipe(useref())
-    // Uncomment these for full uglification
-    // .pipe(gulpIf('*.js', uglify()))
-    // .pipe(gulpIf('*.css', minifyCss()))
-    .pipe(gulp.dest(''))
-    .pipe(browserSync.reload({ stream: true }))
+  if (argv.f) {
+    console.log("Production build.");
+    return gulp.src('src/index.html')
+      .pipe(useref())
+      .pipe(gulpIf('*.js', uglify()))
+      .pipe(gulpIf('*.css', minifyCss()))
+      .pipe(gulp.dest(''))
+      .pipe(browserSync.reload({ stream: true }));
+  } else {
+    return gulp.src('src/index.html')
+      .pipe(useref())
+      .pipe(gulp.dest(''))
+      .pipe(browserSync.reload({ stream: true }));
+  }
 });
