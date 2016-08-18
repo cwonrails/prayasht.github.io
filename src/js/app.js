@@ -29,16 +29,6 @@ $(document).ready(function() {
   }
 });
 
-
-$(document).ready(function() {
-  var bodyWidth = $("body").width();
-  var vwptWidth = $(window).width();
-  var bpTwo = "400px"
-  if (vwptWidth > bpTwo) {
-    $("body").addClass("red");
-  }
-})
-
 $(document).ready(function() {
   var bodyHeight = $("body").height();
   var vwptHeight = $(window).height();
@@ -64,6 +54,7 @@ function init() {
   // Home Button
   $('.logo').on('click', 'a', function() {
     $('body.index').addClass('disable-scroll');
+    $('.home').removeClass('swoosh');
     var section = $(this).data('section');
     var elem = $('#container .' + section);
 

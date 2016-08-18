@@ -404,3 +404,21 @@ html:not(.no-touchevents).fixed header#header {
 #youtube {
   fill: #cd181f;
 }
+
+.swoosh {
+  animation: swoosh-animation 3000ms linear both;
+}
+
+@keyframes swoosh-animation {
+  0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -700, 0, 0, 1); opacity: 0.0;}
+  2.6% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -460.681, 0, 0, 1); }
+  5.11% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -282.95, 0, 0, 1); }
+  7.61% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -155.885, 0, 0, 1); }
+  10.11% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -71.761, 0, 0, 1); }
+  15.22% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.888, 0, 0, 1); }
+  20.22% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 22.744, 0, 0, 1); }
+  34.53% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.736, 0, 0, 1); opacity: 0.8;}
+  48.85% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.363, 0, 0, 1); }
+  77.38% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.006, 0, 0, 1); }
+  100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); opacity: 1;}
+}
