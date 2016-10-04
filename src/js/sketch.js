@@ -68,20 +68,20 @@ function Fragment(_x, _y) {
       // Only draw if certain distance between nodes
       if (distance > 30 && distance < 125) {
         strokeCap(ROUND); stroke(0, 25);
-        line(px, py, fragments[i].px, fragments[i].py);
+        line(px, py, p2.px, p2.py);
       }
 
       // Inner loop further enumerates to all other vertices to calculate triangulation
-      for (var j = i + 1; j < fragments.length; j++) {
-        var p3 = fragments[j];
-        var dist2 = dist(p2.px, p2.py, p3.px, p3.py);
-        var dist3 = dist(px, py, p3.px, p3.py)
-        // Triangulation
-        if (distance <= 120 && dist2 <= 120 && dist3 <= 120) {
-          noStroke(); fill(32, 32, 32, 10);
-          // triangle(px, py, p2.px, p2.py, p3.px, p3.py);
-        }
-      }
+      // for (var j = i + 1; j < fragments.length; j++) {
+      //   var p3 = fragments[j];
+      //   var dist2 = dist(p2.px, p2.py, p3.px, p3.py);
+      //   var dist3 = dist(px, py, p3.px, p3.py)
+      //   // Triangulation
+      //   if (distance <= 120 && dist2 <= 120 && dist3 <= 120) {
+      //     noStroke(); fill(32, 32, 32, 10);
+      //     triangle(px, py, p2.px, p2.py, p3.px, p3.py);
+      //   }
+      // }
     }
   }
 }
