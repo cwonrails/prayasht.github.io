@@ -362,7 +362,7 @@ html:not(.no-touchevents).fixed header#header {
 // -- Main
 
 #defaultCanvas0 {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
