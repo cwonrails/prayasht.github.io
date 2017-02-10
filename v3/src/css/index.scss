@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+@font-face {
+  font-family: "Neuzeit-Book";
+  src: url(../../static/fonts/d741af6b-26f4-4e34-b55d-432ccade3280.woff2) format("woff2"),
+       url(../../static/fonts/77aaeb7b-86f4-47a1-8196-74a660dd0919.woff) format("woff"),
+       url(../../static/fonts/efdf74e6-bfd4-466d-93fd-4f8f4d55b80c.ttf) format("ttf");
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+body {
+  font-family: Neuzeit-Book, Helvetica Neue, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 1.4em;
+  font-weight: 400;
+  color: #282828;
+  letter-spacing: .02em;
+  background: #EBEBEB;
+
+  header#header {
+    h1 a, h2, nav a {
+      transition: color ease .7s;
+      transition: font-family ease .7s;
+      color: #ebebeb;
+    }
+
+    .logo {
+      text-align: center;
+    }
+  }
+}
+
+h3, p {
+  font-size: 14px;
+  line-height: 1.4em;
+  font-family: Neuzeit-Book, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #282828 !important;
+  letter-spacing: .02em;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+h3 {
+  letter-spacing: .06em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: #282828;
+  text-decoration: none;
+}
+
+.blog-page {
+	margin-bottom: 40px;
+}
+.blog-page h1 {
+	font-size: responsive 20px 36px;
+	margin-top: 0;
+}
+.blog-page p {
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 26px;
+}
+@media (max-width:900px) {
+	.blog-single .text, .blog-single .footer {
+		padding: 0 15px;
+	}
+}
