@@ -2,14 +2,13 @@ import React from 'react'
 import moment from 'moment'
 import { RouteHandler, Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
-import access from 'safe-access'
 import { config } from 'config'
 import ReadNext from '../ReadNext'
 
 import './style.css'
 import '../../../static/css/highlight.css'
 
-class SitePost extends React.Component {
+class Post extends React.Component {
   render() {
     const {route} = this.props
     const post = route.page.data
@@ -45,8 +44,8 @@ class SitePost extends React.Component {
   }
 }
 
-SitePost.propTypes = {
+Post.propTypes = {
   route: React.PropTypes.object.isRequired
 }
 
-export default SitePost
+export default Post

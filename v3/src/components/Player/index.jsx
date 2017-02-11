@@ -1,8 +1,5 @@
 import React, {Component, PropTypes} from 'react';
 import ReactDOM from 'react-dom';
-import { RouteHandler, Link } from 'react-router';
-import { prefixLink } from 'gatsby-helpers';
-import { config } from 'config';
 import classnames from 'classnames';
 
 import './style.scss';

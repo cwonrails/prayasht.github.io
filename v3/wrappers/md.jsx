@@ -1,22 +1,22 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { config } from 'config'
+import React from 'react';
+import Helmet from 'react-helmet';
+import { config } from 'config';
 
-import SitePost from '../src/components/SitePost'
-import Application from '../src/components/Application'
+import Post from '../src/components/Post';
+import Application from '../src/components/Application';
 
 class MarkdownWrapper extends React.Component {
   render() {
-    const {route} = this.props
-    const post = route.page.data
+    const {route} = this.props;
+    const post = route.page.data;
     let layout, template
 
     layout = post.layout
 
     if (layout != 'page') {
-      // template = <SitePost {...this.props}/>
+      template = <Post {...this.props}/>
     } else {
-      // template = <Application {...this.props}/>
+      template = <Application {...this.props}/>
     }
 
     return (

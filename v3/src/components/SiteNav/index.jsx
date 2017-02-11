@@ -4,28 +4,28 @@ import { prefixLink } from 'gatsby-helpers'
 import './style.css'
 
 class SiteNav extends React.Component {
-    render() {
-        const {location} = this.props
-        return (
-            <nav className='blog-nav'>
-              <ul>
-                <li>
-                  <Link to={ prefixLink('/blog/')} activeClassName="current" onlyActiveOnIndex>Thoughts</Link>
-                </li>
-                <li>
-                  <Link to={ prefixLink('/about/')} activeClassName="current">About me</Link>
-                </li>
-                <li>
-                  <Link to={ prefixLink('/contact/')} activeClassName="current">Contact me</Link>
-                </li>
-              </ul>
-            </nav>
-            );
-    }
+  render() {
+    const {location} = this.props
+    return (
+      <nav className='blog-nav'>
+        <ul>
+          <li>
+            <Link to={ prefixLink('/blog/')} activeClassName="current" onlyActiveOnIndex>Thoughts</Link>
+          </li>
+          <li>
+            <Link to={ prefixLink('/about/')} activeClassName="current">About me</Link>
+          </li>
+          <li>
+            <Link to={ prefixLink('/contact/')} activeClassName="current">Contact me</Link>
+          </li>
+        </ul>
+      </nav>
+    );
+  }
 }
 
 SiteNav.propTypes = {
-    location: React.PropTypes.object,
+  location: React.PropTypes.object,
 }
 
 export default SiteNav

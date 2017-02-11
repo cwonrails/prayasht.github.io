@@ -4,7 +4,7 @@
   "description": "Official portfolio website of Prayash Thapa.",
   "main": "n/a",
   "scripts": {
-    "dev": "gatsby develop",
+    "start": "gatsby develop",
     "build": "gatsby build",
     "clean:public": "rm -rf public",
     "clean": "npm run clean:public",

@@ -9,7 +9,7 @@ import access from 'safe-access'
 import { config } from 'config'
 
 import Emblem from '../../src/components/Emblem'
-import SitePost from '../../src/components/SitePost'
+import Post from '../../src/components/Post'
 import SiteSidebar from '../../src/components/SiteSidebar'
 
 exports.data = {

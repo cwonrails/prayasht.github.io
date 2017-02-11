@@ -1,10 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import moment from 'moment';
-import { RouteHandler, Link } from 'react-router';
-import { prefixLink } from 'gatsby-helpers';
-import access from 'safe-access';
-import { config } from 'config';
 
 import SiteSidebar from '../SiteSidebar';
 import './style.scss';
