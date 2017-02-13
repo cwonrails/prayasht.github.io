@@ -114,14 +114,12 @@ class Visualizer extends Component {
     // var height = window.innerHeight;
 
     const { r } = this.state;
-
     var rendererProps = {
       antialias: 1,
       width: 400,
       height: 340,
       mainCamera: 'camera',
-      onAnimate: this._onAnimate,
-      pixelRatio: window.devicePixelRatio
+      onAnimate: this._onAnimate
     };
 
     var cameraProps = {

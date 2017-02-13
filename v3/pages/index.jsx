@@ -17,11 +17,13 @@ class Application extends React.Component {
 
   fadeIn = () => {
     var elem = ReactDOM.findDOMNode(this);
-  	elem.style.opacity = 0;
-  	window.requestAnimationFrame(function() {
-  		elem.style.transition = "opacity 750ms";
-  		elem.style.opacity = 1;
-  	});
+  	// elem.style.opacity = 0;
+    // if (window) {
+    //   window.requestAnimationFrame(function() {
+    // 		elem.style.transition = "opacity 750ms";
+    // 		elem.style.opacity = 1;
+    // 	});
+    // }
   }
 
   componentDidMount = () => {

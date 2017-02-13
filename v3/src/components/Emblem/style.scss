@@ -25,15 +25,18 @@ $desktop-width: 1200px;
   margin: 0 auto;
 }
 
-#main {
+svg#main {
   display: block;
+  position: relative;
   margin: 0 auto;
+  -webkit-user-select: none;
 
   @include mobile {
     width: 100%;
   }
 
   path {
+    cursor: pointer;
     transition: fill-opacity .5s;
 
     &:hover {
@@ -42,12 +45,7 @@ $desktop-width: 1200px;
   }
 }
 
-svg#main {
-  -webkit-user-select: none;
-}
-
 #behance {
-  cursor: pointer;
   fill: #0955ff;
 }
 

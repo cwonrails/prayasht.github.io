@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import classnames from 'classnames';
 
 import './style.scss';
-import Visualizer from '../Visualizer';
+// import Visualizer from '../Visualizer';
 
 class Player extends Component {
   state = {
@@ -19,11 +19,13 @@ class Player extends Component {
 
   fadeIn = () => {
     var elem = ReactDOM.findDOMNode(this);
-  	elem.style.opacity = 0;
-  	window.requestAnimationFrame(function() {
-  		elem.style.transition = "opacity 500ms";
-  		elem.style.opacity = 1;
-  	});
+  	// elem.style.opacity = 0;
+    // if (window) {
+    //   window.requestAnimationFrame(function() {
+    // 		elem.style.transition = "opacity 500ms";
+    // 		elem.style.opacity = 1;
+    // 	});
+    // }
   }
 
   componentDidMount = () => {
