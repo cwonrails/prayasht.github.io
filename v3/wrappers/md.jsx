@@ -9,19 +9,19 @@ class MarkdownWrapper extends React.Component {
   render() {
     const {route} = this.props;
     const post = route.page.data;
-    let layout, template
+    let layout, template;
 
-    layout = post.layout
+    layout = post.layout;
 
     if (layout != 'page') {
-      template = <Post {...this.props}/>
+      template = <Post {...this.props} />
     } else {
-      template = <Application {...this.props}/>
+      template = <Application {...this.props} />
     }
 
     return (
       <div>
-        <Helmet title={ `${post.title} - ${config.siteTitle}` }/>
+        <Helmet title={ `${post.title} - ${config.siteTitle}` } />
         { template }
       </div>
     );
@@ -32,4 +32,4 @@ MarkdownWrapper.propTypes = {
   route: React.PropTypes.object
 }
 
-export default MarkdownWrapper
+export default MarkdownWrapper;
