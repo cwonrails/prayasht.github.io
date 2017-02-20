@@ -1,0 +1,86 @@
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+@mixin mobile {
+  @media (min-width: 300px) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+#emblemContainer {
+  width: 100%;
+  margin: 0 auto;
+
+  svg#main {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    -webkit-user-select: none;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    path {
+      cursor: pointer;
+      transition: fill-opacity .5s;
+
+      &:hover {
+        fill-opacity: .5;
+      }
+    }
+  }
+
+  #behance {
+    fill: #0955ff;
+  }
+
+  #blog {
+    fill: #c12354;
+  }
+
+  #facebook {
+    fill: #3b5999;
+  }
+
+  #soundcloud {
+    fill: #cb5923;
+  }
+
+  #twitter {
+    fill: #55aded;
+  }
+
+  #youtube {
+    fill: #cd181f;
+  }
+
+  .swoosh {
+    animation: swoosh-animation 5000ms linear both;
+  }
+
+  @keyframes swoosh-animation {
+    0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -700, 0, 0, 1); opacity: 0.0; }
+    2.5% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -456.546, 0, 0, 1); }
+    4.9% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -298.898, 0, 0, 1); }
+    9.81% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -120.56, 0, 0, 1); }
+    14.71% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -45.442, 0, 0, 1); opacity: 0.5; }
+    19.62% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -15.608, 0, 0, 1); }
+    29.43% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.912, 0, 0, 1); }
+    59.14% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.264, 0, 0, 1); opacity: 1; }
+    100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  }
+}

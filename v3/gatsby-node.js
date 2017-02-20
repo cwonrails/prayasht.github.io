@@ -1,23 +1,16 @@
-var rucksack = require('rucksack-css')
-var lost = require("lost")
-var cssnext = require("postcss-cssnext")
+/* eslint-disable */
+import generateFeed from './src/scripts/feed.js';
 
-exports.modifyWebpackConfig = function(config, env) {
+export function modifyWebpackConfig(config, env) {
+  if (env === 'build-javascript') {
+    config.merge({
+      devtool: 'hidden-source-map'
+    });
+  }
+  return config;
+}
 
-  // config.merge({
-  //   postcss: [
-  //     lost(),
-  //     rucksack(),
-  //     cssnext({
-  //       browsers: ['>1%', 'last 2 versions']
-  //     })
-  //   ]
-  // })
-
-  config.loader('svg', {
-    test: /\.(svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-    loader: 'file-loader',
-  })
-
-  return config
-};
+export function postBuild(pages, callback) {
+  generateFeed(pages);
+  callback();
+}

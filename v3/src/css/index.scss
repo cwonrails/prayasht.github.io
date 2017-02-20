@@ -1,3 +1,11 @@
+@charset "utf-8";
+
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
+@custom-selector :--pseudo ::after, ::before;
+
+// ************************************************************************************
+// * Global
+
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +47,6 @@ body {
     h1 a, h2, nav a {
       transition: color ease .7s;
       transition: font-family ease .7s;
-      color: #ebebeb;
     }
 
     .logo {
@@ -77,17 +84,61 @@ a {
 .blog-page {
 	margin-bottom: 40px;
 }
+
 .blog-page h1 {
 	font-size: responsive 20px 36px;
 	margin-top: 0;
 }
+
 .blog-page p {
 	font-size: 16px;
 	line-height: 26px;
 	margin-bottom: 26px;
 }
+
 @media (max-width:900px) {
 	.blog-single .text, .blog-single .footer {
 		padding: 0 15px;
 	}
+}
+
+// ************************************************************************************
+// * Header
+
+header#header {
+  position: relative;
+  padding-top: 30px;
+
+  a {
+    color: #282828;
+  }
+
+  .site-title {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 9999;
+
+    &:hover, :active {
+      opacity: 0.6;
+    }
+
+    &.hide {
+      display: none;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 0;
+      font-size: 1.5em;
+      font-weight: 500;
+      color: #202020;
+      opacity: .66;
+      padding: 1em;
+    }
+  }
 }

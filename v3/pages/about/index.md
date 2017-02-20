@@ -1,7 +1,7 @@
 ---
-title: "About me"
-layout: page
-path: "/about"
+title: About Me
 ---
 
-I am a dingus.
+__tl;dr__ I make music and write :code: that does things.
+
+* I'm a noob.

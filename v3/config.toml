@@ -1,14 +1,8 @@
-siteTitle = "effulgence // prayash thapa"
-siteDescr = "Prayash Thapa (effulgence) is an audiovisual artist and programmer."
-siteAuthor = "Prayash Thapa"
-
-siteTelegramUrl = "#"
-siteTwitterUrl = "twitter.com/iameffulgence"
-siteGithubUrl = "github.com/prayasht"
-siteEmailUrl = "#"
-siteRssUrl = "#"
-siteVkUrl = "#"
-
-googleAnalyticsId = ""
-
+blogTitle = "effulgence // prayash thapa"
+mastHead = "prayash thapa"
+authorName = "Prayash Thapa"
+shortName = "effulgence"
 linkPrefix = ""
+domain = "http://effulgence.io"
+email = "prayash@effulgence.io"
+description = "Effulgence is an audiovisual artist + programmer."
