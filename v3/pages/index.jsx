@@ -15,18 +15,18 @@ import Emblem from '../src/components/Emblem';
 
 class Application extends React.Component {
 
-  fadeIn = () => {
+  fadeIn() {
     var elem = ReactDOM.findDOMNode(this);
-  	// elem.style.opacity = 0;
-    // if (window) {
-    //   window.requestAnimationFrame(function() {
-    // 		elem.style.transition = "opacity 750ms";
-    // 		elem.style.opacity = 1;
-    // 	});
-    // }
+  	elem.style.opacity = 0;
+    if (window) {
+      window.requestAnimationFrame(function() {
+    		elem.style.transition = "opacity 750ms";
+    		elem.style.opacity = 1;
+    	});
+    }
   }
 
-  componentDidMount = () => {
+  componentDidMount() {
   	this.fadeIn();
   }
 

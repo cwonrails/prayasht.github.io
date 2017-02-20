@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { config } from 'config'
-// import Player from '../../src/components/Player'
+import Player from '../../src/components/Player'
 
 export default class ReactComponent extends React.Component {
   constructor () {
@@ -18,7 +18,7 @@ export default class ReactComponent extends React.Component {
   }
 
   render () {
-    
+
     let songs = [
       {
         url: 'http://tegos.kz/new/mp3_full/Redfoo_-_New_Thang.mp3',
@@ -45,7 +45,7 @@ export default class ReactComponent extends React.Component {
         <p>{this.state.count}</p>
         <button onClick={() => this.handlePlusClick()}>+</button>
         <button onClick={() => this.handleMinusClick()}>-</button> */}
-        {/* <Player songs={songs} autoplay/> */}
+        <Player songs={songs} autoplay/>
       </div>
     )
   }

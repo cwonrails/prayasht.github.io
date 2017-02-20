@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import React3 from 'react-three-renderer';
 import * as THREE from 'three';
 
-var TrackballControls = require('three-trackballcontrols');
+// var TrackballControls = require('three-trackballcontrols');
 // var OrbitControls = require('three-orbit-controls')(THREE);
 
 // import Sky from './components/Sky';
@@ -32,14 +32,14 @@ class Visualizer extends Component {
     // const controls = new OrbitControls(this.refs.camera);
     // this.controls = controls;
 
-    controls = new TrackballControls(this.refs.camera, this.refs.renderer._canvas);
-    controls.rotateSpeed = 2.0;
-    controls.zoomSpeed = 1;
-    controls.panSpeed = 1;
-    controls.dampingFactor = 0.3;
-    controls.minDistance = 100;
-    controls.maxDistance = 600;
-    this.controls = controls;
+    // controls = new TrackballControls(this.refs.camera, this.refs.renderer._canvas);
+    // controls.rotateSpeed = 2.0;
+    // controls.zoomSpeed = 1;
+    // controls.panSpeed = 1;
+    // controls.dampingFactor = 0.3;
+    // controls.minDistance = 100;
+    // controls.maxDistance = 600;
+    // this.controls = controls;
 
     this.refs.scene.fog = new THREE.FogExp2('#FCF7E1', 0.0011);
 
