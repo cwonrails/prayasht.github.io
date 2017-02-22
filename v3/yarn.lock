@@ -1455,7 +1455,7 @@ clap@^1.0.9:
   dependencies:
     chalk "^1.1.3"
 
-classnames@2.2.5:
+classnames@2.2.5, classnames@^2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
@@ -2771,6 +2771,17 @@ fb-watchman@^1.8.0:
   resolved "https://registry.yarnpkg.com/fb-watchman/-/fb-watchman-1.9.2.tgz#a24cf47827f82d38fb59a69ad70b76e3b6ae7383"
   dependencies:
     bser "1.0.2"
+
+fbjs@0.8.6:
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.6.tgz#7eb67d6986b2d5007a9b6e92e0e7cb6f75cad290"
+  dependencies:
+    core-js "^1.0.0"
+    isomorphic-fetch "^2.1.1"
+    loose-envify "^1.0.0"
+    object-assign "^4.1.0"
+    promise "^7.1.1"
+    ua-parser-js "^0.7.9"
 
 fbjs@^0.8.1, fbjs@^0.8.4:
   version "0.8.9"
@@ -6375,6 +6386,12 @@ react-side-effect@^1.0.2, react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^0.2.2"
 
+react-three-renderer@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-three-renderer/-/react-three-renderer-3.0.0.tgz#c2d9d790693ef162c06ba498d2632c8f5de42b05"
+  dependencies:
+    fbjs "0.8.6"
+
 react-timeago@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/react-timeago/-/react-timeago-3.1.3.tgz#8ebefed9757dd48eb0c64642ae4f94930b579d9f"
@@ -7007,6 +7024,10 @@ static-site-generator-webpack-plugin@^2.1.0:
     bluebird "^3.0.5"
     eval "^0.1.0"
 
+stats.js@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/stats.js/-/stats.js-1.0.0.tgz#ca304e56b116a3f46413acc349eb6eee19df688e"
+
 stdin@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/stdin/-/stdin-0.0.1.tgz#d3041981aaec3dfdbc77a1b38d6372e38f5fb71e"
@@ -7395,6 +7416,24 @@ tempfile@^1.0.0:
 text-table@^0.2.0, text-table@~0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
+
+three-orbit-controls@^82.1.0:
+  version "82.1.0"
+  resolved "https://registry.yarnpkg.com/three-orbit-controls/-/three-orbit-controls-82.1.0.tgz#11a7f33d0a20ecec98f098b37780f6537374fab4"
+
+three-trackballcontrols@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/three-trackballcontrols/-/three-trackballcontrols-0.0.5.tgz#d07818f0da68c39ed260bc8a90b5c7b818a6c644"
+  dependencies:
+    three "^0.74.0"
+
+three@0.82.1:
+  version "0.82.1"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.82.1.tgz#f63c3730971520c54479e3627d370d764a4a8383"
+
+three@^0.74.0:
+  version "0.74.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.74.0.tgz#648a2a418dae9e8b5de14661fdc84d38429b72da"
 
 through2-filter@^2.0.0:
   version "2.0.0"
