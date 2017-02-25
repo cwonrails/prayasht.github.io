@@ -30,7 +30,7 @@ export default function HTML(props) {
         <meta name='author' content='Prayash Thapa' />
 
         <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:creator' content='@f0rr0' />
+        <meta name='twitter:creator' content='@iameffulgence' />
 
         <meta property='fb:app_id' content='532441146961582' />
         <meta property='og:url' content={`http://effulgence.io${path}`} />

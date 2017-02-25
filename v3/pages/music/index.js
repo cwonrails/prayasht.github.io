@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
-import Helmet from 'react-helmet'
-import { config } from 'config'
-import Player from '../../src/components/Player'
+import Helmet from 'react-helmet';
+import { config } from 'config';
+import Player from '../../src/components/Player';
 
 let songs = [
   {

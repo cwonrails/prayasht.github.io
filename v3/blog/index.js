@@ -1,6 +1,6 @@
-import { config } from 'config'; // eslint-disable-line
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
+import { config } from 'config'; // eslint-disable-line
 import Blog from '../src/components/Blog';
 
 export default function BlogIndex({ route }) {

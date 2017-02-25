@@ -107,12 +107,11 @@ class Visualizer extends Component {
   }
 
   componentWillUnmount() {
-    this.controls.dispose();
-    delete this.controls;
+    // this.controls.dispose();
+    // delete this.controls;
   }
 
   _onAnimate = () => {
-    controls.update();
     const r = Date.now() * 0.0005;
 
     this.refs.camera.position.x += 0.1;
