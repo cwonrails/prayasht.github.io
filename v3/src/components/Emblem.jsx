@@ -92,7 +92,7 @@ class Emblem extends React.Component {
             c-0.072-9.501,0.735-17.564,9.597-23.125L378.533,5.24z" />
         </Link>
 
-        <Link to={prefixLink('/blog/')} activeClassName="current" onlyActiveOnIndex>
+        <Link to={prefixLink('/work/')} activeClassName="current" onlyActiveOnIndex>
           <path id="work" fill="url(#workFill)" className="cover" d="M247.323,489.883c0,1.463-0.141,2.927-0.291,5.826c-4.047-3.169-7.095-5.556-10.14-7.943
             c-19.886-15.598-39.799-31.164-59.65-46.806c-13.658-10.763-27.21-21.662-40.863-32.431c-2.539-2.002-3.736-4.244-3.731-7.61
             c0.099-59.317,0.082-118.635,0.107-177.951c0.003-5.397,0.143-5.512,5.474-5.514c34.546-0.013,69.093-0.017,103.64-0.015
@@ -116,7 +116,7 @@ class Emblem extends React.Component {
     )
 
     return (
-      <div id="emblemContainer">
+      <div id='emblemContainer'>
         { svgEmblem }
       </div>
     );

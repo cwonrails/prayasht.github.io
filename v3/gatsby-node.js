@@ -7,6 +7,7 @@ export function modifyWebpackConfig(config, env) {
       devtool: 'hidden-source-map'
     });
   }
+
   return config;
 }
 

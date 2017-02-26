@@ -21,7 +21,7 @@ class About extends Component {
 
   render() {
     return (
-      <div className='about'>
+      <div id='about'>
         {/* <img className='avatar' alt='avatar' src={prefixLink(`${avatar}`)} width="50px" /> */}
         <article className="overview">
           <h2 className="bold">Hi, I'm Prayash.</h2>

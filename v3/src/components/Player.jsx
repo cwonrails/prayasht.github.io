@@ -196,7 +196,7 @@ class Player extends Component {
     let randomClass = classnames('player-btn small random', {'active': this.state.random});
 
     return (
-      <div id="player">
+      <div id='player'>
         <div className="player-container">
           <audio src={active.url} autoPlay={false} preload="auto" ref="player"></audio>
 
