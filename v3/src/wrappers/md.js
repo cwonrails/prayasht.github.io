@@ -1,14 +1,32 @@
 import React, { Component, PropTypes } from 'react';
+import ReactDOM from 'react-dom';
 import moment from 'moment';
 import Helmet from 'react-helmet';
 import { config } from 'config'; // eslint-disable-line
+
 import { TweetThis, FacebookShare } from '../components/Social';
 import ReadNext from '../components/ReadNext';
-import Bio from '../components/Bio';
+import About from '../components/About';
 import { isBlogPost, getBlogPosts, getNextPosts, getPostsFromPaths } from '../utils/blog-helpers';
 import avatar from '../../static/img/avatar.jpg';
 
 export default class MarkdownWrapper extends Component {
+
+  fadeIn() {
+    var elem = ReactDOM.findDOMNode(this);
+  	elem.style.opacity = 0;
+    if (window) {
+      window.requestAnimationFrame(function() {
+    		elem.style.transition = "opacity 750ms";
+    		elem.style.opacity = 1;
+    	});
+    }
+  }
+
+  componentDidMount() {
+  	this.fadeIn();
+  }
+
   render() {
     const { route } = this.props;
     const { page: { data: post } } = route;
@@ -44,6 +62,7 @@ export default class MarkdownWrapper extends Component {
             </header>
             <div className='post-content' dangerouslySetInnerHTML={{ __html: post.body }} />
           </article>
+          <br />
           <aside className='post-footer'>
             <ul>
               <li><TweetThis {...post} /></li>

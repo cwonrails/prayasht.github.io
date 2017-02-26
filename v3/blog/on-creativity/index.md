@@ -1,7 +1,7 @@
 ---
-title: From Beginner to Amateur
+title: On Creativity
 date: 11/28/2016
-description: "What I learned after writing 10 songs."
+description: "The journey from beginner to amateur."
 draft: false
 ---
 

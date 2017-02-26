@@ -1,0 +1,46 @@
+#blog {
+  .blog-post {
+    margin-bottom: 2em;
+
+    h2 {
+      margin: 0.25em 0 0.5em 0;
+      font-size: 1.75em;
+    }
+
+    p {
+      margin: 0.5em 0;
+    }
+  }
+
+  .blog-page {
+  	margin-bottom: 40px;
+  }
+
+  .blog-page h1 {
+  	font-size: responsive 20px 36px;
+  	margin-top: 0;
+  }
+
+  .blog-page p {
+  	font-size: 16px;
+  	line-height: 26px;
+  	margin-bottom: 26px;
+  }
+
+  @media (max-width:900px) {
+  	.blog-single .text, .blog-single .footer {
+  		padding: 0 15px;
+  	}
+  }
+}
+
+.post-footer {
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+}

@@ -16,7 +16,8 @@ export default function BlogIndex(props) {
   const docTitle = `${config.blogTitle}`;
 
   return (
-    <section className='content'>
+
+    <section className={props.route.page.path === '/' ? '' : 'content' }>
       <Helmet
         title={docTitle}
         meta={[
@@ -28,8 +29,9 @@ export default function BlogIndex(props) {
           { name: 'twitter:title', content: docTitle }
         ]}
       />
-      <Emblem />
+    <Emblem />
     </section>
+
   );
 }
 

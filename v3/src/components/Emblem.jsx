@@ -85,7 +85,7 @@ class Emblem extends React.Component {
             C292.854,344.087,292.979,349.671,292.979,355.25z" />
         </a>
 
-        <Link to={prefixLink('/blog/')} activeClassName="current" onlyActiveOnIndex>
+        <Link to={prefixLink('/about/')} activeClassName="current" onlyActiveOnIndex>
           <path id="visuals" fill="url(#visualFill)" className="cover" d="M378.533,5.24c0.673-0.855,2.3-1.417,3.42-1.317c0.866,0.077,1.855,1.269,2.354,2.2
             c0.406,0.757,0.208,1.861,0.208,2.812c-0.001,78.257-0.03,156.516,0.044,234.772c0.006,3.821-1.077,5.278-5.072,5.266
             c-41.373-0.119-82.746-0.125-124.12-0.046c-3.654,0.006-5.051-1.101-5.045-4.895c0.088-48.724,0.251-97.448-0.116-146.169

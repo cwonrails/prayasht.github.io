@@ -42,7 +42,7 @@ export default function HTML(props) {
         <script src="https://use.fontawesome.com/8d22a2b20b.js"></script>
         { css }
       </head>
-      <body className='container'>
+      <body id='container'>
         <div id='react-mount' dangerouslySetInnerHTML={{ __html: body }} />
         <script async src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
         <script

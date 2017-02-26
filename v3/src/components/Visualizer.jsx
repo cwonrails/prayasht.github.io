@@ -2,10 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import React3 from 'react-three-renderer';
 import * as THREE from 'three';
 
-// var TrackballControls = require('three-trackballcontrols');
-
-// import Sky from './components/Sky';
-// import Box from './Box';
+var TrackballControls;
 
 var cubes = [], spheres = [];
 var controls;
@@ -45,17 +42,17 @@ class Visualizer extends Component {
   }
 
   componentDidMount() {
-    // const controls = new OrbitControls(this.refs.camera);
-    // this.controls = controls;
-
-    // controls = new TrackballControls(this.refs.camera, this.refs.renderer._canvas);
-    // controls.rotateSpeed = 2.0;
-    // controls.zoomSpeed = 1;
-    // controls.panSpeed = 1;
-    // controls.dampingFactor = 0.3;
-    // controls.minDistance = 100;
-    // controls.maxDistance = 600;
-    // this.controls = controls;
+    // if (window) {
+      TrackballControls = require('three-trackballcontrols');
+      controls = new TrackballControls(this.refs.camera, this.refs.renderer._canvas);
+      controls.rotateSpeed = 2.0;
+      controls.zoomSpeed = 1;
+      controls.panSpeed = 1;
+      controls.dampingFactor = 0.3;
+      controls.minDistance = 100;
+      controls.maxDistance = 600;
+      this.controls = controls;
+    // }
 
     this.refs.scene.fog = new THREE.FogExp2('#FCF7E1', 0.0011);
 
@@ -107,11 +104,12 @@ class Visualizer extends Component {
   }
 
   componentWillUnmount() {
-    // this.controls.dispose();
-    // delete this.controls;
+    this.controls.dispose();
+    delete this.controls;
   }
 
   _onAnimate = () => {
+    controls.update();
     const r = Date.now() * 0.0005;
 
     this.refs.camera.position.x += 0.1;
@@ -132,7 +130,7 @@ class Visualizer extends Component {
     var rendererProps = {
       antialias: 1,
       width: 400,
-      height: 340,
+      height: 344,
       mainCamera: 'camera',
       onAnimate: this._onAnimate
     };
@@ -158,9 +156,6 @@ class Visualizer extends Component {
         <scene ref='scene' position={THREE.Vector3(0, 0, 0)}>
 
           <perspectiveCamera ref='camera' name='camera' {...cameraProps} />
-          {/* <gridHelper size={1000} step={300} colorCenterLine={0x0000ff} /> */}
-
-          {/* <Sky radius={4000} widthSegments={32} heightSegments={15} topColor={0x999999} bottomColor={0x333333}/> */}
           <Box width={30} height={30} depth={30} rotation={this.state.cubeRotation} />
 
           <directionalLight color={0xFFFFFF} position={this.directionalLightPosition} />

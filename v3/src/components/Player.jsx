@@ -1,6 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import classnames from 'classnames';
+let resolve = require('soundcloud-resolve-jsonp/node');
+let SC = require('soundcloud');
+
+const CLIENT_ID = 'a364360d3c9782e360e4759ce0424007';
+let track;
 
 import '../css/player.scss';
 import Visualizer from './Visualizer';
@@ -18,8 +23,23 @@ class Player extends Component {
     songs: this.props.songs
   }
 
+  fetch = () => {
+    let track;
+
+    resolve({
+      url: 'https://soundcloud.com/effulgence/stray-thoughts',
+      client_id: CLIENT_ID
+    }, (err, res) => {
+      if (err) { console.error(err) }
+      track = res;
+      console.log(track);
+      this.refs.player.src = track.stream_url + '&client_id=' + CLIENT_ID;;
+      // console.log(this.refs.player);
+    });
+  }
+
   fadeIn = () => {
-    var elem = ReactDOM.findDOMNode(this);
+    let elem = ReactDOM.findDOMNode(this);
   	elem.style.opacity = 0;
     if (window) {
       window.requestAnimationFrame(function() {
@@ -35,6 +55,15 @@ class Player extends Component {
     playerElement.addEventListener('ended', this.end);
     playerElement.addEventListener('error', this.next);
     this.fadeIn();
+
+    // SC.initialize({ client_id: CLIENT_ID });
+    // SC.get('/users/1041317/tracks').then((tracks) => {
+    //   console.log('Latest track: ' + tracks[0].title);
+    //   console.log(tracks[0]);
+    //   this.refs.player.src = tracks[0].stream_url + '&client_id=' + CLIENT_ID;
+    // });
+
+    this.fetch();
   }
 
   componentWillUnmount = () => {
@@ -47,11 +76,11 @@ class Player extends Component {
   _handleUpload = (e) => {
     e.preventDefault();
 
-    var files = e.target.files;
+    let files = e.target.files;
     console.log(files);
-    var file = URL.createObjectURL(files[0]);
+    let file = URL.createObjectURL(files[0]);
 
-    var song = {
+    let song = {
       url: file,
       cover: 'https://images-na.ssl-images-amazon.com/images/I/61ATGoNkASL.jpg',
       artist: {
@@ -107,13 +136,13 @@ class Player extends Component {
   }
 
   next = () => {
-    var total = this.state.songs.length;
-    var current = (this.state.repeat)
+    let total = this.state.songs.length;
+    let current = (this.state.repeat)
       ? this.state.current
       : (this.state.current < total - 1)
         ? this.state.current + 1
         : 0;
-    var active = this.state.songs[current];
+    let active = this.state.songs[current];
 
     this.setState({ current: current, active: active, progress: 0 });
 
@@ -122,11 +151,11 @@ class Player extends Component {
   }
 
   previous = () => {
-    var total = this.state.songs.length;
-    var current = (this.state.current > 0)
+    let total = this.state.songs.length;
+    let current = (this.state.current > 0)
       ? this.state.current - 1
       : total - 1;
-    var active = this.state.songs[current];
+    let active = this.state.songs[current];
 
     this.setState({ current: current, active: active, progress: 0 });
 
@@ -135,7 +164,7 @@ class Player extends Component {
   }
 
   randomize = () => {
-    // var s = shuffle(this.state.songs.slice());
+    // let s = shuffle(this.state.songs.slice());
     //
     // this.setState({
     //   songs: (!this.state.random)
@@ -167,18 +196,12 @@ class Player extends Component {
     let randomClass = classnames('player-btn small random', {'active': this.state.random});
 
     return (
-      <div>
+      <div id="player">
         <div className="player-container">
           <audio src={active.url} autoPlay={false} preload="auto" ref="player"></audio>
 
           <div className={coverClass}>
             <Visualizer />
-          </div>
-
-          <div className="artist-info">
-            {/* <input type="file" accept="audio/*" ref="uploadButton" onChange={this._handleUpload}/> */}
-            <h2 className="artist-name">{active.artist.name}</h2>
-            <h3 className="artist-song-name">{active.artist.song}</h3>
           </div>
 
           <div className="player-progress-container" onClick={this.setProgress}>
@@ -189,33 +212,25 @@ class Player extends Component {
 
           <div className="player-options">
             <div className="player-buttons player-controls">
-              <button onClick={this.toggle} className="player-btn big" title="Play/Pause">
-                <i className={playPauseClass}/>
-              </button>
-
               <button onClick={this.previous} className="player-btn medium" title="Previous Song">
                 <i className="fa fa-backward"/>
+              </button>
+
+              <button onClick={this.toggle} className="player-btn big" title="Play/Pause">
+                <i className={playPauseClass}/>
               </button>
 
               <button onClick={this.next} className="player-btn medium" title="Next Song">
                 <i className="fa fa-forward"/>
               </button>
             </div>
+          </div>
 
-            <div className="player-buttons">
-              <button className="player-btn small volume" onClick={this.toggleMute} title="Mute/Unmute">
-                <i className={volumeClass}/>
-              </button>
-
-              <button className={repeatClass} onClick={this.repeat} title="Repeat">
-                <i className="fa fa-repeat"/>
-              </button>
-
-              <button className={randomClass} onClick={this.randomize} title="Shuffle">
-                <i className="fa fa-random"/>
-              </button>
-            </div>
-
+          <div className="artist-info">
+            {/* <input type="file" accept="audio/*" ref="uploadButton" onChange={this._handleUpload}/> */}
+            <h2 className="artist-name">{active.artist.name}</h2>
+            <span> - </span>
+            <h3 className="artist-song-name">{active.artist.song}</h3>
           </div>
         </div>
       </div>

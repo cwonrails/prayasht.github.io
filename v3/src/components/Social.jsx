@@ -6,7 +6,7 @@ const FacebookIcon = generateShareIcon('facebook');
 const TwitterIcon = generateShareIcon('twitter');
 
 const TweetThis = props =>
-  <TwitterShareButton url={`http://effulgence.io{props.path}`} title={props.title} via={'f0rr0'} className={'share-icons'}>
+  <TwitterShareButton url={`http://effulgence.io{props.path}`} title={props.title} via={'iameffulgence'} className={'share-icons'}>
     <TwitterIcon round size={32} />
   </TwitterShareButton>;
 
