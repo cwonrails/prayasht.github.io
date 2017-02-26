@@ -12,20 +12,7 @@ import avatar from '../../static/img/avatar.jpg';
 
 export default class MarkdownWrapper extends Component {
 
-  fadeIn() {
-    var elem = ReactDOM.findDOMNode(this);
-  	elem.style.opacity = 0;
-    if (window) {
-      window.requestAnimationFrame(function() {
-    		elem.style.transition = "opacity 750ms";
-    		elem.style.opacity = 1;
-    	});
-    }
-  }
-
-  componentDidMount() {
-  	this.fadeIn();
-  }
+  componentDidMount() { }
 
   render() {
     const { route } = this.props;
@@ -70,7 +57,7 @@ export default class MarkdownWrapper extends Component {
             </ul>
             <ReadNext posts={nextPosts} />
             <hr />
-            <Bio />
+            <About />
           </aside>
         </section>
       );

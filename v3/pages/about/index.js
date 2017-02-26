@@ -1,17 +1,17 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import { config } from 'config';
-import Bio from '../../src/components/About';
+import About from '../../src/components/About';
 
-export default function About({ route }) {
+export default function AboutMe({ route }) {
   return (
     <section className='content'>
       <Helmet title='effulgence // about' />
-      <Bio />
+      <About />
     </section>
   )
 }
 
-About.propTypes = {
+AboutMe.propTypes = {
   route: PropTypes.object
 };
