@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 import { config } from 'config'; // eslint-disable-line
 import { prefixLink } from 'gatsby-helpers' // eslint-disable-line
 import Masonry from 'react-masonry-component';
+import nucleactor from '../../static/img/nucleactor.png';
 
 var masonryOptions = {
   transitionDuration: 0,
@@ -47,15 +48,15 @@ class Portfolio extends Component {
 
     return (
       <div id='portfolio'>
-        <Masonry
-          className={'grid'} // default ''
-          elementType={'div'} // default 'div'
-          options={masonryOptions} // default {}
-          disableImagesLoaded={false} // default false
-          updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
-        >
-          {childElements}
-        </Masonry>
+        <article className="project">
+          <a href="http://effulgence.io/Nucleactor" target="_blank">
+            <img src={nucleactor} alt="nucleactor" width='600px'/>
+            <span className="project-title">
+              <h1>Nucleactor</h1>
+              <h2>audio visualization for soundcloud</h2>
+            </span>
+          </a>
+        </article>
       </div>
     )
   }

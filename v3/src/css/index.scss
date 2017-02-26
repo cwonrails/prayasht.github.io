@@ -42,6 +42,7 @@ body#container {
   color: #282828;
   letter-spacing: .02em;
   background: #EBEBEB;
+  margin: 20px auto 0;
 
   header#header {
     h1 a, h2, nav a {
@@ -52,6 +53,10 @@ body#container {
     .logo {
       text-align: center;
     }
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 768px;
   }
 }
 
@@ -125,21 +130,18 @@ header#header {
   }
 }
 
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
+#about {
+  h2 {
+    opacity: .75;
+    font-size: 2em;
+  }
 
-.grid-sizer, .grid-item {
-  width: 33.333%;
-}
+  h3 {
+    opacity: .75;
+    font-size: 1.75em;
+  }
 
-.grid-item {
-  float: left;
-}
-
-.grid-item img {
-  display: block;
-  max-width: 100%;
+  .overview {
+    padding: 1em;
+  }
 }

@@ -1,10 +1,16 @@
 #blog {
+  header h2 {
+    opacity: .75;
+    font-size: 2em;
+  }
+  
   .blog-post {
     margin-bottom: 2em;
 
     h2 {
       margin: 0.25em 0 0.5em 0;
-      font-size: 1.75em;
+      opacity: .75;
+      font-size: 2em;
     }
 
     p {
