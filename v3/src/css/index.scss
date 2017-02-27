@@ -98,6 +98,11 @@ header#header {
 
   a {
     color: #282828;
+    padding: 0.5em 1em;
+
+    &:hover, :active {
+      opacity: 0.4;
+    }
   }
 
   .site-title {
@@ -109,10 +114,6 @@ header#header {
     margin: 0 auto;
     width: 100%;
     z-index: 9999;
-
-    &:hover, :active {
-      opacity: 0.6;
-    }
 
     &.hide {
       display: none;
@@ -127,21 +128,5 @@ header#header {
       opacity: .66;
       padding: 1em;
     }
-  }
-}
-
-#about {
-  h2 {
-    opacity: .75;
-    font-size: 2em;
-  }
-
-  h3 {
-    opacity: .75;
-    font-size: 1.75em;
-  }
-
-  .overview {
-    padding: 1em;
   }
 }

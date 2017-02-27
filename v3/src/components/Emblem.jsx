@@ -5,10 +5,10 @@ import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
 
 import '../css/emblem.scss';
-import visualPic from '../../static/img/visual.png';
+import aboutPic from '../../static/img/about.png';
 import musicPic from '../../static/img/music.jpg';
-import codePic from '../../static/img/code.jpg';
-import videoPic from '../../static/img/video.jpg';
+import workPic from '../../static/img/work.jpg';
+import blogPic from '../../static/img/blog.jpg';
 
 class Emblem extends React.Component {
 
@@ -31,8 +31,8 @@ class Emblem extends React.Component {
     let svgEmblem = (
       <svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enableBackground="new 0 0 500 500">
         <defs>
-          <pattern preserveAspectRatio="xMidYMid" x="0" y="0" id="visualFill" width="100%" height="100%" patternUnits="userSpaceOnUse">
-            <image xlinkHref={prefixLink(`${visualPic}`)} width="100%" height="55%"></image>
+          <pattern preserveAspectRatio="xMidYMid" x="0" y="0" id="aboutFill" width="100%" height="100%" patternUnits="userSpaceOnUse">
+            <image xlinkHref={prefixLink(`${aboutPic}`)} width="100%" height="55%"></image>
           </pattern>
 
           <pattern preserveAspectRatio="xMidYMid" x="50%" y="100" id="musicFill" width="100%" height="50%" patternUnits="userSpaceOnUse">
@@ -40,11 +40,11 @@ class Emblem extends React.Component {
           </pattern>
 
           <pattern preserveAspectRatio="xMidYMid" x="0" y="-10%" id="workFill" width="100%" height="50%" patternUnits="userSpaceOnUse">
-            <image xlinkHref={prefixLink(`${codePic}`)} width="75%" height="60%"></image>
+            <image xlinkHref={prefixLink(`${workPic}`)} width="75%" height="60%"></image>
           </pattern>
 
-          <pattern preserveAspectRatio="xMidYMid" x="-3%" y="5%" id="videoFill" width="100%" height="50%" patternUnits="userSpaceOnUse">
-            <image xlinkHref={prefixLink(`${videoPic}`)} width="70%" height="60%"></image>
+          <pattern preserveAspectRatio="xMidYMid" x="-3%" y="5%" id="blogFill" width="100%" height="50%" patternUnits="userSpaceOnUse">
+            <image xlinkHref={prefixLink(`${blogPic}`)} width="70%" height="60%"></image>
           </pattern>
         </defs>
 
@@ -86,7 +86,7 @@ class Emblem extends React.Component {
         </a>
 
         <Link to={prefixLink('/about/')} activeClassName="current" onlyActiveOnIndex>
-          <path id="visuals" fill="url(#visualFill)" className="cover" d="M378.533,5.24c0.673-0.855,2.3-1.417,3.42-1.317c0.866,0.077,1.855,1.269,2.354,2.2
+          <path id="about" fill="url(#aboutFill)" className="cover" d="M378.533,5.24c0.673-0.855,2.3-1.417,3.42-1.317c0.866,0.077,1.855,1.269,2.354,2.2
             c0.406,0.757,0.208,1.861,0.208,2.812c-0.001,78.257-0.03,156.516,0.044,234.772c0.006,3.821-1.077,5.278-5.072,5.266
             c-41.373-0.119-82.746-0.125-124.12-0.046c-3.654,0.006-5.051-1.101-5.045-4.895c0.088-48.724,0.251-97.448-0.116-146.169
             c-0.072-9.501,0.735-17.564,9.597-23.125L378.533,5.24z" />
@@ -100,7 +100,7 @@ class Emblem extends React.Component {
         </Link>
 
         <Link to={prefixLink('/blog/')} activeClassName="current" onlyActiveOnIndex>
-          <path id="video" fill="url(#videoFill)" className="cover" d="M155.681,213.902c-28.708,0-57.415,0.001-86.123,0c-5.327,0-5.502-0.148-5.505-5.49
+          <path id="video" fill="url(#blogFill)" className="cover" d="M155.681,213.902c-28.708,0-57.415,0.001-86.123,0c-5.327,0-5.502-0.148-5.505-5.49
             c-0.013-30.75-0.016-61.499-0.01-92.249c0.001-5.316,0.157-5.48,5.529-5.482c57.417-0.019,114.834-0.028,172.252-0.028
             c5.344,0,5.492,0.15,5.493,5.512c0.009,30.75,0.005,61.499-0.009,92.247c-0.003,5.351-0.159,5.507-5.502,5.51
             c-28.709,0.013-57.417,0.005-86.125,0.005C155.681,213.92,155.681,213.912,155.681,213.902z" />

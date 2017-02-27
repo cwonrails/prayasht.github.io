@@ -1,8 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import classnames from 'classnames';
-let resolve = require('soundcloud-resolve-jsonp/node');
-let SC = require('soundcloud');
+import SC from 'soundcloud';
 
 const CLIENT_ID = 'a364360d3c9782e360e4759ce0424007';
 let track;
@@ -24,17 +23,13 @@ class Player extends Component {
   }
 
   fetch = () => {
-    let track;
+    SC.initialize({ client_id: CLIENT_ID });
+    SC.get('/users/1041317/tracks').then((tracks) => {
+      // this.setState({ songs: tracks });
+      console.log(tracks);
 
-    resolve({
-      url: 'https://soundcloud.com/effulgence/stray-thoughts',
-      client_id: CLIENT_ID
-    }, (err, res) => {
-      if (err) { console.error(err) }
-      track = res;
-      console.log(track);
-      this.refs.player.src = track.stream_url + '&client_id=' + CLIENT_ID;;
-      // console.log(this.refs.player);
+      this.refs.player.src = tracks[0].stream_url + '?client_id=' + CLIENT_ID;
+      this.play()
     });
   }
 
@@ -55,14 +50,6 @@ class Player extends Component {
     playerElement.addEventListener('ended', this.end);
     playerElement.addEventListener('error', this.next);
     this.fadeIn();
-
-    // SC.initialize({ client_id: CLIENT_ID });
-    // SC.get('/users/1041317/tracks').then((tracks) => {
-    //   console.log('Latest track: ' + tracks[0].title);
-    //   console.log(tracks[0]);
-    //   this.refs.player.src = tracks[0].stream_url + '&client_id=' + CLIENT_ID;
-    // });
-
     this.fetch();
   }
 
@@ -71,26 +58,6 @@ class Player extends Component {
     playerElement.removeEventListener('timeupdate', this.updateProgress);
     playerElement.removeEventListener('ended', this.end);
     playerElement.removeEventListener('error', this.next);
-  }
-
-  _handleUpload = (e) => {
-    e.preventDefault();
-
-    let files = e.target.files;
-    console.log(files);
-    let file = URL.createObjectURL(files[0]);
-
-    let song = {
-      url: file,
-      cover: 'https://images-na.ssl-images-amazon.com/images/I/61ATGoNkASL.jpg',
-      artist: {
-        name: 'Andy McKee',
-        song: files[0].name
-      }
-    }
-
-    this.setState({ active: song, progress: 0 });
-    this.play();
   }
 
   setProgress = (e) => {
@@ -227,7 +194,6 @@ class Player extends Component {
           </div>
 
           <div className="artist-info">
-            {/* <input type="file" accept="audio/*" ref="uploadButton" onChange={this._handleUpload}/> */}
             <h2 className="artist-name">{active.artist.name}</h2>
             <span> - </span>
             <h3 className="artist-song-name">{active.artist.song}</h3>

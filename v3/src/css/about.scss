@@ -1,0 +1,23 @@
+#about {
+  a {
+    font-weight: 600;
+
+    &:hover, :active {
+      opacity: 0.5;
+    }
+  }
+
+  h2 {
+    opacity: .75;
+    font-size: 2em;
+  }
+
+  h3 {
+    opacity: .75;
+    font-size: 1.75em;
+  }
+
+  .overview {
+    padding: 1em;
+  }
+}
