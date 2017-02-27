@@ -44,6 +44,10 @@ body#container {
   background: #EBEBEB;
   margin: 20px auto 0;
 
+  @media only screen and (min-width: 768px) {
+    width: 768px;
+  }
+
   header#header {
     h1 a, h2, nav a {
       transition: color ease .7s;
@@ -55,8 +59,11 @@ body#container {
     }
   }
 
-  @media only screen and (min-width: 768px) {
-    width: 768px;
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 }
 
@@ -128,14 +135,5 @@ header#header {
       opacity: .66;
       padding: 1em;
     }
-  }
-}
-
-#home {
-  canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
   }
 }

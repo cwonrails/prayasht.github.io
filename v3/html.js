@@ -38,7 +38,6 @@ export default function HTML(props) {
 
         { meta.toComponent() }
 
-        <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' />
         <script src="https://use.fontawesome.com/8d22a2b20b.js"></script>
         { css }
       </head>

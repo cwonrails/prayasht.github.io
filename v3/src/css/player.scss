@@ -1,6 +1,11 @@
 #player {
   margin-top: 2em;
 
+  canvas {
+    position: relative !important;
+    z-index: 0 !important;
+  }
+
   .player-container {
     width: 400px;
     margin: 0 auto;

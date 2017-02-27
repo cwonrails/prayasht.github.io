@@ -48,7 +48,7 @@ class Portfolio extends Component {
         </article>
 
         <article className="project">
-          <a href="http://effulgence.io/Musiverse" target="_blank">
+          <a href="http://processes.effulgence.io" target="_blank">
             <img src={processes} alt="processes" width='600px'/>
           </a>
           <span className="project-details">

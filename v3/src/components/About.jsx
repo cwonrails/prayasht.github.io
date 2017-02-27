@@ -29,6 +29,12 @@ class About extends Component {
           <h2 className="bold">Hi, I'm Prayash.</h2>
           <br />
           <h3>I make <a href="http://soundcloud.com/effulgence" target="_blank">music</a> and write <a href="http://github.com/prayasht" target="_blank">code</a> that draws things.</h3>
+          <br />
+          <p>I write software for a living and currently reside in <del>Kathmandu, Nepal</del> Boulder, CO.</p>
+          <p>I use this space primarily for sharing personal projects, music, and other art-like things that I may be working on.
+          If you'd like an overview of my professional work, check out my <a href="http://linkedin.com/in/prayasht" target="_blank">LinkedIn</a>.</p>
+          <p>Feel free to peruse my blog if you're interested in any of my ramblings on tech, life, art or other things.</p>
+          <p>Want to make something together? Don't hesitate to reach out!</p>
         </article>
       </div>
     )

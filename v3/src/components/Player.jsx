@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import classnames from 'classnames';
-import sc from 'soundcloud';
+var sc;
 
 const CLIENT_ID = 'a364360d3c9782e360e4759ce0424007';
 let track;
@@ -23,6 +23,7 @@ class Player extends Component {
   }
 
   fetch = () => {
+    sc = require('soundcloud');
     sc.initialize({ client_id: CLIENT_ID });
     sc.get('/users/1041317/tracks').then((tracks) => {
 
