@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import classnames from 'classnames';
-import SC from 'soundcloud';
+import sc from 'soundcloud';
 
 const CLIENT_ID = 'a364360d3c9782e360e4759ce0424007';
 let track;
@@ -23,13 +23,28 @@ class Player extends Component {
   }
 
   fetch = () => {
-    SC.initialize({ client_id: CLIENT_ID });
-    SC.get('/users/1041317/tracks').then((tracks) => {
-      // this.setState({ songs: tracks });
-      console.log(tracks);
+    sc.initialize({ client_id: CLIENT_ID });
+    sc.get('/users/1041317/tracks').then((tracks) => {
 
-      this.refs.player.src = tracks[0].stream_url + '?client_id=' + CLIENT_ID;
-      this.play()
+      let fetchedTracks = [];
+      tracks.forEach((t) => {
+        // console.log(t);
+        let url = t.stream_url + '?client_id=' + CLIENT_ID;
+        let cover = t.arkwork_url;
+        let trackName = t.title;
+
+        fetchedTracks.push({
+          url: url,
+          cover: cover,
+          artist: {
+            name: 'Effulgence',
+            song: trackName
+          }
+        });
+      })
+
+      this.setState({ active: fetchedTracks[0], songs: fetchedTracks });
+      this.play();
     });
   }
 

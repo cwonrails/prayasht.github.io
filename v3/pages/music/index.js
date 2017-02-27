@@ -4,8 +4,8 @@ import { config } from 'config';
 import Player from '../../src/components/Player';
 
 let songs = [{
-  url: 'http://tegos.kz/new/mp3_full/Redfoo_-_New_Thang.mp3',
-  cover: 'https://images-na.ssl-images-amazon.com/images/I/61ATGoNkASL.jpg',
+  url: 'https://api.soundcloud.com/tracks/274242735/stream?client_id=a364360d3c9782e360e4759ce0424007',
+  cover: 'https://i1.sndcdn.com/artworks-000172119017-djpgcd-large.jpg',
   artist: {
     name: 'Effulgence',
     song: 'Us'

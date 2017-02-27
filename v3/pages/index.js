@@ -6,6 +6,7 @@ import { config } from 'config'; // eslint-disable-line
 
 import '../src/css/index.scss'
 import Emblem from '../src/components/Emblem';
+import Waves from '../src/components/Waves';
 import { getBlogPosts } from '../src/utils/blog-helpers';
 
 export default function BlogIndex(props) {
@@ -29,7 +30,10 @@ export default function BlogIndex(props) {
           { name: 'twitter:title', content: docTitle }
         ]}
       />
-    <Emblem />
+      <div id="home">
+        <Emblem />
+        <Waves />
+      </div>
     </section>
 
   );
