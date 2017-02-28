@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 import { config } from 'config'; // eslint-disable-line
 
-export default function Masthead() {
+export default function Header() {
   return (
     <header id="header">
       <div className="logo">
@@ -15,6 +15,6 @@ export default function Masthead() {
   );
 }
 
-Masthead.propTypes = {
+Header.propTypes = {
   className: PropTypes.string
 };

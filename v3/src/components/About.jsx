@@ -33,8 +33,8 @@ class About extends Component {
           <p>I write software for a living and currently reside in <del>Kathmandu, Nepal</del> Boulder, CO.</p>
           <p>I use this space primarily for sharing personal projects, music, and other art-like things that I may be working on.
           If you'd like an overview of my professional work, check out my <a href="http://linkedin.com/in/prayasht" target="_blank">LinkedIn</a>.</p>
-          <p>Feel free to peruse my blog if you're interested in any of my ramblings on tech, life, art or other things.</p>
-          <p>Want to make something together? Don't hesitate to reach out!</p>
+          <p>Feel free to peruse my blog if you're interested in any of my ramblings on art, tech, life, or other things.</p>
+          <p>Want to make something together? <a href="" target="_blank">Don't be a stranger!</a></p>
         </article>
       </div>
     )

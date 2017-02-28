@@ -37,13 +37,12 @@ export default function HTML(props) {
         <meta property='og:site_name' content='effulgence // prayash thapa' />
 
         { meta.toComponent() }
-
-        <script src="https://use.fontawesome.com/8d22a2b20b.js"></script>
         { css }
       </head>
       <body id='container'>
         <div id='react-mount' dangerouslySetInnerHTML={{ __html: body }} />
         <script async src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
+        <script async src="https://use.fontawesome.com/8d22a2b20b.js"></script>
         <script
           async
           dangerouslySetInnerHTML={{

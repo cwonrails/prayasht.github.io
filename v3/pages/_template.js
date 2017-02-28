@@ -1,13 +1,14 @@
 import React, { PropTypes } from 'react';
-import Masthead from '../src/components/Masthead';
+import Header from '../src/components/Header';
 import Footer from '../src/components/Footer';
-import '../src/css/index.scss';
 import Waves from '../src/components/Waves';
+
+import '../src/css/index.scss';
 
 export default function Template({ children }) {
   return (
     <main>
-      <Masthead />
+      <Header />
       <Waves />
       {children}
       <Footer />
