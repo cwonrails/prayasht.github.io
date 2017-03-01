@@ -12,15 +12,21 @@ import blogPic from '../../static/img/blog.jpg';
 
 class Emblem extends Component {
 
+  constructor(props, context) {
+    super(props, context);
+    this.state = {
+      ...this.state,
+      isIntro: false
+    };
+  }
+
   fadeIn() {
     var elem = ReactDOM.findDOMNode(this);
   	elem.style.opacity = 0;
-    if (window) {
-      window.requestAnimationFrame(function() {
-    		elem.style.transition = "opacity 750ms";
-    		elem.style.opacity = 1;
-    	});
-    }
+    window.requestAnimationFrame(() => {
+  		elem.style.transition = "opacity 1000ms ease-out";
+  		elem.style.opacity = 1;
+  	});
   }
 
   componentDidMount() {
@@ -116,7 +122,7 @@ class Emblem extends Component {
     )
 
     return (
-      <div id='emblemContainer' className='swoosh'>
+      <div id='emblemContainer' className={ this.state.isIntro ? 'swoosh' : '' }>
         { svgEmblem }
       </div>
     );

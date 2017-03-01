@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 import Header from '../src/components/Header';
 import Footer from '../src/components/Footer';
 import Waves from '../src/components/Waves';

@@ -15,7 +15,6 @@ export default function BlogIndex(props) {
   const fromNow = moment(date, 'MM/DD/YYYY').fromNow();
   // const docTitle = `${config.blogTitle} by ${config.authorName}`;
   const docTitle = `${config.blogTitle}`;
-
   return (
 
     <section className={props.route.page.path === '/' ? '' : 'content' }>
@@ -34,7 +33,6 @@ export default function BlogIndex(props) {
         <Emblem />
       </div>
     </section>
-
   );
 }
 
