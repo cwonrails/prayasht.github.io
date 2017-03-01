@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component, PropTypes } from 'react';
 import { RouteHandler, Link } from 'react-router';
+import ReactDOM from 'react-dom';
 import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
 
@@ -10,7 +10,7 @@ import musicPic from '../../static/img/music.jpg';
 import workPic from '../../static/img/work.jpg';
 import blogPic from '../../static/img/blog.jpg';
 
-class Emblem extends React.Component {
+class Emblem extends Component {
 
   fadeIn() {
     var elem = ReactDOM.findDOMNode(this);
@@ -116,7 +116,7 @@ class Emblem extends React.Component {
     )
 
     return (
-      <div id='emblemContainer'>
+      <div id='emblemContainer' className='swoosh'>
         { svgEmblem }
       </div>
     );
@@ -124,7 +124,7 @@ class Emblem extends React.Component {
 }
 
 Emblem.propTypes = {
-  route: React.PropTypes.object
+  route: PropTypes.object
 }
 
 export default Emblem
