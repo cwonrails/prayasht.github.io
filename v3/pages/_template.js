@@ -8,7 +8,7 @@ import '../src/css/index.scss';
 export default function Template({ children }) {
   var state = children.props.location.pathname;
   return (
-    <main className={ (state === '/' || state === '/music/') ? '' : 'notHome'}>
+    <main className={ (state === '/' || state === '/music/') ? '' : 'notHome' }>
       <Header />
       <Waves />
       {children}
