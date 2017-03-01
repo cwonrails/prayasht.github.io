@@ -151,8 +151,8 @@ header#header {
 }
 
 .swoosh {
-  -webkit-animation: swoosh 2000ms linear both;
-  animation: swoosh 2000ms linear both;
+  -webkit-animation: swoosh 1000ms ease-out both;
+  animation: swoosh 1000ms ease-out both;
 }
 
 /* Generated with Bounce.js. Edit at https://goo.gl/TuHAC6 */

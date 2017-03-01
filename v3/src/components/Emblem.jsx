@@ -16,7 +16,7 @@ class Emblem extends Component {
     super(props, context);
     this.state = {
       ...this.state,
-      isIntro: false
+      isIntro: true
     };
   }
 
