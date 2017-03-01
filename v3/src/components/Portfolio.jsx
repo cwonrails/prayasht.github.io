@@ -27,6 +27,7 @@ class Portfolio extends Component {
   render() {
     return (
       <div id='portfolio'>
+        {/* <header><h2>Work</h2></header> */}
         <article className="project">
           <a href="http://effulgence.io/Nucleactor" target="_blank">
             <img src={nucleactor} alt="nucleactor" width='600px'/>

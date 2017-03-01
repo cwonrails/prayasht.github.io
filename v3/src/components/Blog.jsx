@@ -51,6 +51,7 @@ class Blog extends Component {
     // return <table className='post-list'><tbody>{posts}</tbody></table>;
     return (
       <div id='blog'>
+        <header><h2>Blog</h2></header>
         <br />
         { posts }
       </div>

@@ -147,12 +147,10 @@ class Visualizer extends Component {
 
     return (
       <React3 ref='renderer' {...rendererProps} clearColor={0xFCF7E1}>
-
         <resources>
           <boxGeometry resourceId='cubeGeo' width={30} height={30} depth={30} />
           <meshNormalMaterial resourceId='cubeMaterial' />
         </resources>
-
         <scene ref='scene' position={THREE.Vector3(0, 0, 0)}>
 
           <perspectiveCamera ref='camera' name='camera' {...cameraProps} />
@@ -174,7 +172,6 @@ class Visualizer extends Component {
           </mesh>
 
         </scene>
-
       </React3>
     );
   }

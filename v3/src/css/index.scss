@@ -29,6 +29,9 @@ section {
        url(../../static/fonts/efdf74e6-bfd4-466d-93fd-4f8f4d55b80c.ttf) format("ttf");
 }
 
+html { -webkit-font-smoothing: antialiased; }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) { -webkit-font-smoothing: subpixel-antialiased; }
+
 .bold {
   font-weight: bolder;
 }
@@ -42,7 +45,7 @@ body#container {
   color: #282828;
   letter-spacing: .02em;
   background: #EBEBEB;
-  margin: 20px auto 0;
+  margin: 0 auto;
 
   @media only screen and (min-width: 768px) {
     width: 768px;
@@ -64,6 +67,10 @@ body#container {
     top: 0;
     left: 0;
     z-index: -1;
+  }
+
+  .notHome canvas {
+    opacity: 0.25 !important;
   }
 }
 
@@ -89,11 +96,16 @@ p {
 
 a {
   color: #282828;
+  line-height: 1em;
   text-decoration: none;
 }
 
 .content {
   padding: 2em 4em;
+
+  @media only screen and (max-width: 476px) {
+    padding: 2em;
+  }
 }
 
 // ************************************************************************************

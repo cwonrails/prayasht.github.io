@@ -7,7 +7,6 @@ export default function BlogIndex({ route }) {
   return (
     <section className='content'>
       <Helmet title='effulgence // blog' />
-      <header><h2>Thoughts</h2></header>
       <Blog route={route} />
     </section>
   );

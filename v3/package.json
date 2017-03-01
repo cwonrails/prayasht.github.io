@@ -78,6 +78,7 @@
     "three-orbit-controls": "^82.1.0",
     "three-trackballcontrols": "0.0.5",
     "toml": "^2.3.0",
+    "tween.js": "^16.6.0",
     "twemoji": "^2.2.0",
     "underscore.string": "^3.3.4"
   },
