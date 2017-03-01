@@ -42,17 +42,15 @@ class Visualizer extends Component {
   }
 
   componentDidMount() {
-    // if (window) {
-      TrackballControls = require('three-trackballcontrols');
-      controls = new TrackballControls(this.refs.camera, this.refs.renderer._canvas);
-      controls.rotateSpeed = 2.0;
-      controls.zoomSpeed = 1;
-      controls.panSpeed = 1;
-      controls.dampingFactor = 0.3;
-      controls.minDistance = 100;
-      controls.maxDistance = 600;
-      this.controls = controls;
-    // }
+    TrackballControls = require('three-trackballcontrols');
+    controls = new TrackballControls(this.refs.camera, this.refs.renderer._canvas);
+    controls.rotateSpeed = 2.0;
+    controls.zoomSpeed = 1;
+    controls.panSpeed = 1;
+    controls.dampingFactor = 0.3;
+    controls.minDistance = 100;
+    controls.maxDistance = 600;
+    this.controls = controls;
 
     this.refs.scene.fog = new THREE.FogExp2('#FCF7E1', 0.0011);
 
