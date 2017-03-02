@@ -82,7 +82,7 @@ class Waves extends Component {
     wMesh.scale.y = 3;
   	wMesh.scale.z = 0.4;
     // console.log(wMesh);
-    console.log(wHeightMap);
+    // console.log(wHeightMap);
 
   	wMesh.scale.multiplyScalar(50);
     wMesh.rotation.z = 2;

@@ -49,6 +49,7 @@
     "moment": "^2.14.1",
     "open": "0.0.5",
     "ora": "^0.3.0",
+    "pixi.js": "^4.4.1",
     "postcss-browser-reporter": "^0.5.0",
     "postcss-cssnext": "^2.8.0",
     "postcss-import": "^8.1.2",

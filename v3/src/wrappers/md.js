@@ -12,7 +12,18 @@ import avatar from '../../static/img/avatar.jpg';
 
 export default class MarkdownWrapper extends Component {
 
-  componentDidMount() { }
+  componentDidMount() {
+    this.fadeIn();
+  }
+
+  fadeIn() {
+    var elem = ReactDOM.findDOMNode(this);
+  	elem.style.opacity = 0;
+    window.requestAnimationFrame(() => {
+  		elem.style.transition = "opacity 1000ms ease-out";
+  		elem.style.opacity = 1;
+  	});
+  }
 
   render() {
     const { route } = this.props;
@@ -40,7 +51,7 @@ export default class MarkdownWrapper extends Component {
               { name: 'twitter:title', content: docTitle }
             ]}
           />
-          <article className='blog-body'>
+          <article id='blog-body'>
             <header className='blog-header'>
               <h2>{post.title}</h2>
               <div>
@@ -57,7 +68,7 @@ export default class MarkdownWrapper extends Component {
             </ul>
             <ReadNext posts={nextPosts} />
             <hr />
-            <About />
+            {/* <About /> */}
           </aside>
         </section>
       );
