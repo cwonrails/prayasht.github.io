@@ -31,9 +31,7 @@ $desktop-width: 1200px;
     user-select: none;
     -webkit-user-select: none;
 
-    @include mobile {
-      width: 100%;
-    }
+    @include mobile { width: 100%; }
 
     path {
       cursor: pointer;
@@ -42,6 +40,10 @@ $desktop-width: 1200px;
       &:hover {
         fill-opacity: .5;
       }
+    }
+
+    a {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
   }
 
