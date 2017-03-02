@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 import moment from 'moment';
-import { getBlogPosts } from '../utils/blog-helpers';
+import { getBlogPosts, fadeIn } from '../utils/blog-helpers';
 
 import '../css/blog.scss';
 
@@ -32,17 +32,8 @@ const generatePostsTable = ({ route }) => {
 
 class Blog extends Component {
 
-  fadeIn() {
-    var elem = ReactDOM.findDOMNode(this);
-  	elem.style.opacity = 0;
-    window.requestAnimationFrame(function() {
-  		elem.style.transition = "opacity 750ms";
-  		elem.style.opacity = 1;
-  	});
-  }
-
   componentDidMount() {
-  	this.fadeIn();
+  	fadeIn.call(this);
   }
 
   render() {

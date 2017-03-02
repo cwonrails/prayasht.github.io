@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import React3 from 'react-three-renderer';
-import ReactDOM from 'react-dom';
 import * as THREE from 'three';
 import TWEEN from 'tween.js';
 import Simplex from '../utils/noise';
+import { fadeIn } from '../utils/blog-helpers';
 
 import Terrain from '../utils/terrain.js';
 var TbControls;
@@ -35,17 +35,8 @@ class Waves extends Component {
     };
   }
 
-  fadeIn() {
-    let elem = ReactDOM.findDOMNode(this);
-  	elem.style.opacity = 0;
-    window.requestAnimationFrame(function() {
-  		elem.style.transition = "opacity 700ms";
-  		elem.style.opacity = 1;
-  	});
-  }
-
   componentDidMount() {
-    this.fadeIn();
+    fadeIn.call(this);
 
     TbControls = require('three-trackballcontrols');
     controls = new TbControls(this.refs.camera, this.refs.renderer._canvas);

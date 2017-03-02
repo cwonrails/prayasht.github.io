@@ -1,4 +1,5 @@
 import moment from 'moment';
+import ReactDOM from 'react-dom';
 import sortBy from 'lodash.sortby';
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 
@@ -26,4 +27,17 @@ export function getNextPosts(currPath, posts, num = 3) {
      .concat(posts.slice(currIndex + 1, num + 1));
   }
   return posts.slice(currIndex - num - 1, currIndex);
+}
+
+export var fadeIn = function() {
+  let elem = ReactDOM.findDOMNode(this);
+  elem.style.opacity = 0;
+  window.requestAnimationFrame(function() {
+    elem.style.transition = "opacity 700ms";
+    elem.style.MozTransform = "opacity 700ms";
+    elem.style.WebkitTransform = "opacity 700ms";
+    console.log(elem.style);
+    elem.style.opacity = 1;
+    console.log(elem.style);
+  });
 }

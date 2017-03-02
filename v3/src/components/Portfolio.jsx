@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
 import { config } from 'config'; // eslint-disable-line
 import { prefixLink } from 'gatsby-helpers' // eslint-disable-line
+import { fadeIn } from '../utils/blog-helpers';
 
 import '../css/portfolio.scss';
 import nucleactor from '../../static/img/nucleactor.jpg';
@@ -11,17 +12,8 @@ import processes from '../../static/img/processes.jpg';
 
 class Portfolio extends Component {
 
-  fadeIn() {
-    var elem = ReactDOM.findDOMNode(this);
-  	elem.style.opacity = 0;
-    window.requestAnimationFrame(function() {
-  		elem.style.transition = "opacity 750ms";
-  		elem.style.opacity = 1;
-  	});
-  }
-
   componentDidMount() {
-  	this.fadeIn();
+  	fadeIn.call(this);
   }
 
   render() {

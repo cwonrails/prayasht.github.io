@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import ReactDOM from 'react-dom';
+import { fadeIn } from '../utils/blog-helpers';
 import classnames from 'classnames';
 var sc;
 
@@ -49,23 +49,12 @@ class Player extends Component {
     });
   }
 
-  fadeIn = () => {
-    let elem = ReactDOM.findDOMNode(this);
-  	elem.style.opacity = 0;
-    if (window) {
-      window.requestAnimationFrame(function() {
-    		elem.style.transition = "opacity 500ms";
-    		elem.style.opacity = 1;
-    	});
-    }
-  }
-
   componentDidMount = () => {
     let playerElement = this.refs.player;
     playerElement.addEventListener('timeupdate', this.updateProgress);
     playerElement.addEventListener('ended', this.end);
     playerElement.addEventListener('error', this.next);
-    this.fadeIn();
+    fadeIn.call(this);
     this.fetch();
   }
 

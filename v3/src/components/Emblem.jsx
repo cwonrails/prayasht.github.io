@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { RouteHandler, Link } from 'react-router';
-import ReactDOM from 'react-dom';
+import { fadeIn } from '../utils/blog-helpers';
 import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
 
@@ -20,21 +20,12 @@ class Emblem extends Component {
     };
   }
 
-  fadeIn() {
-    var elem = ReactDOM.findDOMNode(this);
-  	elem.style.opacity = 0;
-    window.requestAnimationFrame(() => {
-  		elem.style.transition = "opacity 1000ms ease-out";
-  		elem.style.opacity = 1;
-  	});
-  }
-
   componentDidMount() {
-  	this.fadeIn();
+  	fadeIn.call(this);
   }
 
   render() {
-    let svgEmblem = (
+    let emblem = (
       <svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enableBackground="new 0 0 500 500">
         <defs>
           <pattern preserveAspectRatio="xMidYMid" x="0" y="0" id="aboutFill" width="100%" height="100%" patternUnits="userSpaceOnUse">
@@ -123,7 +114,7 @@ class Emblem extends Component {
 
     return (
       <div id='emblemContainer' className={ this.state.isIntro ? 'swoosh' : '' }>
-        { svgEmblem }
+        { emblem }
       </div>
     );
   }
