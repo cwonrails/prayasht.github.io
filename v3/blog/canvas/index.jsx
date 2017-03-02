@@ -13,7 +13,8 @@ import * as PIXI from 'pixi.js';
 exports.data = {
   title: 'Undiscovered Colors',
   date: '11/28/2016',
-  description: "A memoir to a brief excursion in Argentina."
+  description: "A memoir to a brief excursion in Argentina.",
+  draft: true
 }
 
 class Canvas extends Component {

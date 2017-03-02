@@ -10,20 +10,21 @@ import '../css/blog.scss';
 const generatePostsTable = ({ route }) => {
   const posts = [];
   getBlogPosts(route).forEach(({ data, path }) => {
-
-    const { title, date, description } = data;
-    posts.push(
-      <div className='blog-post' key={ path }>
-        <time dateTime={ moment(data).format('MMMM YYYY') }>
-          { moment(date).format('MMMM YYYY') }
-        </time>
-        <span style={{ padding: '5px' }}></span>
-        {/* <span className='blog-category'>{ category }</span> */}
-        <h2><Link style={{ borderBottom: 'none', }} to={prefixLink(path)}>{title}</Link></h2>
-        <p dangerouslySetInnerHTML={{ __html: description }} />
-        {/* <Link className='readmore' to={prefixLink(path)}>Read</Link> */}
-      </div>
-    );
+    if (!data.draft) {
+      const { title, date, description } = data;
+      posts.push(
+        <div className='blog-post' key={ path }>
+          <time dateTime={ moment(data).format('MMMM YYYY') }>
+            { moment(date).format('MMMM YYYY') }
+          </time>
+          <span style={{ padding: '5px' }}></span>
+          {/* <span className='blog-category'>{ category }</span> */}
+          <h2><Link style={{ borderBottom: 'none', }} to={prefixLink(path)}>{title}</Link></h2>
+          <p dangerouslySetInnerHTML={{ __html: description }} />
+          {/* <Link className='readmore' to={prefixLink(path)}>Read</Link> */}
+        </div>
+      );
+    }
   });
 
   return posts;
