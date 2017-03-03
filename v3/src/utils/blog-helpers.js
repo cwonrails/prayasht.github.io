@@ -36,8 +36,8 @@ export var fadeIn = function() {
     elem.style.transition = "opacity 700ms";
     elem.style.MozTransform = "opacity 700ms";
     elem.style.WebkitTransform = "opacity 700ms";
-    console.log(elem.style);
+    // console.log(elem.style);
     elem.style.opacity = 1;
-    console.log(elem.style);
+    // console.log(elem.style);
   });
 }

@@ -18,10 +18,9 @@ class Waves extends Component {
 
     this.fog = new THREE.Fog(0xCCE0FF, 0, 45);
     this.directionalLightPosition = new THREE.Vector3(-5, -1, 10);
-
     this.state = {
       ...this.state,
-      r: Date.now() * 0.0005,
+      cameraZoom: 0.75,
       cubeRotation: new THREE.Euler(),
       mainCameraPosition: new THREE.Vector3(50, 5, 170),
       mainCameraRotation: new THREE.Euler(),
@@ -77,10 +76,18 @@ class Waves extends Component {
 
   	wMesh.scale.multiplyScalar(50);
     wMesh.rotation.z = 2;
+  }
 
-    let camZoom = { cameraZoom: 0.75 };
-    let camZoomTarget = { cameraZoom: 1.25 };
-    let camTween = new TWEEN.Tween(camZoom).to(camZoomTarget, 4000);
+  componentDidUpdate() {
+    this.zoom(this.state.cameraZoom, this.props.cameraZoom, 2000);
+    this.state.cameraZoom = this.props.cameraZoom;
+  }
+
+  zoom(start, end, duration) {
+    console.log("Zooming from:", start, "to", end);
+    let camZoom = { cameraZoom: start };
+    let camZoomTarget = { cameraZoom: end };
+    let camTween = new TWEEN.Tween(camZoom).to(camZoomTarget, duration);
     camTween.onUpdate(() => {
       this.refs.camera.zoom = camZoom.cameraZoom;
       this.refs.camera.updateProjectionMatrix();

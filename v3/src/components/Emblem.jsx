@@ -113,7 +113,7 @@ class Emblem extends Component {
     )
 
     return (
-      <div id='emblemContainer' className={ this.state.isIntro ? 'swoosh' : '' }>
+      <div id='emblemContainer' className='swoosh'>
         { emblem }
       </div>
     );
