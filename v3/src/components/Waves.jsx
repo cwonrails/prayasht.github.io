@@ -2,7 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import React3 from 'react-three-renderer';
 import * as THREE from 'three';
 import TWEEN from 'tween.js';
-import Simplex from '../utils/noise';
 import { fadeIn } from '../utils/blog-helpers';
 
 import Terrain from '../utils/terrain.js';
@@ -10,7 +9,6 @@ var TbControls;
 
 var wMesh, wGeometry, wMaterial, wHeightMap;
 var controls; var flying = 0;
-var simplex = new Simplex();
 
 class Waves extends Component {
   constructor(props, context) {
@@ -20,7 +18,6 @@ class Waves extends Component {
     this.directionalLightPosition = new THREE.Vector3(-5, -1, 10);
     this.state = {
       ...this.state,
-      cameraZoom: 0.75,
       cubeRotation: new THREE.Euler(),
       mainCameraPosition: new THREE.Vector3(50, 5, 170),
       mainCameraRotation: new THREE.Euler(),
@@ -79,22 +76,21 @@ class Waves extends Component {
   }
 
   componentDidUpdate() {
-    this.zoom(this.state.cameraZoom, this.props.cameraZoom, 2000);
-    this.state.cameraZoom = this.props.cameraZoom;
+    this._zoom(this.refs.camera.zoom, this.props.cameraZoom, 2000);
   }
 
-  zoom(start, end, duration) {
-    console.log("Zooming from:", start, "to", end);
+  _zoom(start, end, duration) {
+    // console.log("Zooming from:", start, "to", end);
     let camZoom = { cameraZoom: start };
     let camZoomTarget = { cameraZoom: end };
-    let camTween = new TWEEN.Tween(camZoom).to(camZoomTarget, duration);
-    camTween.onUpdate(() => {
-      this.refs.camera.zoom = camZoom.cameraZoom;
-      this.refs.camera.updateProjectionMatrix();
-    });
-
-    camTween.easing(TWEEN.Easing.Cubic.Out);
-    camTween.start();
+    let camTween = new TWEEN.Tween(camZoom)
+      .to(camZoomTarget, duration)
+      .easing(TWEEN.Easing.Cubic.Out)
+      .start()
+      .onUpdate(() => {
+        this.refs.camera.zoom = camZoom.cameraZoom;
+        this.refs.camera.updateProjectionMatrix();
+      });
   }
 
   _onAnimate = () => {

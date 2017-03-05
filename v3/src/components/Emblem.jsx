@@ -15,13 +15,12 @@ class Emblem extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
-      ...this.state,
-      isIntro: true
+      ...this.state
     };
   }
 
   componentDidMount() {
-  	fadeIn.call(this);
+
   }
 
   render() {
@@ -110,8 +109,9 @@ class Emblem extends Component {
             L256.307,330.646z" />
         </Link>
       </svg>
-    )
+    );
 
+    console.log('boutta render');
     return (
       <div id='emblemContainer' className='swoosh'>
         { emblem }

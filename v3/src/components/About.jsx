@@ -17,7 +17,7 @@ class About extends Component {
       <div id='about'>
         {/* <img className='avatar' alt='avatar' src={prefixLink(`${avatar}`)} width="50px" /> */}
         <article className="overview">
-          <header><h2 className="bold">Hi, I'm Prayash.</h2></header>
+          {/* <header><h2 className="bold">Hi, I'm Prayash.</h2></header>
           <br />
           <h3>I make <a href="http://soundcloud.com/effulgence" target="_blank">music</a> and write <a href="http://github.com/prayasht" target="_blank">code</a> that draws things.</h3>
           <br />
@@ -25,7 +25,7 @@ class About extends Component {
           <p>I use this space primarily for sharing personal projects, music, and other art-like things that I may be working on.
           If you'd like an overview of my professional work, check out my <a href="http://linkedin.com/in/prayasht" target="_blank">LinkedIn</a>.</p>
           <p>Feel free to peruse my blog if you're interested in any of my ramblings on art, tech, life, or other things.</p>
-          <p>Want to make something together? <a href="" target="_blank">Don't be a stranger!</a></p>
+          <p>Want to make something together? <a href="" target="_blank">Don't be a stranger!</a></p> */}
         </article>
       </div>
     )

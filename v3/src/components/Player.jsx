@@ -7,7 +7,7 @@ const CLIENT_ID = 'a364360d3c9782e360e4759ce0424007';
 let track;
 
 import '../css/player.scss';
-import Visualizer from './Visualizer';
+// import Visualizer from './Visualizer';
 
 class Player extends Component {
 
@@ -173,7 +173,7 @@ class Player extends Component {
           <audio src={active.url} autoPlay={false} preload="auto" ref="player"></audio>
 
           <div className={coverClass}>
-            <Visualizer />
+            {/* <Visualizer /> */}
           </div>
 
           <div className="player-progress-container" onClick={this.setProgress}>
