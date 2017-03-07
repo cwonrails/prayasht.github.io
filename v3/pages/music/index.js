@@ -16,7 +16,7 @@ export default function Music({ route }) {
   return (
     <div>
       <Helmet title='effulgence // music' />
-      <Player songs={songs} autoplay/>
+      <Player songs={songs} />
     </div>
   )
 }

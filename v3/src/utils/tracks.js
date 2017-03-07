@@ -562,4 +562,4 @@ var tracks = [
   }
 ]
 
-exports.tracks = tracks;
+export default tracks;

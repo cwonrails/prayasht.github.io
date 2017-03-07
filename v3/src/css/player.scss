@@ -31,39 +31,39 @@
 
       .spotify {
         border-bottom: 2px rgba(0, 0, 0, 0) solid;
-        &:hover {
+        a:hover {
           // border-bottom: 2px #2ebd59 solid;
-          i { color: #2ebd59; }
+          i { color: #2EBD59; }
         }
       }
 
       .soundcloud {
         border-bottom: 2px rgba(0, 0, 0, 0) solid;
-        &:hover {
+        a:hover {
           // border-bottom: 2px #f50 solid;
-          i { color: #f50; }
+          i { color: #F50; }
         }
       }
 
       .youtube {
         border-bottom: 2px rgba(0, 0, 0, 0) solid;
-        &:hover {
+        a:hover {
           // border-bottom: 2px #f50 solid;
-          i { color: #cc181e; }
+          i { color: #CC181E; }
         }
       }
 
       .itunes {
         border-bottom: 2px rgba(0, 0, 0, 0) solid;
-        &:hover {
+        a:hover {
           // border-bottom: 2px #f50 solid;
-          i { color: #cc181e; }
+          i { color: #8466FF; }
         }
       }
 
       .bandcamp {
         border-bottom: 2px rgba(0, 0, 0, 0) solid;
-        &:hover {
+        a:hover {
           // border-bottom: 2px #f50 solid;
           i { color: #848484; }
         }
@@ -99,7 +99,9 @@
 
     .artist-info {
       display: inline-block;
-      padding: 1em 0;
+      width: 100%;
+      text-align: center;
+      padding: 1em 0 0 0;
       color: #222;
 
       .artist-name,
@@ -109,14 +111,8 @@
         margin: 0;
       }
 
-      .artist-name {
-        margin-bottom: 5px;
-        font-size: 16px;
-        font-weight: 400;
-      }
-
-      .artist-song-name {
-        font-size: 14px;
+      .artist-name, .artist-song-name {
+        font-size: 1.15em;
         font-weight: 400;
       }
     }

@@ -2,7 +2,7 @@
 title: "Undiscovered Colors"
 date: 11/28/2016
 description: "A memoir to a brief excursion in Argentina."
-draft: false
+draft: true
 ---
 
 On April 27th, 2016, I bought a plane ticket to Argentina. I was set to spend 5 weeks on a study abroad program studying Argentina history, culture and literature, and 2 weeks with not sure what. Swelling with mixtures of excitement and anxiety, I repeatedly asked myself: "What's it going to be like?" I had never visited a foreign country other than Nepal (my birthplace) and USA (my current home).

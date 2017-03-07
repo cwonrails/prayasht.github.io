@@ -18,7 +18,7 @@ class Player extends Component {
     random: false,
     repeat: false,
     mute: false,
-    play: this.props.autoplay || true,
+    play: false,
     songs: this.props.songs
   }
 
@@ -28,7 +28,7 @@ class Player extends Component {
     // sc.get('/users/1041317/tracks').then((tracks) => {
       // console.log(tracks);
       let fetchedTracks = [];
-      tracks.tracks.forEach((t) => {
+      tracks.forEach((t) => {
         // console.log(t);
         let url = t.stream_url + '?client_id=' + CLIENT_ID;
         let cover = t.artwork_url.replace('large', 't300x300');
@@ -160,7 +160,6 @@ class Player extends Component {
   render() {
 
     const { active, play, progress, songs } = this.state;
-    // console.log(active);
 
     let playPauseClass = classnames('fa', { 'fa-pause': play }, { 'fa-play': !play });
     let volumeClass = classnames('fa', { 'fa-volume-up': !this.state.mute }, {'fa-volume-off': this.state.mute});
@@ -194,10 +193,29 @@ class Player extends Component {
                 </a>
               </li>
 
-              <li className="soundcloud"><i className="fa fa-2x fa-soundcloud" aria-hidden="true"></i></li>
-              <li className="youtube"><i className="fa fa-2x fa-youtube" aria-hidden="true"></i></li>
-              <li className="itunes"><i className="fa fa-2x fa-music" aria-hidden="true"></i></li>
-              <li className="bandcamp"><i className="fa fa-2x fa-bandcamp" aria-hidden="true"></i></li>
+              <li className="soundcloud">
+                <a href="https://soundcloud.com/effulgence" target="_blank">
+                  <i className="fa fa-2x fa-soundcloud" aria-hidden="true"></i>
+                </a>
+              </li>
+
+              <li className="youtube">
+                <a href="https://youtube.com/iameffulgence" target="_blank">
+                  <i className="fa fa-2x fa-youtube-play" aria-hidden="true"></i>
+                </a>
+              </li>
+
+              <li className="itunes">
+                <a href="https://itunes.apple.com/us/artist/effulgence/id1031779356" target="_blank">
+                  <i className="fa fa-2x fa-music" aria-hidden="true"></i>
+                </a>
+              </li>
+
+              <li className="bandcamp">
+                <a href="https://effulgence.bandcamp.com" target="_blank">
+                  <i className="fa fa-2x fa-bandcamp" aria-hidden="true"></i>
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -210,11 +228,11 @@ class Player extends Component {
               <img className='artwork' src={active.cover} />
 
               {/* Now Playing */}
-              {/* <div className="artist-info">
+              <div className="artist-info">
                 <h2 className="artist-name">{active.artist.name}</h2>
                 <span> - </span>
                 <h3 className="artist-song-name">{active.artist.song}</h3>
-              </div> */}
+              </div>
 
               {/* Player Controls */}
               <div className="options">
