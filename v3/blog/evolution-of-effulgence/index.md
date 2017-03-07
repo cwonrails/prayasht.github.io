@@ -33,4 +33,6 @@ I considered using Jekyll (a static site/blog generator) for a while, but I REAL
 
 After a lot of research, I ran into an awesome new framework called gatsby.js, a site generator that transforms plain text into dynamic blogs and websites using the latest web technologies such as React and Node. It has no page reloads, supports global page transitions, and leverages server-side rendering so all the components are rendered into raw markup for production builds. It also bundles all the scripts attached using Webpack. You mean I can blog, create a static site, and embed all the interactive elements I want without having to compromise the user experience? I'll take it.
 
-v3 is this. You're on it. It's everything I've ever wanted. Big ups to the creators of gatsby.js and React. The web just gets better and faster everyday.
+Finally, we arrive at v3:
+
+You're on it. It's everything I've ever wanted. Big ups to the creators of gatsby.js and React. The web just gets better and faster everyday.

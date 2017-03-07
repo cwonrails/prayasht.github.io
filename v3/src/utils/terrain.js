@@ -10,10 +10,9 @@ var Terrain = {};
  * @return {Array} allocated heightmap
  */
 Terrain.allocateHeightMap = function(width, depth) {
-  var ArrayClass = Float64Array || Array;
   var heightMap = new Array(width);
   for (var x = 0; x < width; x++) {
-    heightMap[x] = new ArrayClass(depth);
+    heightMap[x] = new Float64Array(depth);
   }
   return heightMap;
 }

@@ -1,13 +1,13 @@
 import React, { Component, PropTypes } from 'react';
 import { fadeIn } from '../utils/blog-helpers';
 import classnames from 'classnames';
+import tracks from '../utils/tracks';
 var sc;
 
 const CLIENT_ID = 'a364360d3c9782e360e4759ce0424007';
 let track;
 
 import '../css/player.scss';
-// import Visualizer from './Visualizer';
 
 class Player extends Component {
 
@@ -24,14 +24,14 @@ class Player extends Component {
 
   fetch = () => {
     sc = require('soundcloud');
-    sc.initialize({ client_id: CLIENT_ID });
-    sc.get('/users/1041317/tracks').then((tracks) => {
-
+    // sc.initialize({ client_id: CLIENT_ID });
+    // sc.get('/users/1041317/tracks').then((tracks) => {
+      // console.log(tracks);
       let fetchedTracks = [];
-      tracks.forEach((t) => {
+      tracks.tracks.forEach((t) => {
         // console.log(t);
         let url = t.stream_url + '?client_id=' + CLIENT_ID;
-        let cover = t.arkwork_url;
+        let cover = t.artwork_url.replace('large', 't300x300');
         let trackName = t.title;
 
         fetchedTracks.push({
@@ -45,8 +45,9 @@ class Player extends Component {
       })
 
       this.setState({ active: fetchedTracks[0], songs: fetchedTracks });
-      this.play();
-    });
+      fadeIn.call(this);
+      // this.play();
+    // });
   }
 
   componentDidMount = () => {
@@ -54,7 +55,6 @@ class Player extends Component {
     playerElement.addEventListener('timeupdate', this.updateProgress);
     playerElement.addEventListener('ended', this.end);
     playerElement.addEventListener('error', this.next);
-    fadeIn.call(this);
     this.fetch();
   }
 
@@ -159,50 +159,93 @@ class Player extends Component {
 
   render() {
 
-    const {active, play, progress} = this.state;
+    const { active, play, progress, songs } = this.state;
+    // console.log(active);
 
-    let coverClass = classnames('player-cover', { 'no-height': !!!active.cover });
     let playPauseClass = classnames('fa', { 'fa-pause': play }, { 'fa-play': !play });
     let volumeClass = classnames('fa', { 'fa-volume-up': !this.state.mute }, {'fa-volume-off': this.state.mute});
     let repeatClass = classnames('player-btn small repeat', {'active': this.state.repeat});
     let randomClass = classnames('player-btn small random', {'active': this.state.random});
 
+    const opts = {
+      width: '320',
+      height: '195',
+      playerVars: { // https://developers.google.com/youtube/player_parameters
+        autoplay: 0
+      }
+    };
+
+    const tracks = songs.map((track) =>
+      <li key={track.artist.song.toString()}>
+        {track.artist.song}
+      </li>
+    );
+
     return (
       <div id='player'>
-        <div className="player-container">
+        <div className="container">
           <audio src={active.url} autoPlay={false} preload="auto" ref="player"></audio>
 
-          <div className={coverClass}>
-            {/* <Visualizer /> */}
+          <div className="platforms">
+            <ul>
+              <li className="spotify">
+                <a href="https://open.spotify.com/artist/2AUSdVDoLw0BgBFfXW5Xb5" target="_blank">
+                  <i className="fa fa-2x fa-spotify" aria-hidden="true"></i>
+                </a>
+              </li>
+
+              <li className="soundcloud"><i className="fa fa-2x fa-soundcloud" aria-hidden="true"></i></li>
+              <li className="youtube"><i className="fa fa-2x fa-youtube" aria-hidden="true"></i></li>
+              <li className="itunes"><i className="fa fa-2x fa-music" aria-hidden="true"></i></li>
+              <li className="bandcamp"><i className="fa fa-2x fa-bandcamp" aria-hidden="true"></i></li>
+            </ul>
           </div>
 
-          <div className="player-progress-container" onClick={this.setProgress}>
-            <span className="player-progress-value" style={{
+          <div className="media">
+
+            {/* Info Pane */}
+            <div className="pane-info">
+
+              {/* Artwork */}
+              <img className='artwork' src={active.cover} />
+
+              {/* Now Playing */}
+              {/* <div className="artist-info">
+                <h2 className="artist-name">{active.artist.name}</h2>
+                <span> - </span>
+                <h3 className="artist-song-name">{active.artist.song}</h3>
+              </div> */}
+
+              {/* Player Controls */}
+              <div className="options">
+                <button onClick={this.previous} className="player-btn medium" title="Previous Song">
+                  <i className="fa fa-backward"/>
+                </button>
+
+                <button onClick={this.toggle} className="player-btn big" title="Play/Pause">
+                  <i className={playPauseClass}/>
+                </button>
+
+                <button onClick={this.next} className="player-btn medium" title="Next Song">
+                  <i className="fa fa-forward"/>
+                </button>
+              </div>
+
+            </div>
+
+            {/* Tracklist Pane */}
+            <div className="pane-tracklist">
+              <ul>{tracks}</ul>
+            </div>
+
+          </div>
+
+          {/* <div className="progress-container" onClick={this.setProgress}>
+            <span className="progress-value" style={{
               width: progress + '%'
             }}></span>
-          </div>
+          </div> */}
 
-          <div className="player-options">
-            <div className="player-buttons player-controls">
-              <button onClick={this.previous} className="player-btn medium" title="Previous Song">
-                <i className="fa fa-backward"/>
-              </button>
-
-              <button onClick={this.toggle} className="player-btn big" title="Play/Pause">
-                <i className={playPauseClass}/>
-              </button>
-
-              <button onClick={this.next} className="player-btn medium" title="Next Song">
-                <i className="fa fa-forward"/>
-              </button>
-            </div>
-          </div>
-
-          <div className="artist-info">
-            <h2 className="artist-name">{active.artist.name}</h2>
-            <span> - </span>
-            <h3 className="artist-song-name">{active.artist.song}</h3>
-          </div>
         </div>
       </div>
     );

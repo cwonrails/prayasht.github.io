@@ -11,7 +11,7 @@ export default function Template({ children }) {
     <main className={ (route === '/' || route === '/music/') ? '' : 'notHome' }>
       <Header />
       <Waves cameraZoom={ (route === '/' ? 1.25 : 2.25) }/>
-      {children}
+      { children }
       <Footer />
     </main>
   );

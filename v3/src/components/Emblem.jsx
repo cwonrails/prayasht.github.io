@@ -12,17 +12,6 @@ import blogPic from '../../static/img/blog.jpg';
 
 class Emblem extends Component {
 
-  constructor(props, context) {
-    super(props, context);
-    this.state = {
-      ...this.state
-    };
-  }
-
-  componentDidMount() {
-
-  }
-
   render() {
     let emblem = (
       <svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enableBackground="new 0 0 500 500">
@@ -111,7 +100,6 @@ class Emblem extends Component {
       </svg>
     );
 
-    console.log('boutta render');
     return (
       <div id='emblemContainer' className='swoosh'>
         { emblem }
