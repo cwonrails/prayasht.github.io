@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import { fadeIn } from '../utils/blog-helpers';
 import classnames from 'classnames';
 import YouTube from 'react-youtube';
 
@@ -50,7 +49,6 @@ class Player extends Component {
       })
 
       this.setState({ active: fetchedTracks[0], songs: fetchedTracks });
-      fadeIn.call(this);
     // });
   }
 
@@ -198,7 +196,7 @@ class Player extends Component {
     };
 
     return (
-      <div id='player'>
+      <div id='player' className='fade'>
         <div className="container">
           <audio src={active.url} autoPlay={false} preload="auto" ref="player"></audio>
 
@@ -246,7 +244,7 @@ class Player extends Component {
 
               {/* Now Playing */}
               <div className="artist-info">
-                <strong><h3 className="artist-song-name">{active.artist.song}</h3></strong>
+                <h3 className="artist-song-name">{active.artist.song}</h3>
                 <br />
                 <h2 className="artist-name">{active.artist.name}</h2>
               </div>

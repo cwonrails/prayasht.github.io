@@ -137,14 +137,14 @@
 
       .artist-name,
       .artist-song-name {
+        font-size: 1.15em;
         display: inline-block;
         color: #222;
         margin: 0;
       }
 
-      .artist-name, .artist-song-name {
-        font-size: 1.15em;
-      }
+      .artist-name { font-weight: normal; }
+      .artist-song-name { font-weight: bold; }
     }
 
     .options {
@@ -159,7 +159,7 @@
     display: inline-block;
     color: #222;
     overflow-y: scroll;
-    max-height: 250px;
+    max-height: 275px;
     padding: 0.5em 0;
 
     ul.list {

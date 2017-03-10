@@ -2,7 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import React3 from 'react-three-renderer';
 import * as THREE from 'three';
 import TWEEN from 'tween.js';
-import { fadeIn } from '../utils/blog-helpers';
 
 import Terrain from '../utils/terrain.js';
 var TbControls;
@@ -32,8 +31,6 @@ class Waves extends Component {
   }
 
   componentDidMount() {
-    fadeIn.call(this);
-
     TbControls = require('three-trackballcontrols');
     controls = new TbControls(this.refs.camera, this.refs.renderer._canvas);
     controls.rotateSpeed = 0.1;
@@ -54,7 +51,7 @@ class Waves extends Component {
       }
     });
 
-    wHeightMap = Terrain.allocateHeightMap(100, 250);
+    wHeightMap = Terrain.allocateHeightMap(100, 300);
     Terrain.simplexHeightMap(wHeightMap);
 
     wGeometry	= Terrain.heightMapToPlaneGeometry(wHeightMap);
@@ -97,17 +94,6 @@ class Waves extends Component {
     TWEEN.update();
     controls.update();
     wMesh.rotation.z += 0.00001;
-    // wMesh.position.z += 0.05;
-
-    for (var x = 0; x < wHeightMap.length; x++) {
-      for (var z = 0; z < wHeightMap[0].length; z++) {
-        var height = wHeightMap[x][z];
-
-        // Set vertex.z to a normalized height
-        // var vertex = wMesh.geometry.vertices[x + z * wHeightMap.length];
-        // vertex.z = simplex.noise(height - 0.5, x) * 2;
-      }
-    }
   }
 
   render() {
@@ -122,7 +108,7 @@ class Waves extends Component {
     };
 
     return (
-      <React3 ref='renderer' {...this.state.rendererProps} clearColor={0xEBEBEB} alpha={true} clearAlpha={0.25} >
+      <React3 ref='renderer' {...this.state.rendererProps} clearColor={0xEBEBEB} alpha={true} clearAlpha={0.25} className='fade'>
         <scene ref='scene' position={THREE.Vector3(0, 0, 0)}>
           <perspectiveCamera ref='camera' name='camera' {...cameraProps} />
           <directionalLight color={0x6695F7} position={this.directionalLightPosition} />

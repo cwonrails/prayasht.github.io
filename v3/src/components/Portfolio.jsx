@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
 import { config } from 'config'; // eslint-disable-line
 import { prefixLink } from 'gatsby-helpers' // eslint-disable-line
-import { fadeIn } from '../utils/blog-helpers';
 
 import '../css/portfolio.scss';
 import nucleactor from '../../static/img/nucleactor.jpg';
@@ -11,14 +10,9 @@ import musiverse from '../../static/img/musiverse.jpg';
 import processes from '../../static/img/processes.jpg';
 
 class Portfolio extends Component {
-
-  componentDidMount() {
-  	fadeIn.call(this);
-  }
-
   render() {
     return (
-      <div id='portfolio'>
+      <div id='portfolio' className='fade'>
         {/* <header><h2>Work</h2></header> */}
         <article className="project">
           <a href="http://effulgence.io/Nucleactor" target="_blank">

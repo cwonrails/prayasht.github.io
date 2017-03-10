@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 import moment from 'moment';
-import { getBlogPosts, fadeIn } from '../utils/blog-helpers';
+import { getBlogPosts } from '../utils/blog-helpers';
 
 import '../css/blog.scss';
 
@@ -31,16 +31,11 @@ const generatePostsTable = ({ route }) => {
 };
 
 class Blog extends Component {
-
-  componentDidMount() {
-  	fadeIn.call(this);
-  }
-
   render() {
     const posts = generatePostsTable(this.props);
     // return <table className='post-list'><tbody>{posts}</tbody></table>;
     return (
-      <div id='blog'>
+      <div id='blog' className='fade'>
         <header><h2>Blog</h2></header>
         <br />
         { posts }

@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import { RouteHandler, Link } from 'react-router';
-import { fadeIn } from '../utils/blog-helpers';
 import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
 
