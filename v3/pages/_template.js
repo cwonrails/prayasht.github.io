@@ -8,9 +8,9 @@ import '../src/css/index.scss';
 export default function Template({ children }) {
   var route = children.props.location.pathname;
   return (
-    <main className={ (route === '/' || route === '/music/') ? '' : 'notHome' }>
+    <main className={(route === '/' || route === '/music/') ? '' : 'notHome'}>
       <Header />
-      <Waves cameraZoom={ (route === '/' ? 1.25 : 2.25) }/>
+      <Waves cameraZoom={(route === '/' ? 5 : 8.25)}/>
       { children }
       <Footer />
     </main>

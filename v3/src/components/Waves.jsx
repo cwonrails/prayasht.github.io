@@ -17,10 +17,10 @@ class Waves extends Component {
     super(props, context);
 
     this.fog = new THREE.Fog(0xCCE0FF, 0, 45);
-    this.directionalLightPosition = new THREE.Vector3(-5, -1, 10);
+    this.directionalLightPosition = new THREE.Vector3(0, 0, 100);
     this.state = {
       ...this.state,
-      mainCameraPosition: new THREE.Vector3(50, 5, 170),
+      mainCameraPosition: new THREE.Vector3(50, 5, 0),
       mainCameraRotation: new THREE.Euler(),
       rendererProps: {
         antialias: 1,
@@ -28,6 +28,15 @@ class Waves extends Component {
         height: 400,
         mainCamera: 'camera',
         onAnimate: this._onAnimate
+      },
+
+      cameraProps: {
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+        near: 10,
+        far: 10000
       }
     };
   }
@@ -41,6 +50,9 @@ class Waves extends Component {
     controls.dampingFactor = 0.3;
     controls.minDistance = 100;
     controls.maxDistance = 600;
+    controls.noZoom = true;
+    controls.noPan = true;
+    controls.noRotate = true;
     this.controls = controls;
 
     this.setState({
@@ -50,14 +62,22 @@ class Waves extends Component {
         height: window.innerHeight,
         mainCamera: 'camera',
         onAnimate: this._onAnimate
+      },
+
+      cameraProps: {
+        left: window.innerWidth / -2,
+        right: window.innerWidth / 2,
+        top: window.innerHeight / 2,
+        bottom: window.innerHeight / -2,
+        near: 10,
+        far: 10000
       }
     });
 
-    wHeightMap = Terrain.allocateHeightMap(100, 350);
+    wHeightMap = Terrain.allocateHeightMap(150, 300);
     Terrain.simplexHeightMap(wHeightMap);
 
     wGeometry	= Terrain.heightMapToPlaneGeometry(wHeightMap);
-  	// Terrain.heightMapToVertexColor(wHeightMap, wGeometry);
 
     wMaterial = new THREE.MeshLambertMaterial({ color: 0x6695f7, wireframe: true });
   	wMesh = new THREE.Mesh(wGeometry, wMaterial);
@@ -65,13 +85,15 @@ class Waves extends Component {
     this.refs.scene.add(wMesh);
 
   	wMesh.scale.x = 5;
-    wMesh.scale.y = 3;
+    wMesh.scale.y = 5;
   	wMesh.scale.z = 0.4;
-    // console.log(wMesh);
-    // console.log(wHeightMap);
 
-  	wMesh.scale.multiplyScalar(50);
-    wMesh.rotation.z = 2;
+  	wMesh.scale.multiplyScalar(75);
+    wMesh.rotation.z = 5;
+    wMesh.position.z = -30;
+
+    this.refs.camera.zoom = 4;
+    this.refs.camera.updateProjectionMatrix();
   }
 
   componentDidUpdate() {
@@ -111,18 +133,8 @@ class Waves extends Component {
     return (
       <React3 ref='renderer' {...this.state.rendererProps} clearColor={0xEBEBEB} alpha={true} clearAlpha={0.25}>
         <scene ref='scene' position={THREE.Vector3(0, 0, 0)}>
-          <perspectiveCamera ref='camera' name='camera' {...cameraProps} />
-          {/* <orthographicCamera
-            ref='camera'
-            name={orthographicCameraName}
-            left={window.innerWidth / -2}
-            right={window.innerWidth / 2}
-            top={window.innerHeight / 2}
-            bottom={window.innerHeight / -2}
-            near={1}
-            far={1000}
-            rotation={orthographicCameraRotation}
-          /> */}
+          {/* <perspectiveCamera ref='camera' name='camera' {...cameraProps} /> */}
+          <orthographicCamera ref='camera' name='camera' {...this.state.cameraProps} />
           <directionalLight color={0x6695F7} position={this.directionalLightPosition} />
           <ambientLight color={0xEBEBEB} intensity={1} />
         </scene>
