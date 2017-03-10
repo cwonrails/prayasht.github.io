@@ -10,9 +10,8 @@
     width: 98.75%;
     margin: 0 auto;
     overflow: hidden;
-    // background-color: #222;
-    // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    margin-bottom: 48px;
+    background: rgba(235, 235, 235, 0.75);
+    margin-bottom: 1em;
   }
 
   .platforms {
@@ -74,14 +73,46 @@
   .media {
     display: flex;
     flex-direction: row;
-    div {
+
+    .pane-info, .pane-tracklist {
       flex-grow: 1;
+    }
+  }
+
+  .yt-container {
+    display: flex;
+    flex-direction: row;
+
+    .video {
+      flex-grow: 1;
+      position: relative;
+      height: 150px;
+      overflow: hidden;
+      margin: 0 5px;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+      }
+
+      .loading {
+        text-align: center;
+        height: 150px;
+
+        i {
+          top: 40%;
+          position: relative;
+        }
+      }
     }
   }
 
   .pane-info {
     padding: 1em 0.5em 1em 1em;
-    width: 180px;
+    max-width: 180px;
 
     .player-btn {
       color: #222;
@@ -113,7 +144,6 @@
 
       .artist-name, .artist-song-name {
         font-size: 1.15em;
-        font-weight: 400;
       }
     }
 
@@ -129,14 +159,15 @@
     display: inline-block;
     color: #222;
     overflow-y: scroll;
-    max-height: 300px;
+    max-height: 250px;
     padding: 0.5em 0;
 
-    ul {
+    ul.list {
       list-style-type: none;
       display: flex;
       flex-direction: column;
-      li {
+
+      li.track {
         font-size: 1.15em;
         padding: 1em 1em;
         border-bottom: 1px rgba(0, 0, 0, 0.05) solid;
@@ -144,6 +175,29 @@
 
         &:hover, :active {
           background: rgba(155, 155, 155, 0.1);
+
+          .fa {
+            display: inline-block;
+
+            &:hover {
+              color: gray;
+            }
+          }
+          .trackIndex { display: none; }
+        }
+
+        .fa {
+          display: none;
+        }
+
+        .trackIndex {
+          display: inline-block;
+          width: 12.94px;
+        }
+
+        .trackName {
+          display: inline-block;
+          margin-left: 1em;
         }
       }
     }

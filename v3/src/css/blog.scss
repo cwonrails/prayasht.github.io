@@ -57,6 +57,10 @@
       margin-right: 8px;
     }
   }
+
+  .SocialMediaShareButton {
+    cursor: pointer;
+  }
 }
 
 #blog-body {
@@ -80,7 +84,7 @@
     p {
       font-size: 1.25em;
     }
-    
+
     img {
       width: 100%;
       height: auto;

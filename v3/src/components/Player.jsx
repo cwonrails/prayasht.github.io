@@ -1,13 +1,15 @@
 import React, { Component, PropTypes } from 'react';
 import { fadeIn } from '../utils/blog-helpers';
 import classnames from 'classnames';
+import YouTube from 'react-youtube';
+
+import '../css/player.scss';
+import Delay from './Delay';
 import tracks from '../utils/tracks';
 var sc;
 
 const CLIENT_ID = 'a364360d3c9782e360e4759ce0424007';
 let track;
-
-import '../css/player.scss';
 
 class Player extends Component {
 
@@ -24,6 +26,9 @@ class Player extends Component {
 
   fetch = () => {
     sc = require('soundcloud');
+    const superfluousText = 'Effulgence & Immensus - ';
+
+    // Disable SC API calls for now.
     // sc.initialize({ client_id: CLIENT_ID });
     // sc.get('/users/1041317/tracks').then((tracks) => {
       // console.log(tracks);
@@ -39,14 +44,13 @@ class Player extends Component {
           cover: cover,
           artist: {
             name: 'Effulgence',
-            song: trackName
+            song: trackName.replace(superfluousText, '')
           }
         });
       })
 
       this.setState({ active: fetchedTracks[0], songs: fetchedTracks });
       fadeIn.call(this);
-      // this.play();
     // });
   }
 
@@ -157,6 +161,17 @@ class Player extends Component {
     this.refs.player.volume = (mute) ? 1 : 0;
   }
 
+  _handleClick = (index) => {
+    let chosenTrack = this.state.songs[index];
+    this.setState({ active: chosenTrack });
+    this.play();
+  }
+
+  _onYTReady(event) {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
+  }
+
   render() {
 
     const { active, play, progress, songs } = this.state;
@@ -166,6 +181,14 @@ class Player extends Component {
     let repeatClass = classnames('player-btn small repeat', {'active': this.state.repeat});
     let randomClass = classnames('player-btn small random', {'active': this.state.random});
 
+    const tracks = songs.map((track, index) =>
+      <li className="track" key={track.artist.song.toString()} onClick={() => this._handleClick(index)}>
+        <i className="fa fa-play" aria-hidden="true"></i>
+        <div className="trackIndex">{index + 1}</div>
+        <div className="trackName">{track.artist.song}</div>
+      </li>
+    );
+
     const opts = {
       width: '320',
       height: '195',
@@ -173,12 +196,6 @@ class Player extends Component {
         autoplay: 0
       }
     };
-
-    const tracks = songs.map((track) =>
-      <li key={track.artist.song.toString()}>
-        {track.artist.song}
-      </li>
-    );
 
     return (
       <div id='player'>
@@ -229,9 +246,9 @@ class Player extends Component {
 
               {/* Now Playing */}
               <div className="artist-info">
+                <strong><h3 className="artist-song-name">{active.artist.song}</h3></strong>
+                <br />
                 <h2 className="artist-name">{active.artist.name}</h2>
-                <span> - </span>
-                <h3 className="artist-song-name">{active.artist.song}</h3>
               </div>
 
               {/* Player Controls */}
@@ -253,10 +270,40 @@ class Player extends Component {
 
             {/* Tracklist Pane */}
             <div className="pane-tracklist">
-              <ul>{tracks}</ul>
+              <ul className="list">{tracks}</ul>
             </div>
 
           </div>
+
+          <div className="yt-container">
+              <div className="video">
+                <Delay wait={1500}>
+                <YouTube
+                  videoId="UHDN-TyN92U"
+                  opts={opts}
+                />
+                </Delay>
+              </div>
+
+              <div className="video">
+                <Delay wait={1500}>
+                  <YouTube
+                    videoId="lKzFU30NyK8"
+                    opts={opts}
+                  />
+                </Delay>
+              </div>
+
+              <div className="video">
+                <Delay wait={1500}>
+                  <YouTube
+                    videoId="CPMwYzgbtH8"
+                    opts={opts}
+                  />
+                </Delay>
+              </div>
+          </div>
+
 
           {/* <div className="progress-container" onClick={this.setProgress}>
             <span className="progress-value" style={{
