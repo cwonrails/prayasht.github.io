@@ -5,9 +5,9 @@ let Terrain = {};
 
 /**
  * Allocate the HeightMap
- * @param {Number} width - width of the heightmap
- * @param {Number} depth - depth of the heightmap
- * @return {Array} allocated heightmap
+ * @param {Int} width - width of the heightmap
+ * @param {Int} depth - depth of the heightmap
+ * @return {Array} - allocated memory for heightmap
  */
 Terrain.allocateHeightMap = function(width, depth) {
   let heightMap = new Array(width);
@@ -19,7 +19,8 @@ Terrain.allocateHeightMap = function(width, depth) {
 
 /**
  * generate a heightmap using a simplex noise
- * @param {Array} heightMap the heightmap to store the data
+ * @param {Array} heightMap - the heightmap to store the data
+ * @return {Void} - modifies heightMap in-memory
  */
 Terrain.simplexHeightMap = function(heightMap) {
 
@@ -47,8 +48,8 @@ Terrain.simplexHeightMap = function(heightMap) {
 
 /**
  * Build a THREE.PlaneGeometry based on a heightMap
- * @param  {Array} heightMap the heightmap
- * @return {THREE.Geometry}  the just built geometry
+ * @param  {Array} heightMap - the heightmap
+ * @return {THREE.Geometry} - plane geometry
  */
 Terrain.heightMapToPlaneGeometry = function(heightMap) {
 
@@ -79,10 +80,7 @@ Terrain.heightMapToPlaneGeometry = function(heightMap) {
 
 /**
  * plane geometry with THREE.Face3
- * @param {[type]} width          [description]
- * @param {[type]} height         [description]
- * @param {[type]} widthSegments  [description]
- * @param {[type]} heightSegments [description]
+ * @param {Int} width, height, widthSegments, heightSegments
  */
 Terrain.PlaneGeometry = function(width, height, widthSegments, heightSegments) {
   THREE.Geometry.call(this);

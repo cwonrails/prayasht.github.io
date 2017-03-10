@@ -18,6 +18,12 @@
       margin: 0.5em 0 0.5em 0;
       opacity: .75;
       font-size: 2em;
+
+      a {
+        @media only screen and (max-width: 476px) {
+          font-size: 0.9em;
+        }
+      }
     }
 
     p {
@@ -66,10 +72,15 @@
 #blog-body {
   .blog-header {
     margin-bottom: 2em;
+
     h2 {
       margin: 0.5em 0 0.5em 0;
       opacity: .75;
       font-size: 2em;
+
+      @media only screen and (max-width: 476px) {
+        font-size: 1.75em;
+      }
     }
   }
 

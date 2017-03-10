@@ -9,6 +9,9 @@ var TbControls;
 var wMesh, wGeometry, wMaterial, wHeightMap;
 var controls; var flying = 0;
 
+const orthographicCameraName = 'orthographicCamera';
+const orthographicCameraRotation = new THREE.Euler();
+
 class Waves extends Component {
   constructor(props, context) {
     super(props, context);
@@ -17,7 +20,6 @@ class Waves extends Component {
     this.directionalLightPosition = new THREE.Vector3(-5, -1, 10);
     this.state = {
       ...this.state,
-      cubeRotation: new THREE.Euler(),
       mainCameraPosition: new THREE.Vector3(50, 5, 170),
       mainCameraRotation: new THREE.Euler(),
       rendererProps: {
@@ -51,7 +53,7 @@ class Waves extends Component {
       }
     });
 
-    wHeightMap = Terrain.allocateHeightMap(100, 300);
+    wHeightMap = Terrain.allocateHeightMap(100, 350);
     Terrain.simplexHeightMap(wHeightMap);
 
     wGeometry	= Terrain.heightMapToPlaneGeometry(wHeightMap);
@@ -99,7 +101,6 @@ class Waves extends Component {
   render() {
     var cameraProps = {
       fov: 60,
-      // aspect: (this.state.rendererProps.width / this.state.rendererProps.height),
       near: 10,
       far: 10000,
       position: this.state.mainCameraPosition,
@@ -108,9 +109,20 @@ class Waves extends Component {
     };
 
     return (
-      <React3 ref='renderer' {...this.state.rendererProps} clearColor={0xEBEBEB} alpha={true} clearAlpha={0.25} className='fade'>
+      <React3 ref='renderer' {...this.state.rendererProps} clearColor={0xEBEBEB} alpha={true} clearAlpha={0.25}>
         <scene ref='scene' position={THREE.Vector3(0, 0, 0)}>
           <perspectiveCamera ref='camera' name='camera' {...cameraProps} />
+          {/* <orthographicCamera
+            ref='camera'
+            name={orthographicCameraName}
+            left={window.innerWidth / -2}
+            right={window.innerWidth / 2}
+            top={window.innerHeight / 2}
+            bottom={window.innerHeight / -2}
+            near={1}
+            far={1000}
+            rotation={orthographicCameraRotation}
+          /> */}
           <directionalLight color={0x6695F7} position={this.directionalLightPosition} />
           <ambientLight color={0xEBEBEB} intensity={1} />
         </scene>

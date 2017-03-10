@@ -17,6 +17,7 @@
   .platforms {
     display: block;
     width: 100%;
+    border-bottom: 1px rgba(0, 0, 0, 0.05) solid;
 
     ul {
       display: flex;
@@ -82,6 +83,7 @@
   .yt-container {
     display: flex;
     flex-direction: row;
+    margin: 0 0.5em;
 
     .video {
       flex-grow: 1;

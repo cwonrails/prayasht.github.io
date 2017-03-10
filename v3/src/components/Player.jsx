@@ -16,9 +16,6 @@ class Player extends Component {
     active: this.props.songs[0],
     current: 0,
     progress: 0,
-    random: false,
-    repeat: false,
-    mute: false,
     play: false,
     songs: this.props.songs
   }
@@ -105,23 +102,15 @@ class Player extends Component {
     this.state.play ? this.pause() : this.play();
   }
 
-  end = () => {
-    (this.state.repeat) ? this.play() : this.setState({ play: false });
-  }
-
   next = () => {
     let total = this.state.songs.length;
-    let current = (this.state.repeat)
-      ? this.state.current
-      : (this.state.current < total - 1)
-        ? this.state.current + 1
-        : 0;
+    let current = (this.state.current < total - 1) ? this.state.current + 1 : 0;
     let active = this.state.songs[current];
 
     this.setState({ current: current, active: active, progress: 0 });
 
     this.refs.player.src = active.url;
-    this.play();
+    setTimeout(() => this.play(), 1000);
   }
 
   previous = () => {
@@ -134,35 +123,13 @@ class Player extends Component {
     this.setState({ current: current, active: active, progress: 0 });
 
     this.refs.player.src = active.url;
-    this.play();
-  }
-
-  randomize = () => {
-    // let s = shuffle(this.state.songs.slice());
-    //
-    // this.setState({
-    //   songs: (!this.state.random)
-    //     ? s
-    //     : this.state.songs,
-    //   random: !this.state.random
-    // });
-  }
-
-  repeat = () => {
-    this.setState({ repeat: !this.state.repeat });
-  }
-
-  toggleMute = () => {
-    let mute = this.state.mute;
-
-    this.setState({ mute: !this.state.mute });
-    this.refs.player.volume = (mute) ? 1 : 0;
+    setTimeout(() => this.play(), 1000);
   }
 
   _handleClick = (index) => {
     let chosenTrack = this.state.songs[index];
     this.setState({ active: chosenTrack });
-    this.play();
+    setTimeout(() => this.play(), 1000);
   }
 
   _onYTReady(event) {
@@ -175,9 +142,6 @@ class Player extends Component {
     const { active, play, progress, songs } = this.state;
 
     let playPauseClass = classnames('fa', { 'fa-pause': play }, { 'fa-play': !play });
-    let volumeClass = classnames('fa', { 'fa-volume-up': !this.state.mute }, {'fa-volume-off': this.state.mute});
-    let repeatClass = classnames('player-btn small repeat', {'active': this.state.repeat});
-    let randomClass = classnames('player-btn small random', {'active': this.state.random});
 
     const tracks = songs.map((track, index) =>
       <li className="track" key={track.artist.song.toString()} onClick={() => this._handleClick(index)}>
@@ -274,32 +238,23 @@ class Player extends Component {
           </div>
 
           <div className="yt-container">
-              <div className="video">
-                <Delay wait={1500}>
-                <YouTube
-                  videoId="UHDN-TyN92U"
-                  opts={opts}
-                />
-                </Delay>
-              </div>
+            <div className="video">
+              <Delay wait={1500}>
+              <YouTube videoId="UHDN-TyN92U" opts={opts} />
+              </Delay>
+            </div>
 
-              <div className="video">
-                <Delay wait={1500}>
-                  <YouTube
-                    videoId="lKzFU30NyK8"
-                    opts={opts}
-                  />
-                </Delay>
-              </div>
+            <div className="video">
+              <Delay wait={1500}>
+                <YouTube videoId="lKzFU30NyK8" opts={opts} />
+              </Delay>
+            </div>
 
-              <div className="video">
-                <Delay wait={1500}>
-                  <YouTube
-                    videoId="CPMwYzgbtH8"
-                    opts={opts}
-                  />
-                </Delay>
-              </div>
+            <div className="video">
+              <Delay wait={1500}>
+                <YouTube videoId="CPMwYzgbtH8" opts={opts} />
+              </Delay>
+            </div>
           </div>
 
 

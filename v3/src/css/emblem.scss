@@ -32,6 +32,9 @@ $desktop-width: 1200px;
     -webkit-user-select: none;
 
     @include mobile { width: 100%; }
+    @media only screen and (max-width: 476px) {
+      max-width: 350px;
+    }
 
     path {
       cursor: pointer;

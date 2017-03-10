@@ -105,6 +105,7 @@ a {
 
   @media only screen and (max-width: 476px) {
     padding: 2em;
+    font-size: 0.85em;
   }
 }
 
@@ -115,12 +116,19 @@ header#header {
   position: relative;
   padding-top: 30px;
 
+  @media only screen and (max-width: 476px) {
+    padding-top: 15px;
+  }
+
   a {
     color: #282828;
-    padding: 0.5em 1em;
 
     &:hover, :active {
       opacity: 0.5;
+    }
+
+    @media only screen and (max-width: 476px) {
+      font-size: 0.9em;
     }
   }
 
