@@ -67,11 +67,11 @@ body#container {
     top: 0;
     left: 0;
     z-index: -1;
+    transition: opacity 1s ease-out;
   }
 
   .notHome canvas {
     opacity: 0.25 !important;
-    transition: opacity 1s ease-out;
   }
 }
 
@@ -195,21 +195,17 @@ header#header {
 }
 
 .fade {
-  -webkit-animation: fade 1500ms ease-out both;
-  animation: fade 1500ms ease-out both;
+  -webkit-animation: fade 1000ms ease-out both;
+  animation: fade 1000ms ease-out both;
 }
 
 @-webkit-keyframes fade {
   0% { opacity: 0.0; }
-  17.02% { opacity: 0.5; }
-  72.57% { opacity: 0.72; }
   100% { opacity: 1; }
 }
 
 @keyframes fade {
   0% { opacity: 0.0; }
-  17.02% { opacity: 0.5; }
-  72.57% { opacity: 0.72; }
   100% { opacity: 1; }
 }
 

@@ -53,7 +53,7 @@ class Waves extends Component {
     controls.noZoom = true;
     controls.noPan = true;
     controls.noRotate = true;
-    this.controls = controls;
+    // this.controls = controls;
 
     this.setState({
       rendererProps: {
@@ -114,7 +114,7 @@ class Waves extends Component {
 
   _onAnimate = () => {
     TWEEN.update();
-    controls.update();
+    // controls.update();
     wMesh.rotation.z += 0.00001;
   }
 
