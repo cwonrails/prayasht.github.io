@@ -42,6 +42,8 @@ class Waves extends Component {
   }
 
   componentDidMount() {
+    // window.addEventListener("resize", this.updateDimensions.bind(this));
+
     TbControls = require('three-trackballcontrols');
     controls = new TbControls(this.refs.camera, this.refs.renderer._canvas);
     controls.rotateSpeed = 0.1;

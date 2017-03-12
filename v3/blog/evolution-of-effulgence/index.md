@@ -5,7 +5,7 @@ description: "A short overview of how I built this site."
 draft: false
 ---
 
-What started out as a school project eventually turned into effulgence.io.
+tl;dr What started out as a school project eventually turned into effulgence.io.
 
 For me, creating a personal website means much more than simply slapping a collection of links and a wall of text on a webpage with my name on it and some social media icons in the footer. I don't want my identity on the Internet to look like everybody else's. I want something that you could look at and *immediately* tell it's mine.
 
