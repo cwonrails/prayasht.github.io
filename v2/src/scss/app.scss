@@ -1,0 +1,422 @@
+// -- Application
+@import '_mixins';
+@import '_typography';
+@import '_variables';
+
+body {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  min-height: 150px;
+  flex-direction: column;
+  animation: fadein 2s;
+
+  &.work img {
+    opacity: 0;
+    transition: opacity 2s;
+  }
+}
+
+main#content {
+  flex: 1;
+}
+
+body.index {
+  background: #EBEBEB;
+  -webkit-font-smoothing: antialiased;
+}
+
+.disable-scroll {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.ie7 body {
+  overflow: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+@include desktop {
+  .project figure {
+    height: 540px;
+  }
+
+  #container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  header#header > div {
+    width: 1080px;
+  }
+
+  header#header {
+    &.notOnTop, &.scrollup {
+      margin-left: -540px;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 0;
+  width: 100%;
+  display: block;
+}
+
+ul li {
+  list-style: none;
+}
+
+@media only screen and (max-width: 800px) {
+  body.overflow {
+    overflow: hidden !important;
+    height: 100%;
+  }
+
+  html {
+    &.overflow {
+      overflow: hidden !important;
+      height: 100%;
+    }
+
+    &:not(.no-touchevents) body.index header div.logo {
+      position: fixed !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .work, .music article {
+    margin: 45px 0 0;
+  }
+}
+
+a {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 800px) {
+  #container {
+    width: 700px;
+    margin: 20px auto 0;
+  }
+
+  header#header > div {
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #container {
+    margin: 0 auto;
+    width: 880px;
+  }
+
+  header#header > div {
+    width: 880px;
+    margin: 0 auto;
+  }
+}
+
+header#header {
+  position: relative;
+  @include mobile { height: 30px; }
+
+  a {
+    color: #282828;
+  }
+
+  .site-title {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 9999;
+
+    &:hover, :active {
+      opacity: 0.6;
+    }
+
+    &.hide {
+      display: none;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.5em;
+      font-weight: 500;
+      color: #202020;
+      opacity: .66;
+      padding: 1em;
+    }
+  }
+
+  .toggle-nav {
+    position: fixed;
+    left: 30px;
+    top: 25px;
+    z-index: 999999999;
+
+    span {
+      display: block;
+      background: #282828;
+      width: 20px;
+      height: 2px;
+      margin-bottom: 3px;
+    }
+
+    &.active span {
+      transition: background .4s;
+      background: #dcdcdc !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  header#header {
+    padding-top: 30px;
+
+    .toggle-nav {
+      display: none;
+    }
+
+    .logo {
+      z-index: 9999999999;
+
+      &.hide {
+        display: block;
+      }
+    }
+
+    &.notOnTop, &.scrollup {
+      position: fixed;
+      left: 50%;
+      margin-left: -350px;
+      z-index: 99999;
+      background: #ebebeb;
+      padding-top: 15px !important;
+      padding-bottom: 20px;
+      overflow: hidden;
+      min-height: 20px;
+    }
+
+    &.notOnTop .site-title h2, &.scrollup .site-title h2 {
+      position: absolute;
+      top: 0;
+      margin: 0;
+      width: 500px;
+      text-align: left;
+    }
+
+    &.notOnTop ul.main-nav, &.scrollup ul.main-nav, &.notOnTop div, &.scrollup div {
+      margin: 0;
+    }
+
+    &.notOnTop .logo, &.scrollup .logo {
+      display: none;
+    }
+
+    &.notOnTop {
+      nav, .site-title {
+        padding-top: 0;
+      }
+    }
+
+    &.scrollup {
+      nav, .site-title {
+        padding-top: 0;
+      }
+    }
+
+    &.notOnTop {
+      top: -60px;
+    }
+
+    &.opacity {
+      transition: top .2s linear;
+      top: -60px;
+    }
+
+    &.scrollup {
+      top: 0;
+      transition: top .2s linear;
+      z-index: 99999;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  header#header {
+    &.notOnTop, &.scrollup {
+      margin-left: -440px;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #container.margin-top {
+    margin-top: 115px;
+  }
+}
+
+html:not(.no-touchevents).fixed header#header {
+  position: relative !important;
+}
+
+@media all and (-ms-high-contrast: none) {
+  body {
+    display: flex;
+  }
+
+  ::-ms-backdrop, body {
+    display: block;
+  }
+}
+
+.work header:not(#header) {
+  margin-bottom: 30px;
+
+  h1, h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .work header:not(#header) {
+    margin-bottom: 60px;
+  }
+}
+
+.project {
+  margin-bottom: 30px;
+  @include desktop { margin-bottom: 60px; }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .project-title {
+    text-align: center;
+    margin-top: 10px;
+
+    @include desktop { margin-top: 15px; }
+  }
+}
+
+/*****************************************************
+ * Path
+ */
+
+#main {
+  display: block;
+  margin: 0 auto;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  path {
+    transition: fill-opacity .5s;
+
+    &:hover {
+      fill-opacity: .5;
+    }
+  }
+}
+
+.project {
+  margin-bottom: 30px;
+  @include desktop { margin-bottom: 60px; }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .project-title {
+    text-align: center;
+    margin-top: 10px;
+
+    @include desktop { margin-top: 15px; }
+  }
+}
+
+// -- Main
+
+#defaultCanvas0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.music iframe {
+  width: 90%;
+  padding: 0 5%;
+}
+
+.about h1 {
+  margin-bottom: 0;
+}
+
+.home {
+  user-select: none;
+}
+
+#behance {
+  fill: #0955ff;
+}
+
+#blog {
+  fill: #c12354;
+}
+
+#facebook {
+  fill: #3b5999;
+}
+
+#soundcloud {
+  fill: #cb5923;
+}
+
+#twitter {
+  fill: #55aded;
+}
+
+#youtube {
+  fill: #cd181f;
+}
+
+.swoosh {
+  animation: swoosh-animation 5000ms linear both;
+}
+
+@keyframes swoosh-animation {
+  0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -700, 0, 0, 1); opacity: 0.0; }
+  2.5% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -456.546, 0, 0, 1); }
+  4.9% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -298.898, 0, 0, 1); }
+  9.81% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -120.56, 0, 0, 1); }
+  14.71% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -45.442, 0, 0, 1); opacity: 0.5; }
+  19.62% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -15.608, 0, 0, 1); }
+  29.43% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.912, 0, 0, 1); }
+  59.14% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.264, 0, 0, 1); opacity: 1; }
+  100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+}
