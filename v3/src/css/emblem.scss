@@ -40,14 +40,17 @@ $desktop-width: 1200px;
     #work, #musica, #about, #video, #behance, #blog, #facebook, #soundcloud, #twitter, #youtube {
       cursor: pointer;
       transition: fill-opacity .5s;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
       &:hover {
         fill-opacity: .5;
       }
     }
 
-    a {
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    .nav-title {
+      color: #232323;
+      font-size: 1.25em;
+      opacity: 0;
     }
   }
 

@@ -121,6 +121,9 @@ class Emblem extends Component {
             c0.406,0.757,0.208,1.861,0.208,2.812c-0.001,78.257-0.03,156.516,0.044,234.772c0.006,3.821-1.077,5.278-5.072,5.266
             c-41.373-0.119-82.746-0.125-124.12-0.046c-3.654,0.006-5.051-1.101-5.045-4.895c0.088-48.724,0.251-97.448-0.116-146.169
             c-0.072-9.501,0.735-17.564,9.597-23.125L378.533,5.24z" />
+          <foreignObject x="260" y="230" width="100" height="50">
+            <div className="nav-title"><strong>About</strong></div>
+          </foreignObject>
         </Link>
 
         <Link to={prefixLink('/work/')} activeClassName="current" onlyActiveOnIndex>
