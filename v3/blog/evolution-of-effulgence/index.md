@@ -1,13 +1,13 @@
 ---
 title: Evolution of effulgence.io
-date: 3/02/2017
+date: 2/22/2017
 description: "A short overview of how I built this site."
 draft: false
 ---
 
 What started out as a school project eventually turned into effulgence.io.
 
-For me, creating a personal website means much more than simply slapping a collection of links and a wall of text on a webpage with my name on it and some social media icons as a footer. I don't want my identity on the Internet to look like everybody else's. I want something that you could look at and *immediately* tell it's mine.
+For me, creating a personal website means much more than simply slapping a collection of links and a wall of text on a webpage with my name on it and some social media icons in the footer. I don't want my identity on the Internet to look like everybody else's. I want something that you could look at and *immediately* tell it's mine.
 
 When I started this project, I started to think about what it would mean for my website to be different. I knew I wanted to stray away from the generic patterns that are employed on so many webpages out there. But I didn't want to stray too far away from these familiar patterns that it felt foreign to the average visitor. I wanted the interface of my site to have a fresh look to bring something different to the table, but still have a sense of intuitiveness to it so that people could curiously click through without hesitation.
 
@@ -15,7 +15,7 @@ After a few hours of brainstorming and trying out various designs, I came up wit
 ![effulgence.io v1 mockup](./mockup.jpg)
 Super basic sketch of the homepage layout.
 
-It resembles an abstract P (to me at least, most people didn't see it at first glance), and is emblematic in nature. I love the simple geometry behind it. I felt very strongly about having visual elements on site much more than textual ones, so I decided to embed pictures into the 4 blocks and use those my main navigation links. Something about your eyes interpreting colors and visual stimuli in a parallel manner vs interpreting text in a serial manner. Yeah...  that's cool. Let's formalize that on a webpage:
+It resembles an abstract P (to me at least, most people didn't see it at first glance), and is emblematic in nature. I love the simple geometry behind it. I felt very strongly about having visual elements much more than textual ones, so I decided to embed pictures into the 4 blocks and use those as my main navigation links. Something about your eyes interpreting colors and visual stimuli in a parallel manner vs interpreting text in a serial manner. Yeah...  that's cool. Let's formalize that on a webpage:
 ![effulgence.io v2](./v1.jpg)
 Check it out live [here.](http://effulgence.io/v1)
 
@@ -37,6 +37,6 @@ After a lot of research, I ran into an awesome new framework called [gatsby.js](
 
 Finally, we arrive at v3:
 ![effulgence.io v3](./v3.jpg)
-A step in the right direction!
+Awwww yeee. WebGL FTW.
 
-You're on it. It's everything I've ever wanted. I'm still working on optimizing it and adding more functionality, but it's a good start for now. Big ups to the creators of gatsby.js and React. The web just gets better and faster everyday.
+It's not perfect, but it's a step in the right direction. I'm still working on optimizing it and adding more functionality, but it's a good start for now. Big ups to the creators of gatsby.js and React. The web just gets better and faster everyday.
