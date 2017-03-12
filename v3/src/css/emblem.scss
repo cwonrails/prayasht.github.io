@@ -28,6 +28,7 @@ $desktop-width: 1200px;
     display: block;
     position: relative;
     margin: 0 auto;
+    height: 75vh;
     user-select: none;
     -webkit-user-select: none;
 
@@ -36,7 +37,7 @@ $desktop-width: 1200px;
       max-height: 400px;
     }
 
-    path {
+    #work, #musica, #about, #video, #behance, #blog, #facebook, #soundcloud, #twitter, #youtube {
       cursor: pointer;
       transition: fill-opacity .5s;
 

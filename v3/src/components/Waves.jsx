@@ -74,7 +74,7 @@ class Waves extends Component {
       }
     });
 
-    wHeightMap = Terrain.allocateHeightMap(150, 300);
+    wHeightMap = Terrain.allocateHeightMap(100, 200);
     Terrain.simplexHeightMap(wHeightMap);
 
     wGeometry	= Terrain.heightMapToPlaneGeometry(wHeightMap);
@@ -84,16 +84,14 @@ class Waves extends Component {
   	wMesh.lookAt(new THREE.Vector3(0, 50, 0));
     this.refs.scene.add(wMesh);
 
-  	wMesh.scale.x = 5;
-    wMesh.scale.y = 5;
-  	wMesh.scale.z = 0.4;
-
-  	wMesh.scale.multiplyScalar(75);
+  	wMesh.scale.set(45, 250, 25);
+    wMesh.scale.multiplyScalar(1.25);
     wMesh.rotation.z = 5;
-    wMesh.position.z = -30;
+    wMesh.position.z = -300;
 
-    this.refs.camera.zoom = 4;
+    this.refs.camera.zoom = 5;
     this.refs.camera.updateProjectionMatrix();
+    // console.log(this.refs.camera.position);
   }
 
   componentDidUpdate() {

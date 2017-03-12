@@ -71,6 +71,7 @@ body#container {
 
   .notHome canvas {
     opacity: 0.25 !important;
+    transition: opacity 1s ease-out;
   }
 }
 
@@ -201,13 +202,40 @@ header#header {
 @-webkit-keyframes fade {
   0% { opacity: 0.0; }
   17.02% { opacity: 0.5; }
-  72.57% { opacity: 1; }
+  72.57% { opacity: 0.72; }
   100% { opacity: 1; }
 }
 
 @keyframes fade {
   0% { opacity: 0.0; }
   17.02% { opacity: 0.5; }
-  72.57% { opacity: 1; }
+  72.57% { opacity: 0.72; }
   100% { opacity: 1; }
+}
+
+.singleFade-enter {
+  opacity: 0.01;
+}
+
+.singleFade-enter.singleFade-enter-active {
+  opacity: 1;
+  transition: opacity 2000ms ease-in;
+}
+
+.singleFade-leave {
+  opacity: 1;
+}
+
+.singleFade-leave.singleFade-leave-active {
+  opacity: 0.01;
+  transition: opacity 2000ms ease-in;
+}
+
+.singleFade-appear {
+  opacity: 0.01;
+}
+
+.singleFade-appear.singleFade-appear-active {
+  opacity: 1;
+  transition: opacity 2000ms ease-out;
 }
