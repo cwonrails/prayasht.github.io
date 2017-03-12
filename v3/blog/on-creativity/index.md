@@ -2,7 +2,7 @@
 title: On Creativity
 date: 11/28/2016
 description: "The journey from beginner to amateur."
-draft: false
+draft: true
 ---
 
 *This post is going to be a little hard to read for those that don't speak latin.*

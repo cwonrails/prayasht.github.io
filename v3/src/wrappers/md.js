@@ -51,7 +51,7 @@ export default class MarkdownWrapper extends Component {
               { name: 'twitter:title', content: docTitle }
             ]}
           />
-          <article id='blog-body'>
+          <article id='blog-body' className='fade'>
             <header className='blog-header'>
               <h2>{post.title}</h2>
               <div>

@@ -63,7 +63,7 @@ body#container {
   }
 
   canvas {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
@@ -71,6 +71,7 @@ body#container {
 
   .notHome canvas {
     opacity: 0.25 !important;
+    transition: opacity 1s ease-out;
   }
 }
 
@@ -105,6 +106,7 @@ a {
 
   @media only screen and (max-width: 476px) {
     padding: 2em;
+    font-size: 0.85em;
   }
 }
 
@@ -115,12 +117,19 @@ header#header {
   position: relative;
   padding-top: 30px;
 
+  @media only screen and (max-width: 476px) {
+    padding-top: 15px;
+  }
+
   a {
     color: #282828;
-    padding: 0.5em 1em;
 
     &:hover, :active {
-      opacity: 0.4;
+      opacity: 0.5;
+    }
+
+    @media only screen and (max-width: 476px) {
+      font-size: 0.9em;
     }
   }
 
@@ -150,6 +159,9 @@ header#header {
   }
 }
 
+// ************************************************************************************
+// * Animations
+
 .swoosh {
   -webkit-animation: swoosh 1000ms ease-out both;
   animation: swoosh 1000ms ease-out both;
@@ -157,27 +169,73 @@ header#header {
 
 /* Generated with Bounce.js. Edit at https://goo.gl/TuHAC6 */
 @-webkit-keyframes swoosh {
-  0% { -webkit-transform: matrix3d(2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  0% { -webkit-transform: matrix3d(1.65, 0, 0, 0, 0, 1.65, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.65, 0, 0, 0, 0, 1.65, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); opacity: 0.0; }
   5.71% { -webkit-transform: matrix3d(1.625, 0, 0, 0, 0, 1.625, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.625, 0, 0, 0, 0, 1.625, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   11.31% { -webkit-transform: matrix3d(1.365, 0, 0, 0, 0, 1.365, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.365, 0, 0, 0, 0, 1.365, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-  17.02% { -webkit-transform: matrix3d(1.191, 0, 0, 0, 0, 1.191, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.191, 0, 0, 0, 0, 1.191, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.02% { -webkit-transform: matrix3d(1.191, 0, 0, 0, 0, 1.191, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.191, 0, 0, 0, 0, 1.191, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); opacity: 0.5; }
   22.62% { -webkit-transform: matrix3d(1.087, 0, 0, 0, 0, 1.087, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.087, 0, 0, 0, 0, 1.087, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   28.33% { -webkit-transform: matrix3d(1.027, 0, 0, 0, 0, 1.027, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.027, 0, 0, 0, 0, 1.027, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   33.93% { -webkit-transform: matrix3d(0.998, 0, 0, 0, 0, 0.998, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.998, 0, 0, 0, 0, 0.998, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   45.15% { -webkit-transform: matrix3d(0.983, 0, 0, 0, 0, 0.983, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.983, 0, 0, 0, 0, 0.983, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-  72.57% { -webkit-transform: matrix3d(0.996, 0, 0, 0, 0, 0.996, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.996, 0, 0, 0, 0, 0.996, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  72.57% { -webkit-transform: matrix3d(0.996, 0, 0, 0, 0, 0.996, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.996, 0, 0, 0, 0, 0.996, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); opacity: 1; }
   100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
 }
 
 @keyframes swoosh {
-  0% { -webkit-transform: matrix3d(2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  0% { -webkit-transform: matrix3d(1.65, 0, 0, 0, 0, 1.65, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.65, 0, 0, 0, 0, 1.65, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); opacity: 0.0; }
   5.71% { -webkit-transform: matrix3d(1.625, 0, 0, 0, 0, 1.625, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.625, 0, 0, 0, 0, 1.625, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   11.31% { -webkit-transform: matrix3d(1.365, 0, 0, 0, 0, 1.365, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.365, 0, 0, 0, 0, 1.365, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-  17.02% { -webkit-transform: matrix3d(1.191, 0, 0, 0, 0, 1.191, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.191, 0, 0, 0, 0, 1.191, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.02% { -webkit-transform: matrix3d(1.191, 0, 0, 0, 0, 1.191, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.191, 0, 0, 0, 0, 1.191, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); opacity: 0.5; }
   22.62% { -webkit-transform: matrix3d(1.087, 0, 0, 0, 0, 1.087, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.087, 0, 0, 0, 0, 1.087, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   28.33% { -webkit-transform: matrix3d(1.027, 0, 0, 0, 0, 1.027, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.027, 0, 0, 0, 0, 1.027, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   33.93% { -webkit-transform: matrix3d(0.998, 0, 0, 0, 0, 0.998, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.998, 0, 0, 0, 0, 0.998, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   45.15% { -webkit-transform: matrix3d(0.983, 0, 0, 0, 0, 0.983, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.983, 0, 0, 0, 0, 0.983, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-  72.57% { -webkit-transform: matrix3d(0.996, 0, 0, 0, 0, 0.996, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.996, 0, 0, 0, 0, 0.996, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  72.57% { -webkit-transform: matrix3d(0.996, 0, 0, 0, 0, 0.996, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.996, 0, 0, 0, 0, 0.996, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); opacity: 1; }
   100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+}
+
+.fade {
+  -webkit-animation: fade 1500ms ease-out both;
+  animation: fade 1500ms ease-out both;
+}
+
+@-webkit-keyframes fade {
+  0% { opacity: 0.0; }
+  17.02% { opacity: 0.5; }
+  72.57% { opacity: 0.72; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade {
+  0% { opacity: 0.0; }
+  17.02% { opacity: 0.5; }
+  72.57% { opacity: 0.72; }
+  100% { opacity: 1; }
+}
+
+.singleFade-enter {
+  opacity: 0.01;
+}
+
+.singleFade-enter.singleFade-enter-active {
+  opacity: 1;
+  transition: opacity 2000ms ease-in;
+}
+
+.singleFade-leave {
+  opacity: 1;
+}
+
+.singleFade-leave.singleFade-leave-active {
+  opacity: 0.01;
+  transition: opacity 2000ms ease-in;
+}
+
+.singleFade-appear {
+  opacity: 0.01;
+}
+
+.singleFade-appear.singleFade-appear-active {
+  opacity: 1;
+  transition: opacity 2000ms ease-out;
 }

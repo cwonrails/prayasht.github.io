@@ -31,25 +31,11 @@ const generatePostsTable = ({ route }) => {
 };
 
 class Blog extends Component {
-
-  fadeIn() {
-    var elem = ReactDOM.findDOMNode(this);
-  	elem.style.opacity = 0;
-    window.requestAnimationFrame(function() {
-  		elem.style.transition = "opacity 750ms";
-  		elem.style.opacity = 1;
-  	});
-  }
-
-  componentDidMount() {
-  	this.fadeIn();
-  }
-
   render() {
     const posts = generatePostsTable(this.props);
     // return <table className='post-list'><tbody>{posts}</tbody></table>;
     return (
-      <div id='blog'>
+      <div id='blog' className='fade'>
         <header><h2>Blog</h2></header>
         <br />
         { posts }

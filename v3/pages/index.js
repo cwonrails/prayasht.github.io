@@ -15,8 +15,8 @@ export default function BlogIndex(props) {
   const fromNow = moment(date, 'MM/DD/YYYY').fromNow();
   // const docTitle = `${config.blogTitle} by ${config.authorName}`;
   const docTitle = `${config.blogTitle}`;
-  return (
 
+  return (
     <section className={props.route.page.path === '/' ? '' : 'content' }>
       <Helmet
         title={docTitle}

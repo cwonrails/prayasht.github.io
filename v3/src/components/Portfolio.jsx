@@ -10,23 +10,9 @@ import musiverse from '../../static/img/musiverse.jpg';
 import processes from '../../static/img/processes.jpg';
 
 class Portfolio extends Component {
-
-  fadeIn() {
-    var elem = ReactDOM.findDOMNode(this);
-  	elem.style.opacity = 0;
-    window.requestAnimationFrame(function() {
-  		elem.style.transition = "opacity 750ms";
-  		elem.style.opacity = 1;
-  	});
-  }
-
-  componentDidMount() {
-  	this.fadeIn();
-  }
-
   render() {
     return (
-      <div id='portfolio'>
+      <div id='portfolio' className='fade'>
         {/* <header><h2>Work</h2></header> */}
         <article className="project">
           <a href="http://effulgence.io/Nucleactor" target="_blank">

@@ -4,6 +4,12 @@
     font-size: 2em;
   }
 
+  a {
+    &:hover, :active {
+      opacity: 0.5;
+    }
+  }
+
   .blog-post {
     padding: 2em 0;
     border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
@@ -12,10 +18,17 @@
       margin: 0.5em 0 0.5em 0;
       opacity: .75;
       font-size: 2em;
+
+      a {
+        @media only screen and (max-width: 476px) {
+          font-size: 0.9em;
+        }
+      }
     }
 
     p {
       margin: 0.5em 0;
+      font-size: 1.2em;
     }
   }
 
@@ -50,19 +63,39 @@
       margin-right: 8px;
     }
   }
+
+  .SocialMediaShareButton {
+    cursor: pointer;
+  }
 }
 
 #blog-body {
   .blog-header {
     margin-bottom: 2em;
+
     h2 {
       margin: 0.5em 0 0.5em 0;
       opacity: .75;
       font-size: 2em;
+
+      @media only screen and (max-width: 476px) {
+        font-size: 1.75em;
+      }
     }
   }
 
   .post-content {
+    a {
+      font-weight: 600;
+      &:hover, :active {
+        opacity: 0.5;
+      }
+    }
+
+    p {
+      font-size: 1.25em;
+    }
+
     img {
       width: 100%;
       height: auto;

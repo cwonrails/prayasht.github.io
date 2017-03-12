@@ -1,4 +1,5 @@
 import moment from 'moment';
+import ReactDOM from 'react-dom';
 import sortBy from 'lodash.sortby';
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 
