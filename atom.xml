@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://effulgence.io/</id>
     <title>effulgence // prayash thapa</title>
-    <updated>2017-03-12T00:05:46Z</updated>
+    <updated>2017-03-13T17:46:37Z</updated>
     <author>
         <name>Prayash Thapa</name>
         <email>prayash@effulgence.io</email>
@@ -19,7 +19,7 @@
         </link>
         <updated>2017-02-22T07:00:00Z</updated>
         <summary type="html"><![CDATA[A short overview of how I built this site.]]></summary>
-        <content type="html"><![CDATA[<p>What started out as a school project eventually turned into <a href="http://effulgence.io">effulgence.io</a>.</p>
+        <content type="html"><![CDATA[<p>tl;dr What started out as a school project eventually turned into <a href="http://effulgence.io">effulgence.io</a>.</p>
 <p>For me, creating a personal website means much more than simply slapping a collection of links and a wall of text on a webpage with my name on it and some social media icons in the footer. I don&#x2019;t want my identity on the Internet to look like everybody else&#x2019;s. I want something that you could look at and <em>immediately</em> tell it&#x2019;s mine.</p>
 <p>When I started this project, I started to think about what it would mean for my website to be different. I knew I wanted to stray away from the generic patterns that are employed on so many webpages out there. But I didn&#x2019;t want to stray too far away from these familiar patterns that it felt foreign to the average visitor. I wanted the interface of my site to have a fresh look to bring something different to the table, but still have a sense of intuitiveness to it so that people could curiously click through without hesitation.</p>
 <p>After a few hours of brainstorming and trying out various designs, I came up with this:
@@ -41,6 +41,39 @@ Check it out live <a href="http://effulgence.io/v2">here.</a></p>
 <img src="http://effulgence.io/blog/evolution-of-effulgence/v3.jpg" alt="effulgence.io v3">
 Awwww yeee. WebGL FTW.</p>
 <p>It&#x2019;s not perfect, but it&#x2019;s a step in the right direction. I&#x2019;m still working on optimizing it and adding more functionality, but it&#x2019;s a good start for now. Big ups to the creators of gatsby.js and React. The web just gets better and faster everyday.</p>
+<p>You can check out the source code for this website <a href="https://github.com/prayasht/prayasht.github.io">here</a>.</p>
+]]></content>
+        <author>
+            <name>Prayash Thapa</name>
+            <email>prayash@effulgence.io</email>
+            <uri>http://effulgence.io/about</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Origins]]></title>
+        <id>http://effulgence.io/blog/origins/</id>
+        <link href="http://effulgence.io/blog/origins/">
+        </link>
+        <updated>2016-09-18T06:00:00Z</updated>
+        <summary type="html"><![CDATA[Hello, Pixels.]]></summary>
+        <content type="html"><![CDATA[<p>ef-ful-gence
+noun - a brilliant radiance</p>
+<p>Many people ask me what &#x2018;effulgence&#x2019; means, and oftentimes they&#x2019;re puzzled when I tell them it&#x2019;s an english word. I admit that it&#x2019;s not the most common word so I don&#x2019;t expect people to know what it means anyway. I stumbled upon it when I was looking for english translations of the Sanskrit word &#x2018;jyoti&#x2019; which means light. This was around 2011 when I was in search of an alias to release my <a href="/music/">music</a> with. Plus, it wasn&#x2019;t taken by anyone else on SoundCloud! It&#x2019;s stuck ever since and in many ways, it feels like it&#x2019;s evolved to something much more than just a musical endeavor. I like to think of it as a pseudonym for creative output.</p>
+<p>My journey in art began when I was 7 years old. At that time, I was living in <a href="https://goo.gl/maps/dRHoHcJc5WJ2">Kathmandu, Nepal</a> (where I was born). My father bought me a water color set and some paint brushes for my birthday. I was hooked. Painting brought so much color to my life, literally. I looked forward to getting home from school every day so I could go crazy on the back pages of my school notebook. The nuances of the paint brush taught me a lot. It forced me to loosen my hands up and to avoid being stiff, and in many ways that became an analogy for a way of life. At some point, I got a set of color pencils and started outlining my paintings with them. That&#x2019;s when drawing started to take precedence over painting. It was a nice break from all the splatter. I started being precise and bold with each stroke. It was the perfectly opposite thing for me to learn. I was so into it that I even got published on the local newspaper.</p>
+<p><img src="http://effulgence.io/blog/origins/paper.jpg" alt="Prayash Thapa Effulgence Art Newspaper">
+Look ma, that&#x2019;s me! The title literally translates to &#x2018;Prayash&#x2019;s Prayash.&#x2019; My name means attempt. So, I guess it&#x2019;s an eloquent way of saying &#x2018;The attempt of Attempt.&#x2019;</p>
+<p>The sad part is, they never published the actual drawing. Just a profile on me&#x2026; lame. But, the validation felt assuring, and I promised myself to push farther and harder. Alas, I didn&#x2019;t continue as far as I wanted to, and my dedicated slowly waned. I kept up as much crafts as possible, but I got too busy being a hooligan and playing video games to care enough about it.</p>
+<p>Fast forward to 11 years old when I heard my uncle strum the chords of <em>Hotel California</em> by The Eagles in the other room. I walked over to see him embracing a massive dreadnought guitar. The way the steel strings vibrated together form this beautiful sense of harmony immediately entranced me. Seeing my curious face, he generously offered to teach me a few chords. I learned the typical G -&gt; D -&gt; C progression while he sang <em>Knockin on Heaven&#x2019;s Door</em>. That felt so good. Again, I was hooked! I couldn&#x2019;t put the guitar down after that.</p>
+<p><img src="http://effulgence.io/blog/origins/guitar.jpg" alt="Prayash Thapa Effulgence First Guitar">
+My first guitar that I bought in 2013, and still play to this day.</p>
+<p>I kept creating the occasional drawing or two in high school year, and art class was definitely the one I looked forward to the most. My teacher was amazing and encouraged me to pursue it in college, and so I did. I got admitted into the university as a Studio Art major with an emphasis on drawing and painting, I loved every bit of it. It felt like I was re-discovering my 7 year old self.</p>
+<p><img src="http://effulgence.io/blog/origins/nujabes.jpg" alt="Prayash Thapa Effulgence Nujabes Drawing">
+I was obsessed with the freehanded geometric aesthetic. This was a tribute to <a href="https://youtu.be/WrO9PTpuSSs?t=7m50s">Nujabes</a>, a jazz-hop legend.</p>
+<p>Sometime around my second year in college, I decided to enroll in an introductory programming course. I had always been the computer nerd in my family, so I thought why not? The bulky white box that dad brought home with a Windows 95 disc had me so engaged when I was a child, so I saw no harm in trying out something new. I learned programming by writing super basic programs and text-based games. One lecture specifically caught my attention: <a href="https://en.wikipedia.org/wiki/Cellular_automaton">Cellular Automata</a>. Seeing a bunch of random pixels interact with their on-screen neighbors consciously based on a few basic rules lit up a different part of my brain. Such a simple algorithm with such an entrancing visual. Maybe I can still draw and paint, but use code as my brush?</p>
+<p>Well, no doubt. That&#x2019;s when I stumbled upon the rabbit hole of Computer Graphics. The revelation that I could still creatively express myself through code and make beautiful things turned my world upside down. It was the perfect definition of lazy man&#x2019;s art. I define a simple set of constraints and let the computer pseudo-randomly run wild, yet somehow it can still produce something impressively artistic while I sit back and watch? Mind = blown.</p>
+<p><img src="http://effulgence.io/blog/origins/graphics.jpg" alt="Prayash Thapa Effulgence Code Graphics Visual Art">
+<a href="http://effulgence.io/Nucleactor">Nucleactor</a>, an audio-visualizer I coded during a hackathon.</p>
+<p>So there it was, all in front of me. Music, visual art, and code. It was the definition of a holy trinity. The perfect blend of three worlds combined into one beautiful melting pot of logic and creativity. Nothing could be more perfect. At that point, I realized that this is what I want to do for the rest of my life: Art.</p>
 ]]></content>
         <author>
             <name>Prayash Thapa</name>
