@@ -47,8 +47,10 @@ body#container {
   background: #EBEBEB;
   margin: 0 auto;
 
-  @media only screen and (min-width: 768px) {
-    width: 768px;
+  #react-mount {
+    max-width: 768px;
+    margin: 0 auto;
+    display: block;
   }
 
   header#header {
