@@ -69,11 +69,11 @@ body#container {
     top: 0;
     left: 0;
     z-index: -1;
-    transition: opacity 1s ease-out;
   }
 
   .notHome canvas {
     opacity: 0.25 !important;
+    transition: opacity 1s ease-out;
   }
 }
 
