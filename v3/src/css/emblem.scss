@@ -44,15 +44,17 @@ $desktop-width: 1200px;
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
       &:hover {
-        fill-opacity: .5;
+        fill-opacity: .6;
       }
     }
 
-    .nav-title {
-      display: none;
-      color: #232323;
+    .underlay-text {
+      pointer-events: none;
+      font-family: Neuzeit-Book, Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 1.25em;
-      opacity: 0;
+      color: #282828;
+      font-weight: bolder;
+      // opacity: 0.75;
     }
   }
 

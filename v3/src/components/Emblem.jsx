@@ -27,7 +27,7 @@ class Emblem extends Component {
             <image xlinkHref={prefixLink(`${workPic}`)} width="75%" height="60%"></image>
           </pattern>
 
-          <pattern preserveAspectRatio="xMidYMid" x="-3%" y="5%" id="blogFill" width="100%" height="50%" patternUnits="userSpaceOnUse">
+          <pattern preserveAspectRatio="xMidYMid" x="-3%" y="5%" id="blogFill" width="100%" height="100%" patternUnits="userSpaceOnUse">
             <image xlinkHref={prefixLink(`${blogPic}`)} width="70%" height="60%"></image>
           </pattern>
         </defs>
@@ -127,31 +127,32 @@ class Emblem extends Component {
       			z M283.886,365.263h3.347v0.815h-3.347V365.263z"/>
         </a>
 
-        <Link to={prefixLink('/about/')} activeClassName="current" onlyActiveOnIndex>
+        <Link id="aboutLink" to={prefixLink('/about/')} activeClassName="current" onlyActiveOnIndex>
+          <text className="underlay-text" transform="matrix(1 0 0 1 264.0127 239.291)">about</text>
           <path id="about" fill="url(#aboutFill)" className="cover" d="M378.533,5.24c0.673-0.855,2.3-1.417,3.42-1.317c0.866,0.077,1.855,1.269,2.354,2.2
             c0.406,0.757,0.208,1.861,0.208,2.812c-0.001,78.257-0.03,156.516,0.044,234.772c0.006,3.821-1.077,5.278-5.072,5.266
             c-41.373-0.119-82.746-0.125-124.12-0.046c-3.654,0.006-5.051-1.101-5.045-4.895c0.088-48.724,0.251-97.448-0.116-146.169
             c-0.072-9.501,0.735-17.564,9.597-23.125L378.533,5.24z" />
-          <foreignObject x="260" y="230" width="100" height="50">
-            <div className="nav-title"><strong>About</strong></div>
-          </foreignObject>
         </Link>
 
-        <Link to={prefixLink('/work/')} activeClassName="current" onlyActiveOnIndex>
+        <Link id="workLink" to={prefixLink('/work/')} activeClassName="current" onlyActiveOnIndex>
+          <text className="underlay-text" transform="matrix(1 0 0 1 203.042 239.291)">work</text>
           <path id="work" fill="url(#workFill)" className="cover" d="M247.323,489.883c0,1.463-0.141,2.927-0.291,5.826c-4.047-3.169-7.095-5.556-10.14-7.943
             c-19.886-15.598-39.799-31.164-59.65-46.806c-13.658-10.763-27.21-21.662-40.863-32.431c-2.539-2.002-3.736-4.244-3.731-7.61
             c0.099-59.317,0.082-118.635,0.107-177.951c0.003-5.397,0.143-5.512,5.474-5.514c34.546-0.013,69.093-0.017,103.64-0.015
             c5.231,0.001,5.517,0.513,5.383,5.546L247.323,489.883z" />
         </Link>
 
-        <Link to={prefixLink('/blog/')} activeClassName="current" onlyActiveOnIndex>
+        <Link id="blogLink" to={prefixLink('/blog/')} activeClassName="current" onlyActiveOnIndex>
+          <text className="underlay-text" transform="matrix(1 0 0 1 81.042 137.291)">blog</text>
           <path id="video" fill="url(#blogFill)" className="cover" d="M155.681,213.902c-28.708,0-57.415,0.001-86.123,0c-5.327,0-5.502-0.148-5.505-5.49
             c-0.013-30.75-0.016-61.499-0.01-92.249c0.001-5.316,0.157-5.48,5.529-5.482c57.417-0.019,114.834-0.028,172.252-0.028
             c5.344,0,5.492,0.15,5.493,5.512c0.009,30.75,0.005,61.499-0.009,92.247c-0.003,5.351-0.159,5.507-5.502,5.51
             c-28.709,0.013-57.417,0.005-86.125,0.005C155.681,213.92,155.681,213.912,155.681,213.902z" />
         </Link>
 
-        <Link to={prefixLink('/music/')} activeClassName="current" onlyActiveOnIndex>
+        <Link id="musicLink" to={prefixLink('/music/')} activeClassName="current" onlyActiveOnIndex>
+          <text className="underlay-text" transform="matrix(1 0 0 1 264.0127 318.7275)">music</text>
           <path id="musica" fill="url(#musicFill)" className="cover" d="M256.307,330.646c-5.912,0-5.966-0.07-5.974-5.869c-0.007-6.123-0.038-12.245,0.006-18.367l-0.023-17.579
             c0.013-10.339,0.161-20.681,0.017-31.019c-0.052-3.715,1.272-4.987,4.991-4.982c56.325,0.068,112.65,0.033,168.978,0.021
             c2.585,0,5.171,0.058,7.754-0.037c2.801-0.104,3.925,1.199,3.871,3.933l0.047,69.373c0.041,3.362-1.241,4.612-4.566,4.522
