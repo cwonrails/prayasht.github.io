@@ -7,9 +7,7 @@ draft: false
 
 tl;dr What started out as a school project eventually turned into effulgence.io.
 
-For me, creating a personal website means much more than simply slapping a collection of links and a wall of text on a webpage with my name on it and some social media icons in the footer. I don't want my identity on the Internet to look like everybody else's. I want something that you could look at and *immediately* tell it's mine.
-
-When I started this project, I started to think about what it would mean for my website to be different. I knew I wanted to stray away from the generic patterns that are employed on so many webpages out there. But I didn't want to stray too far away from these familiar patterns that it felt foreign to the average visitor. I wanted the interface of my site to have a fresh look to bring something different to the table, but still have a sense of intuitiveness to it so that people could curiously click through without hesitation.
+When I started this project, I started to think about what it would mean for my website to be different. I knew I wanted to stray away from the generic patterns that are employed on so many webpages out there. But I didn't want to stray too far from these familiar patterns that it felt foreign to the average visitor. I wanted the interface of my site to have a fresh look to bring something different to the table, but still have a sense of intuitiveness to it so that people could curiously click through without hesitation.
 
 After a few hours of brainstorming and trying out various designs, I came up with this:
 ![effulgence.io v1 mockup](./mockup.jpg)

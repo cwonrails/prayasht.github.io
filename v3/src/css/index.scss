@@ -46,6 +46,7 @@ body#container {
   letter-spacing: .02em;
   background: #EBEBEB;
   margin: 0 auto;
+  height: 100vh;
 
   #react-mount {
     max-width: 768px;
@@ -110,6 +111,11 @@ a {
     padding: 2em;
     font-size: 0.85em;
   }
+}
+
+.home {
+  height: 100vh;
+  overflow: hidden;
 }
 
 // ************************************************************************************
