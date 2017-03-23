@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://effulgence.io/</id>
     <title>effulgence // prayash thapa</title>
-    <updated>2017-03-19T22:42:18Z</updated>
+    <updated>2017-03-23T22:46:59Z</updated>
     <author>
         <name>Prayash Thapa</name>
         <email>prayash@effulgence.io</email>
         <uri>http://effulgence.io/about</uri>
     </author>
     <link rel="alternate" href="http://effulgence.io"/>
-    <subtitle>Effulgence (Prayash Thapa) is an artist and software developer.</subtitle>
+    <subtitle>Hi, I&apos;m Prayash. I make music and write code that draws things.</subtitle>
     <rights>All rights reserved  2017, Siddharth Jain</rights>
     <generator>Feed for Node.js</generator>
     <entry>
