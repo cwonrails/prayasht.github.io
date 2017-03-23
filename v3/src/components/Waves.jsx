@@ -4,10 +4,10 @@ import * as THREE from 'three';
 import TWEEN from 'tween.js';
 
 import Terrain from '../utils/terrain.js';
-var TbControls;
+let TbControls;
 
-var wMesh, wGeometry, wMaterial, wHeightMap;
-var controls; var flying = 0;
+let frameCount = 0; let controls;
+let wMesh, wGeometry, wMaterial, wHeightMap;
 
 const orthographicCameraName = 'orthographicCamera';
 const orthographicCameraRotation = new THREE.Euler();
@@ -42,6 +42,8 @@ class Waves extends Component {
   }
 
   componentDidMount() {
+    // window.addEventListener("resize", this.updateDimensions.bind(this));
+
     TbControls = require('three-trackballcontrols');
     controls = new TbControls(this.refs.camera, this.refs.renderer._canvas);
     controls.rotateSpeed = 0.1;
@@ -53,7 +55,7 @@ class Waves extends Component {
     controls.noZoom = true;
     controls.noPan = true;
     controls.noRotate = true;
-    this.controls = controls;
+    // this.controls = controls;
 
     this.setState({
       rendererProps: {
@@ -114,12 +116,10 @@ class Waves extends Component {
 
   _onAnimate = () => {
     TWEEN.update();
-    controls.update();
-    wMesh.rotation.z += 0.00001;
   }
 
   render() {
-    var cameraProps = {
+    let cameraProps = {
       fov: 60,
       near: 10,
       far: 10000,

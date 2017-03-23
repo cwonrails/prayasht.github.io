@@ -66,7 +66,7 @@ export default class MarkdownWrapper extends Component {
               <li><TweetThis {...post} /></li>
               <li><FacebookShare {...post} /></li>
             </ul>
-            <ReadNext posts={nextPosts} />
+            {/* <ReadNext posts={nextPosts} /> */}
             <hr />
             {/* <About /> */}
           </aside>

@@ -29,25 +29,32 @@ $desktop-width: 1200px;
     position: relative;
     margin: 0 auto;
     height: 75vh;
+    width: 80%;
     user-select: none;
     -webkit-user-select: none;
 
     @include mobile { width: 100%; }
     @media only screen and (max-width: 476px) {
-      max-height: 400px;
+      max-height: 450px;
     }
 
-    #work, #musica, #about, #video, #behance, #blog, #facebook, #soundcloud, #twitter, #youtube {
+    #work, #musica, #about, #video, #behance, #insta, #facebook, #soundcloud, #twitter, #youtube {
       cursor: pointer;
       transition: fill-opacity .5s;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
       &:hover {
-        fill-opacity: .5;
+        fill-opacity: .6;
       }
     }
 
-    a {
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    .underlay-text {
+      pointer-events: none;
+      font-family: Neuzeit-Book, Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 1.25em;
+      color: #282828;
+      font-weight: bolder;
+      // opacity: 0.75;
     }
   }
 
@@ -55,7 +62,7 @@ $desktop-width: 1200px;
     fill: #0955ff;
   }
 
-  #blog {
+  #insta {
     fill: #c12354;
   }
 

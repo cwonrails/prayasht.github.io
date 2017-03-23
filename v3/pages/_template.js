@@ -8,9 +8,10 @@ import Waves from '../src/components/Waves';
 import '../src/css/index.scss';
 
 export default function Template({ children }) {
-  var route = children.props.location.pathname;
+  let route = children.props.location.pathname;
+
   return (
-    <main className={(route === '/') ? 'home' : 'notHome'}>
+    <main className={(route === '/') ? 'home' : 'notHome'} onMouseMove={(e) => (console.log())}>
       <Header />
 
       <ReactCSSTransitionGroup
