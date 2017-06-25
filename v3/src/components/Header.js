@@ -6,7 +6,7 @@ import { config } from 'config' // eslint-disable-line
 export default function Header() {
   return (
     <header id="header">
-      <div className="logo">
+      <div className="logo fade">
         <h1>
           <Link to={prefixLink('/')}>{config.mastHead}</Link>
         </h1>

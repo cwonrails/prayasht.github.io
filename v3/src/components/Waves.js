@@ -103,29 +103,7 @@ class Waves extends Component {
   }
 
   render() {
-    return (
-      <div ref="container" />
-      // <React3
-      //   ref="renderer"
-      //   {...this.state.rendererProps}
-      //   clearColor={0xebebeb}
-      //   alpha={true}
-      //   clearAlpha={0.25}
-      // >
-      //   <scene ref="scene" position={THREE.Vector3(0, 0, 0)}>
-      //     <orthographicCamera
-      //       ref="camera"
-      //       name="camera"
-      //       {...this.state.cameraProps}
-      //     />
-      //     <directionalLight
-      //       color={0x6695f7}
-      //       position={this.directionalLightPosition}
-      //     />
-      //     <ambientLight color={0xebebeb} intensity={1} />
-      //   </scene>
-      // </React3>
-    )
+    return <div ref="container" />
   }
 }
 
