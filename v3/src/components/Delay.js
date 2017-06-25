@@ -1,7 +1,6 @@
-import React from 'react';
+import React from 'react'
 
 let Delay = React.createClass({
-
   displayName: 'Delay',
 
   propTypes: {
@@ -9,35 +8,35 @@ let Delay = React.createClass({
   },
 
   getDefaultProps() {
-    return { wait: 250 };
+    return { wait: 250 }
   },
 
   getInitialState() {
-    return { waiting: true };
+    return { waiting: true }
   },
 
   componentDidMount() {
     this.timer = setTimeout(() => {
-      this.setState({ waiting: false });
-    }, this.props.wait);
+      this.setState({ waiting: false })
+    }, this.props.wait)
   },
 
   componentWillUnmount() {
-    clearTimeout(this.timer);
+    clearTimeout(this.timer)
   },
 
   render() {
     if (!this.state.waiting) {
-      return this.props.children;
+      return this.props.children
     }
 
     return (
       <div className="loading">
-        <i className="fa fa-spinner fa-spin fa-fw"></i>
+        <i className="fa fa-spinner fa-spin fa-fw" />
         <span className="sr-only">Loading...</span>
       </div>
-    );
+    )
   }
-});
+})
 
-export default Delay;
+export default Delay

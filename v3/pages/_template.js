@@ -1,17 +1,17 @@
-import React, { Component, PropTypes } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import React, { Component, PropTypes } from 'react'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
-import Header from '../src/components/Header';
-import Footer from '../src/components/Footer';
-import Waves from '../src/components/Waves';
+import Header from '../src/components/Header'
+import Footer from '../src/components/Footer'
+import Waves from '../src/components/Waves'
 
-import '../src/css/index.scss';
+import '../src/css/index.scss'
 
 export default function Template({ children }) {
-  let route = children.props.location.pathname;
+  let route = children.props.location.pathname
 
   return (
-    <main className={(route === '/') ? 'home' : 'notHome'} onMouseMove={(e) => (console.log())}>
+    <main className={route === '/' ? 'home' : 'notHome'}>
       <Header />
 
       <ReactCSSTransitionGroup
@@ -21,15 +21,15 @@ export default function Template({ children }) {
         transitionAppear={true}
         transitionAppearTimeout={2000}
       >
-        <Waves cameraZoom={(route === '/' ? 7 : 10)} key='waves' />
+        <Waves cameraZoom={route === '/' ? 7 : 10} key="waves" />
       </ReactCSSTransitionGroup>
 
-      { children }
+      {children}
       <Footer />
     </main>
-  );
+  )
 }
 
 Template.propTypes = {
   children: PropTypes.any
-};
+}
