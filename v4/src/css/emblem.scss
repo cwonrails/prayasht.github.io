@@ -1,0 +1,84 @@
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+@mixin mobile {
+  @media (min-width: 300px) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+#emblemContainer {
+  width: 100%;
+  margin: 0 auto;
+
+  svg#main {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    height: 75vh;
+    width: 80%;
+    user-select: none;
+    -webkit-user-select: none;
+
+    @include mobile { width: 100%; }
+    @media only screen and (max-width: 476px) {
+      max-height: 450px;
+    }
+
+    #work, #musica, #about, #video, #behance, #insta, #facebook, #soundcloud, #twitter, #youtube {
+      cursor: pointer;
+      transition: fill-opacity .5s;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+      &:hover {
+        fill-opacity: .6;
+      }
+    }
+
+    .underlay-text {
+      pointer-events: none;
+      font-family: Neuzeit-Book, Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 1.25em;
+      color: #282828;
+      font-weight: bolder;
+      // opacity: 0.75;
+    }
+  }
+
+  #behance {
+    fill: #0955ff;
+  }
+
+  #insta {
+    fill: #c12354;
+  }
+
+  #facebook {
+    fill: #3b5999;
+  }
+
+  #soundcloud {
+    fill: #cb5923;
+  }
+
+  #twitter {
+    fill: #55aded;
+  }
+
+  #youtube {
+    fill: #cd181f;
+  }
+}
