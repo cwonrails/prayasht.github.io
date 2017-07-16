@@ -1,13 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Bio from '../components/Bio'
 
-import About from '../components/About'
-
-export default function AboutMe({ route }) {
+export default function About() {
   return (
     <section className="content">
       <Helmet title="effulgence // about" />
-      <About />
+      <Bio />
     </section>
   )
 }

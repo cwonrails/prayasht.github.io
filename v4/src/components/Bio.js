@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import '../css/about.scss'
 import avatar from '../assets/img/avatar-lg.png'
 
-class About extends Component {
+export default class Bio extends Component {
   render() {
     return (
       <div id="about" className="fade">
@@ -53,5 +53,3 @@ class About extends Component {
     )
   }
 }
-
-export default About

@@ -1,19 +1,16 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { Link } from 'react-router'
-import { config } from 'config' // eslint-disable-line
-import { prefixLink } from 'gatsby-helpers' // eslint-disable-line
+import Link from 'gatsby-link'
 
 import '../css/portfolio.scss'
-import nucleactor from '../../static/img/nucleactor.jpg'
-import musiverse from '../../static/img/musiverse.jpg'
-import processes from '../../static/img/processes.jpg'
+import nucleactor from '../assets/img/nucleactor.jpg'
+import musiverse from '../assets/img/musiverse.jpg'
+import processes from '../assets/img/processes.jpg'
 
 class Portfolio extends Component {
   render() {
     return (
       <div id="portfolio" className="fade">
-        <header><h2>/* Work */</h2></header>
         <article className="project">
           <a href="http://effulgence.io/Nucleactor" target="_blank">
             <img src={nucleactor} alt="nucleactor" width="600px" />
