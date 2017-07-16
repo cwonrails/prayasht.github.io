@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import classnames from 'classnames'
 import YouTube from 'react-youtube'
 
@@ -148,8 +148,12 @@ class Player extends Component {
         onClick={() => this._handleClick(index)}
       >
         <i className="fa fa-play" aria-hidden="true" />
-        <div className="trackIndex">{index + 1}</div>
-        <div className="trackName">{track.artist.song}</div>
+        <div className="trackIndex">
+          {index + 1}
+        </div>
+        <div className="trackName">
+          {track.artist.song}
+        </div>
       </li>
     )
 
@@ -213,18 +217,20 @@ class Player extends Component {
           </div>
 
           <div className="media">
-
             {/* Info Pane */}
             <div className="pane-info">
-
               {/* Artwork */}
               <img className="artwork" src={active.cover} />
 
               {/* Now Playing */}
               <div className="artist-info">
-                <h3 className="artist-song-name">{active.artist.song}</h3>
+                <h3 className="artist-song-name">
+                  {active.artist.song}
+                </h3>
                 <br />
-                <h2 className="artist-name">{active.artist.name}</h2>
+                <h2 className="artist-name">
+                  {active.artist.name}
+                </h2>
               </div>
 
               {/* Player Controls */}
@@ -253,14 +259,14 @@ class Player extends Component {
                   <i className="fa fa-forward" />
                 </button>
               </div>
-
             </div>
 
             {/* Tracklist Pane */}
             <div className="pane-tracklist">
-              <ul className="list">{tracks}</ul>
+              <ul className="list">
+                {tracks}
+              </ul>
             </div>
-
           </div>
 
           <div className="yt-container">
@@ -288,16 +294,10 @@ class Player extends Component {
               width: progress + '%'
             }}></span>
           </div> */}
-
         </div>
       </div>
     )
   }
-}
-
-Player.propTypes = {
-  autoplay: React.PropTypes.bool,
-  songs: React.PropTypes.array.isRequired
 }
 
 export default Player

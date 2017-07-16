@@ -7,15 +7,27 @@
     "url": "https://github.com/prayasht/prayasht.github.io/issues"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "gatsby": "^1.2.0",
     "gatsby-link": "^1.0.9",
     "gatsby-plugin-react-helmet": "^1.0.1",
-    "gatsby-plugin-sass": "^1.0.1"
+    "gatsby-plugin-sass": "^1.0.1",
+    "gatsby-plugin-sharp": "^1.0.0-beta.7",
+    "gatsby-remark-copy-linked-files": "^1.0.0-beta.6",
+    "gatsby-remark-images": "^1.0.0-beta.6",
+    "gatsby-remark-prismjs": "^1.0.0-beta.6",
+    "gatsby-remark-responsive-iframe": "^1.0.0-beta.6",
+    "gatsby-remark-smartypants": "^1.0.0-beta.6",
+    "gatsby-source-filesystem": "^1.0.0-beta.6",
+    "gatsby-transformer-remark": "^1.0.0-beta.6",
+    "react-youtube": "^7.4.0"
   },
   "devDependencies": {
     "gh-pages": "^0.12.0"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "repository": {

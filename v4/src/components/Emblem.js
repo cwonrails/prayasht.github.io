@@ -110,7 +110,7 @@ class Emblem extends Component {
           />
         </a>
 
-        <a xlinkHref="http://twitter.com/iameffulgence" target="_blank">
+        <a xlinkHref="http://twitter.com/_prayash" target="_blank">
           <path
             id="twitter"
             className="cover"

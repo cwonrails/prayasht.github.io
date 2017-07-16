@@ -14,7 +14,7 @@ export default class Template extends React.Component {
 
   render() {
     return (
-      <div>
+      <main>
         <Helmet
           title="effulgence.io // prayash thapa"
           meta={[
@@ -25,10 +25,8 @@ export default class Template extends React.Component {
 
         <Header />
 
-        <main>
-          {this.props.children()}
-        </main>
-      </div>
+        {this.props.children()}
+      </main>
     )
   }
 }
