@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import { ShareButtons, generateShareIcon } from 'react-share'
 
 const { FacebookShareButton, TwitterShareButton } = ShareButtons
@@ -9,7 +9,7 @@ const TweetThis = props =>
   <TwitterShareButton
     url={`http://effulgence.io{props.path}`}
     title={props.title}
-    via={'iameffulgence'}
+    via={'_prayash'}
     className={'share-icons'}
   >
     <TwitterIcon round size={32} />
@@ -23,10 +23,5 @@ const FacebookShare = props =>
   >
     <FacebookIcon round size={32} />
   </FacebookShareButton>
-
-FacebookShare.propTypes = TweetThis.propTypes = {
-  path: PropTypes.string,
-  title: PropTypes.string
-}
 
 export { TweetThis, FacebookShare }

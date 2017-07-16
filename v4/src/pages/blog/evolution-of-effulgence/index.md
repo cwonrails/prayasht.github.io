@@ -1,6 +1,6 @@
 ---
 title: Evolution of effulgence.io
-date: 2/22/2017
+date: February 22, 2017
 description: "A short overview of how I built this site."
 draft: false
 ---
@@ -10,16 +10,19 @@ tl;dr What started out as a school project eventually turned into effulgence.io.
 When I started this project, I started to think about what it would mean for my website to be different. I knew I wanted to stray away from the generic patterns that are employed on so many webpages out there. But I didn't want to stray too far from these familiar patterns that it felt foreign to the average visitor. I wanted the interface of my site to have a fresh look to bring something different to the table, but still have a sense of intuitiveness to it so that people could curiously click through without hesitation.
 
 After a few hours of brainstorming and trying out various designs, I came up with this:
+
 ![effulgence.io v1 mockup](./mockup.jpg)
 Super basic sketch of the homepage layout.
 
 It resembles an abstract P (to me at least, most people didn't see it at first glance), and is emblematic in nature. I love the simple geometry behind it. I felt very strongly about having visual elements much more than textual ones, so I decided to embed pictures into the 4 blocks and use those as my main navigation links. Something about your eyes interpreting colors and visual stimuli in a parallel manner vs interpreting text in a serial manner. Yeah...  that's cool. Let's formalize that on a webpage:
+
 ![effulgence.io v2](./v1.jpg)
 Check it out live [here.](http://effulgence.io/v1)
 
 Now, this was in no way perfect. The styling would crap itself on mobile. Gave it a nice harsh white background (cringe). I hardcoded all the markup and CSS. None of the images were optimized. It was a bunch of ```<div>``` elements floating next to each other in the middle of nowhere which brought about some interesting layout challenges in CSS. The site loaded extremely slow because of all the external assets I was pulling. I also had the wonderfully brilliant idea of embedding a bunch of soundcloud players and rendering them in an ```<iframe>``` when you clicked on a specific link. All of this made sense for me at the time but it also resulted in a very choppy experience. Frankly, it was not even a fully realized website. It was a static landing page that just happened to have a bunch of links to other places.
 
 Fast forward a year or so and we arrive at v2:
+
 ![effulgence.io v2](./v2.jpg)
 Check it out live [here.](http://effulgence.io/v2)
 
@@ -34,6 +37,7 @@ I considered using Jekyll (a static site/blog generator), but I REALLY wanted th
 After a lot of research, I ran into an awesome new framework called [gatsby.js](https://github.com/gatsbyjs/gatsby), a static site generator that transforms plain text into dynamic blogs and websites using React (an amazing library that lets you create functional UIs). It has no page reloads, supports global page transitions, and leverages server-side rendering so all the components are rendered into raw markup for production builds. You mean I can blog, create a static site, and embed all the interactivity I want without having to compromise the user experience? I'll take it.
 
 Finally, we arrive at v3:
+
 ![effulgence.io v3](./v3.jpg)
 Awwww yeee. WebGL FTW.
 

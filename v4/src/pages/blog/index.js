@@ -28,30 +28,33 @@ export default class BlogPostsIndex extends React.Component {
       <section className="content">
         <Helmet title="effulgence // blog" />
 
-        <header>
-          <h2>Blog</h2>
-        </header>
-        <br />
+        <div id="blog" className="fade">
+          <header>
+            <h2>Blog</h2>
+          </header>
+          <br />
 
-        {blogPosts.map(post => {
-          const { fields, frontmatter } = post
+          {blogPosts.map(post => {
+            const { fields, frontmatter } = post
 
-          return (
-            <div className="blog-post" key={fields.slug}>
-              <Link to={fields.slug}>
+            return (
+              <div className="blog-post" key={fields.slug}>
+                <time dateTime={frontmatter.date}>
+                  {frontmatter.date}
+                </time>
                 <h2>
-                  {frontmatter.title}
+                  <Link to={fields.slug}>
+                    {frontmatter.title}
+                  </Link>
                 </h2>
+
                 <p>
                   {frontmatter.description}
                 </p>
-              </Link>
-              <p>
-                {frontmatter.date}
-              </p>
-            </div>
-          )
-        })}
+              </div>
+            )
+          })}
+        </div>
       </section>
     )
   }

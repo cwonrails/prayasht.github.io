@@ -38,7 +38,7 @@ class Emblem extends Component {
           </filter>
 
           <filter x="0" y="0" width="1" height="1" id="musicTextBg">
-            <feFlood floodColor="#DB244B" />
+            <feFlood floodColor="#838183" />
             <feComposite in="SourceGraphic" />
           </filter>
 
@@ -298,12 +298,6 @@ class Emblem extends Component {
         </Link>
 
         <Link id="musicLink" to="/music/" activeClassName="current">
-          <text
-            className="underlay-text"
-            transform="matrix(1 0 0 1 264.0127 318.7275)"
-          >
-            music
-          </text>
           <path
             id="musica"
             fill="url(#musicFill)"
@@ -313,6 +307,15 @@ class Emblem extends Component {
             c2.585,0,5.171,0.058,7.754-0.037c2.801-0.104,3.925,1.199,3.871,3.933l0.047,69.373c0.041,3.362-1.241,4.612-4.566,4.522
             L256.307,330.646z"
           />
+          <text
+            className="underlay-text"
+            transform="matrix(1 0 0 1 264.0127 318.7275)"
+            filter="url(#musicTextBg)"
+            x="0"
+            y="0"
+          >
+            &nbsp;music&nbsp;
+          </text>
         </Link>
       </svg>
     )

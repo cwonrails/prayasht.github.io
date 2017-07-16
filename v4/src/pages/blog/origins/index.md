@@ -1,6 +1,6 @@
 ---
 title: Origins
-date: 09/18/2016
+date: September 18, 2016
 description: "Hello, Pixels."
 draft: false
 ---

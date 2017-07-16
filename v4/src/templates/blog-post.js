@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Helmet from 'react-helmet'
+import { TweetThis, FacebookShare } from '../components/Social'
+// import ReadNext from '../components/ReadNext'
 
 class BlogPostTemplate extends React.Component {
   componentDidMount() {
@@ -41,10 +43,34 @@ class BlogPostTemplate extends React.Component {
             { name: 'twitter:title', content: frontmatter.title }
           ]}
         />
-        <h1>
-          {frontmatter.title}
-        </h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <article id="blog-body" className="fade">
+          <header className="blog-header">
+            <h2>
+              {frontmatter.title}
+            </h2>
+          </header>
+          <div
+            className="post-content"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </article>
+        <br />
+        <aside className="post-footer">
+          <ul>
+            <li>
+              <TweetThis {...frontmatter} />
+            </li>
+            <li>
+              <FacebookShare
+                {...frontmatter}
+                path={this.props.location.pathnam}
+              />
+            </li>
+          </ul>
+          {/* <ReadNext posts={nextPosts} /> */}
+          {/* <hr /> */}
+          {/* <About /> */}
+        </aside>
       </section>
     )
   }

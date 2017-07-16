@@ -13,8 +13,10 @@ export default class Template extends React.Component {
   }
 
   render() {
+    const route = this.props.location.pathname
+
     return (
-      <main>
+      <main className={route === '/' ? 'home' : 'notHome'}>
         <Helmet
           title="effulgence.io // prayash thapa"
           meta={[

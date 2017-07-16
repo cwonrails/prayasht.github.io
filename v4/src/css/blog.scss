@@ -5,7 +5,8 @@
   }
 
   a {
-    &:hover, :active {
+    &:hover,
+    :active {
       opacity: 0.5;
     }
   }
@@ -33,24 +34,25 @@
   }
 
   .blog-page {
-  	margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   .blog-page h1 {
-  	font-size: responsive 20px 36px;
-  	margin-top: 0;
+    font-size: responsive 20px 36px;
+    margin-top: 0;
   }
 
   .blog-page p {
-  	font-size: 16px;
-  	line-height: 26px;
-  	margin-bottom: 26px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 26px;
   }
 
-  @media (max-width:900px) {
-  	.blog-single .text, .blog-single .footer {
-  		padding: 0 15px;
-  	}
+  @media (max-width: 900px) {
+    .blog-single .text,
+    .blog-single .footer {
+      padding: 0 15px;
+    }
   }
 }
 
@@ -87,8 +89,9 @@
   .post-content {
     a {
       font-weight: 600;
-      
-      &:hover, :active {
+
+      &:hover,
+      :active {
         border-bottom: 2px solid #212121;
       }
     }
@@ -101,6 +104,10 @@
       width: 100%;
       height: auto;
       margin: 1em 0;
+    }
+
+    .gatsby-resp-image-link:hover {
+      border-bottom: none;
     }
   }
 }
