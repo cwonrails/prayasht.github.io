@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
 import '../css/emblem.scss'
@@ -22,6 +22,26 @@ class Emblem extends Component {
         enableBackground="new 0 0 500 500"
       >
         <defs>
+          <filter x="0" y="0" width="1" height="1" id="aboutTextBg">
+            <feFlood floodColor="#DA5B79" />
+            <feComposite in="SourceGraphic" />
+          </filter>
+
+          <filter x="0" y="0" width="1" height="1" id="workTextBg">
+            <feFlood floodColor="#DB244B" />
+            <feComposite in="SourceGraphic" />
+          </filter>
+
+          <filter x="0" y="0" width="1" height="1" id="blogTextBg">
+            <feFlood floodColor="#DB244B" />
+            <feComposite in="SourceGraphic" />
+          </filter>
+
+          <filter x="0" y="0" width="1" height="1" id="musicTextBg">
+            <feFlood floodColor="#DB244B" />
+            <feComposite in="SourceGraphic" />
+          </filter>
+
           <pattern
             preserveAspectRatio="xMidYMid"
             x="0"
@@ -215,12 +235,6 @@ class Emblem extends Component {
         </a>
 
         <Link id="aboutLink" to="/about/" activeClassName="current">
-          <text
-            className="underlay-text"
-            transform="matrix(1 0 0 1 264.0127 239.291)"
-          >
-            about
-          </text>
           <path
             id="about"
             fill="url(#aboutFill)"
@@ -230,15 +244,18 @@ class Emblem extends Component {
             c-41.373-0.119-82.746-0.125-124.12-0.046c-3.654,0.006-5.051-1.101-5.045-4.895c0.088-48.724,0.251-97.448-0.116-146.169
             c-0.072-9.501,0.735-17.564,9.597-23.125L378.533,5.24z"
           />
+          <text
+            className="underlay-text"
+            transform="matrix(1 0 0 1 264.0127 239.291)"
+            filter="url(#aboutTextBg)"
+            x="0"
+            y="0"
+          >
+            &nbsp;about&nbsp;
+          </text>
         </Link>
 
         <Link id="workLink" to="/work/" activeClassName="current">
-          <text
-            className="underlay-text"
-            transform="matrix(1 0 0 1 203.042 239.291)"
-          >
-            work
-          </text>
           <path
             id="work"
             fill="url(#workFill)"
@@ -248,15 +265,18 @@ class Emblem extends Component {
             c0.099-59.317,0.082-118.635,0.107-177.951c0.003-5.397,0.143-5.512,5.474-5.514c34.546-0.013,69.093-0.017,103.64-0.015
             c5.231,0.001,5.517,0.513,5.383,5.546L247.323,489.883z"
           />
+          <text
+            className="underlay-text"
+            transform="matrix(1 0 0 1 138.042 239.291)"
+            filter="url(#workTextBg)"
+            x="0"
+            y="0"
+          >
+            &nbsp;work&nbsp;
+          </text>
         </Link>
 
         <Link id="blogLink" to="/blog/" activeClassName="current">
-          <text
-            className="underlay-text"
-            transform="matrix(1 0 0 1 81.042 137.291)"
-          >
-            blog
-          </text>
           <path
             id="video"
             fill="url(#blogFill)"
@@ -266,6 +286,15 @@ class Emblem extends Component {
             c5.344,0,5.492,0.15,5.493,5.512c0.009,30.75,0.005,61.499-0.009,92.247c-0.003,5.351-0.159,5.507-5.502,5.51
             c-28.709,0.013-57.417,0.005-86.125,0.005C155.681,213.92,155.681,213.912,155.681,213.902z"
           />
+          <text
+            className="underlay-text"
+            transform="matrix(1 0 0 1 81.042 137.291)"
+            x="0"
+            y="0"
+            style={{ fill: '#424242' }}
+          >
+            &nbsp;blog&nbsp;
+          </text>
         </Link>
 
         <Link id="musicLink" to="/music/" activeClassName="current">
@@ -294,10 +323,6 @@ class Emblem extends Component {
       </div>
     )
   }
-}
-
-Emblem.propTypes = {
-  route: PropTypes.object
 }
 
 export default Emblem

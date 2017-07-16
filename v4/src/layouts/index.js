@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
+import Header from '../components/Header'
 import '../css/typography.css'
 import '../css/index.scss'
 
@@ -21,19 +22,12 @@ export default class Template extends React.Component {
             { name: 'keywords', content: 'sample, something' }
           ]}
         />
-        <h1 style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: '#666',
-              textDecoration: 'none'
-            }}
-          >
-            effulgence.io // prayash thapa
-          </Link>
-        </h1>
 
-        {this.props.children()}
+        <Header />
+
+        <main>
+          {this.props.children()}
+        </main>
       </div>
     )
   }

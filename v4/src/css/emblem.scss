@@ -33,12 +33,23 @@ $desktop-width: 1200px;
     user-select: none;
     -webkit-user-select: none;
 
-    @include mobile { width: 100%; }
+    @include mobile {
+      width: 100%;
+    }
     @media only screen and (max-width: 476px) {
       max-height: 450px;
     }
 
-    #work, #musica, #about, #video, #behance, #insta, #facebook, #soundcloud, #twitter, #youtube {
+    #work,
+    #musica,
+    #about,
+    #video,
+    #behance,
+    #insta,
+    #facebook,
+    #soundcloud,
+    #twitter,
+    #youtube {
       cursor: pointer;
       transition: fill-opacity .5s;
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -51,10 +62,10 @@ $desktop-width: 1200px;
     .underlay-text {
       pointer-events: none;
       font-family: Neuzeit-Book, Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 1.25em;
-      color: #282828;
+      font-size: 14px;
+      fill: #ebebeb;
+      fill: rgba(235, 235, 235, 0.56);
       font-weight: bolder;
-      // opacity: 0.75;
     }
   }
 

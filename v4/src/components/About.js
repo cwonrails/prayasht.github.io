@@ -1,10 +1,8 @@
-import React, { Component, PropTypes } from 'react'
-import { Link } from 'react-router'
-import { config } from 'config' // eslint-disable-line
-import { prefixLink } from 'gatsby-helpers' // eslint-disable-line
+import React, { Component } from 'react'
+import Link from 'gatsby-link'
 
 import '../css/about.scss'
-import avatar from '../../static/img/avatar-lg.png'
+import avatar from '../assets/img/avatar-lg.png'
 
 class About extends Component {
   render() {
@@ -12,7 +10,9 @@ class About extends Component {
       <div id="about" className="fade">
         {/* <img className='avatar' alt='avatar' src={prefixLink(`${avatar}`)} width="50%" height="auto" /> */}
         <article className="overview">
-          <header><h2 className="bold">Hi, I'm Prayash.</h2></header>
+          <header>
+            <h2 className="bold">Hi, I'm Prayash.</h2>
+          </header>
           <br />
           <h3>
             I make{' '}
@@ -20,8 +20,10 @@ class About extends Component {
               music
             </a>{' '}
             and write{' '}
-            <a href="http://github.com/prayasht" target="_blank">code</a> that
-            draws things.
+            <a href="http://github.com/prayasht" target="_blank">
+              code
+            </a>{' '}
+            that draws things.
           </h3>
           <br />
           <p>
@@ -30,8 +32,8 @@ class About extends Component {
           </p>
           <p>
             I use this space primarily for sharing personal projects, music, and
-            other art-like things that I may be working on.
-            If you'd like an overview of my professional work, check out my{' '}
+            other art-like things that I may be working on. If you'd like an
+            overview of my professional work, check out my{' '}
             <a href="http://linkedin.com/in/prayasht" target="_blank">
               online resume
             </a>.
