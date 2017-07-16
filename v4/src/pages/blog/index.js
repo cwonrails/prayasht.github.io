@@ -20,25 +20,23 @@ export default class BlogPostsIndex extends React.Component {
   }
 
   render() {
-    const blogPosts = this.props.data.allMarkdownRemark.edges.map(
-      edge => edge.node
-    )
+    const blogPosts = this.props.data.allMarkdownRemark.edges
+      .map(edge => edge.node)
+      .reverse()
 
     return (
       <section className="content">
         <Helmet title="effulgence // blog" />
 
         <div id="blog" className="fade">
-          <header>
-            <h2>Blog</h2>
-          </header>
-          <br />
-
-          {blogPosts.map(post => {
+          {blogPosts.map((post, index) => {
             const { fields, frontmatter } = post
 
             return (
-              <div className="blog-post" key={fields.slug}>
+              <div
+                className={'blog-post ' + (index === 0 ? 'first' : '')}
+                key={fields.slug}
+              >
                 <time dateTime={frontmatter.date}>
                   {frontmatter.date}
                 </time>

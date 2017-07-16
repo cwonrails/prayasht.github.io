@@ -3,10 +3,6 @@ import React from 'react'
 let Delay = React.createClass({
   displayName: 'Delay',
 
-  propTypes: {
-    wait: React.PropTypes.number
-  },
-
   getDefaultProps() {
     return { wait: 250 }
   },

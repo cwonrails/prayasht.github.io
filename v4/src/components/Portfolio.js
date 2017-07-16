@@ -7,7 +7,7 @@ import nucleactor from '../assets/img/nucleactor.jpg'
 import musiverse from '../assets/img/musiverse.jpg'
 import processes from '../assets/img/processes.jpg'
 
-class Portfolio extends Component {
+export default class Portfolio extends Component {
   render() {
     return (
       <div id="portfolio" className="fade">
@@ -46,5 +46,3 @@ class Portfolio extends Component {
     )
   }
 }
-
-export default Portfolio

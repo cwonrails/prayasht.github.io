@@ -6,7 +6,8 @@
   a {
     font-weight: 600;
 
-    &:hover, :active {
+    &:hover,
+    :active {
       border-bottom: 2px solid #212121;
     }
   }
@@ -21,9 +22,5 @@
 
   p {
     font-size: 1.5em;
-  }
-
-  .overview {
-    padding: 1em;
   }
 }

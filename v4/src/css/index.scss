@@ -67,12 +67,7 @@ body#container {
     h1 a,
     h2,
     nav a {
-      transition: color ease .7s;
-      transition: font-family ease .7s;
-    }
-
-    .logo {
-      text-align: center;
+      transition: all ease .7s;
     }
   }
 
@@ -83,9 +78,15 @@ body#container {
     z-index: -99;
   }
 
-  .notHome canvas {
-    opacity: 0.25 !important;
-    transition: opacity 1s ease-out;
+  .notHome {
+    #header .logo h1 a {
+      // left: 50%;
+    }
+
+    canvas {
+      opacity: 0.25 !important;
+      transition: opacity 1s ease-out;
+    }
   }
 }
 
@@ -159,11 +160,14 @@ header#header {
     display: none;
   }
 
+  .justify-center {
+    justify-content: center !important;
+  }
+
   .logo {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4em;
 
     &.hide {
       display: none;
@@ -177,6 +181,21 @@ header#header {
       color: #202020;
       opacity: .66;
       padding: 1em;
+
+      a {
+        position: relative;
+        // left: 25%;
+      }
+    }
+
+    .breadcrumb {
+      text-align: center;
+      margin: 0;
+      font-size: 1.5em;
+      font-weight: 500;
+      color: #202020;
+      opacity: .66;
+      padding: 1em 0;
     }
   }
 }

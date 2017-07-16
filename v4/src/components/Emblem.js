@@ -7,7 +7,7 @@ import musicPic from '../assets/img/music.jpg'
 import workPic from '../assets/img/work.jpg'
 import blogPic from '../assets/img/blog.jpg'
 
-class Emblem extends Component {
+export default class Emblem extends Component {
   render() {
     let emblem = (
       <svg
@@ -291,7 +291,7 @@ class Emblem extends Component {
             transform="matrix(1 0 0 1 81.042 137.291)"
             x="0"
             y="0"
-            style={{ fill: '#424242' }}
+            style={{ fill: 'rgba(235, 235, 235, 0.56)' }}
           >
             &nbsp;blog&nbsp;
           </text>
@@ -327,5 +327,3 @@ class Emblem extends Component {
     )
   }
 }
-
-export default Emblem

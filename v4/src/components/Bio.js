@@ -28,7 +28,10 @@ export default class Bio extends Component {
           <br />
           <p>
             I build software for a living and currently reside in{' '}
-            <del>Kathmandu, Nepal</del> Boulder, CO.
+            <a href="https://goo.gl/maps/dRHoHcJc5WJ2">
+              <del>Kathmandu, Nepal</del>
+            </a>{' '}
+            Boulder, CO.
           </p>
           <p>
             I use this space primarily for sharing personal projects, music, and

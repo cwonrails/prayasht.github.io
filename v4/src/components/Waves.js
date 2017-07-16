@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import * as THREE from 'three'
 import TWEEN from 'tween.js'
 import Terrain from '../utils/terrain.js'
@@ -9,7 +9,7 @@ let camera, scene, renderer, controls
 // Terrain variables
 let wMesh, wGeometry, wMaterial, wHeightMap
 
-class Waves extends Component {
+export default class Waves extends Component {
   constructor(props, context) {
     super(props, context)
   }
@@ -106,5 +106,3 @@ class Waves extends Component {
     return <div ref="container" />
   }
 }
-
-export default Waves
