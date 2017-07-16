@@ -318,9 +318,9 @@ class Emblem extends Component {
     )
 
     return (
-      <div id="emblemContainer" className="swoosh">
+      <section id="emblemContainer" className="swoosh">
         {emblem}
-      </div>
+      </section>
     )
   }
 }

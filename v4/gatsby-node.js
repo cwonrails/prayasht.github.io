@@ -3,9 +3,11 @@ const path = require('path')
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
   let slug
+
   if (node.internal.type === `MarkdownRemark`) {
     const fileNode = getNode(node.parent)
     const parsedFilePath = path.parse(fileNode.relativePath)
+
     if (parsedFilePath.name !== `index` && parsedFilePath.dir !== ``) {
       slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`
     } else if (parsedFilePath.dir === ``) {
@@ -25,6 +27,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   return new Promise((resolve, reject) => {
     const pages = []
     const blogPost = path.resolve('src/templates/blog-post.js')
+
     // Query for all markdown "nodes" and for the slug we previously created.
     resolve(
       graphql(

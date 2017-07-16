@@ -1,10 +1,9 @@
 import React, { PropTypes } from 'react'
-import { prefixLink } from 'gatsby-helpers' // eslint-disable-line
 
 const Icon = ({ icon }) =>
   <span
     className="footer-icon"
-    style={{ backgroundImage: `url(${prefixLink(`/icons/${icon}.svg`)})` }}
+    style={{ backgroundImage: `url($`/icons/${icon}.svg`)}` }}
   />
 
 Icon.propTypes = {

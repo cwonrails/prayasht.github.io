@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import '../../css/blog.scss'
 
@@ -9,7 +10,8 @@ export default class BlogPostsIndex extends React.Component {
   }
 
   fadeIn() {
-    var elem = ReactDOM.findDOMNode(this)
+    let elem = ReactDOM.findDOMNode(this)
+
     elem.style.opacity = 0
     window.requestAnimationFrame(() => {
       elem.style.transition = 'opacity 1000ms ease-out'
@@ -24,27 +26,29 @@ export default class BlogPostsIndex extends React.Component {
 
     return (
       <section className="content">
-        <h1>Blog</h1>
+        <Helmet title="effulgence // blog" />
+
+        <header>
+          <h2>Blog</h2>
+        </header>
+        <br />
+
         {blogPosts.map(post => {
           const { fields, frontmatter } = post
 
           return (
-            <div key={fields.slug}>
+            <div className="blog-post" key={fields.slug}>
               <Link to={fields.slug}>
                 <h2>
                   {frontmatter.title}
                 </h2>
                 <p>
-                  {frontmatter.excerpt ? frontmatter.excerpt : post.excerpt}
+                  {frontmatter.description}
                 </p>
               </Link>
-              <div>
-                <small>
-                  <em>
-                    {frontmatter.date}
-                  </em>
-                </small>
-              </div>
+              <p>
+                {frontmatter.date}
+              </p>
             </div>
           )
         })}
