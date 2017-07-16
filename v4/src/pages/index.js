@@ -8,13 +8,3 @@ export default class Index extends React.Component {
     return <Emblem />
   }
 }
-
-// export const pageQuery = graphql`
-//   query SiteMetadataLookup($slug: String!) {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-//   }
-// `
