@@ -1,19 +1,21 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
+import { getBreadCrumb } from '../utils/blog'
 
 export default class Header extends Component {
   render() {
-    const headerText = this.props.left
+    const { breadcrumb } = this.props
+    const breadcrumbDisplay = getBreadCrumb(breadcrumb)
+    const headerText = breadcrumb
       ? 'effulgence.io'
       : 'effulgence.io // prayash thapa'
+
     return (
       <header id="header">
-        <div
-          className={'logo fade ' + (this.props.left ? '' : 'justify-center')}
-        >
+        <div className={'logo fade ' + (breadcrumb ? '' : 'justify-center')}>
           <div className="breadcrumb">
             <strong className="fade">
-              {this.props.left.substr(1)}
+              {breadcrumbDisplay}
             </strong>
           </div>
           <h1>

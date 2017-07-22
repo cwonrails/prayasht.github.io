@@ -104,14 +104,24 @@
       font-size: 1.25em;
     }
 
+    a + em {
+      color: #212121;
+      font-style: normal;
+      opacity: 0.5;
+    }
+
     img {
       width: 100%;
       height: auto;
       margin: 1em 0;
     }
 
-    .gatsby-resp-image-link:hover {
-      border-bottom: none;
+    .gatsby-resp-image-link {
+      margin-bottom: 1em;
+
+      &:hover {
+        border-bottom: none;
+      }
     }
   }
 }

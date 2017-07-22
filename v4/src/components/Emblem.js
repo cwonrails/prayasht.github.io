@@ -9,7 +9,7 @@ import blogPic from '../assets/img/blog.jpg'
 
 export default class Emblem extends Component {
   render() {
-    let emblem = (
+    const emblem = (
       <svg
         id="main"
         version="1.1"
@@ -246,7 +246,7 @@ export default class Emblem extends Component {
           />
           <text
             className="underlay-text"
-            transform="matrix(1 0 0 1 264.0127 239.291)"
+            transform="matrix(1 0 0 1 265 240)"
             filter="url(#aboutTextBg)"
             x="0"
             y="0"
@@ -267,7 +267,7 @@ export default class Emblem extends Component {
           />
           <text
             className="underlay-text"
-            transform="matrix(1 0 0 1 138.042 239.291)"
+            transform="matrix(1 0 0 1 140 240)"
             filter="url(#workTextBg)"
             x="0"
             y="0"
@@ -288,7 +288,7 @@ export default class Emblem extends Component {
           />
           <text
             className="underlay-text"
-            transform="matrix(1 0 0 1 81.042 137.291)"
+            transform="matrix(1 0 0 1 75 135)"
             x="0"
             y="0"
             style={{ fill: 'rgba(235, 235, 235, 0.56)' }}
@@ -309,7 +309,7 @@ export default class Emblem extends Component {
           />
           <text
             className="underlay-text"
-            transform="matrix(1 0 0 1 264.0127 318.7275)"
+            transform="matrix(1 0 0 1 265 320)"
             filter="url(#musicTextBg)"
             x="0"
             y="0"

@@ -27,7 +27,12 @@
     "gh-pages": "^0.12.0"
   },
   "keywords": [
-    "gatsby"
+    "effulgence",
+    "prayash thapa",
+    "portfolio",
+    "blog",
+    "gatsby",
+    "react"
   ],
   "license": "MIT",
   "main": "n/a",
@@ -38,7 +43,7 @@
   "scripts": {
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "develop": "gatsby develop",
+    "start": "gatsby develop --open",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"pages/*.js\" \"utils/*.js\" \"wrappers/*.js\" \"html.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   }

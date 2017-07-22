@@ -1,9 +1,9 @@
-## http://effulgence.io (v4)
+## http://effulgence.io (v3)
 
 Updates include:
-- Migration from Gatsby 0.12 to v1
-- WebGL Shader Background
-- Minor layout changes
+- Migration from jQuery to [Gatsby.js](https://gatsbyjs.org) v0.12.
+- Re-written in React and Markdown.
+- WebGL Terrain Background using [three.js](http://threejs.org).
 
 You can read about the development of this site on my [blog](http://effulgence.io/blog/evolution-of-effulgence/).
 

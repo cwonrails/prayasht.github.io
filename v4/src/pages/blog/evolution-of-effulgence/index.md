@@ -12,19 +12,19 @@ When I started this project, I started to think about what it would mean for my 
 After a few hours of brainstorming and trying out various designs, I came up with this:
 
 ![effulgence.io v1 mockup](./mockup.jpg)
-Super basic sketch of the homepage layout.
+*Super basic sketch of the homepage layout.*
 
 It resembles an abstract P (to me at least, most people didn't see it at first glance), and is emblematic in nature. I love the simple geometry behind it. I felt very strongly about having visual elements much more than textual ones, so I decided to embed pictures into the 4 blocks and use those as my main navigation links. Something about your eyes interpreting colors and visual stimuli in a parallel manner vs interpreting text in a serial manner. Yeah...  that's cool. Let's formalize that on a webpage:
 
 ![effulgence.io v2](./v1.jpg)
-Check it out live [here.](http://effulgence.io/v1)
+*Check it out live [here](http://effulgence.io/v1).*
 
 Now, this was in no way perfect. The styling would crap itself on mobile. Gave it a nice harsh white background (cringe). I hardcoded all the markup and CSS. None of the images were optimized. It was a bunch of ```<div>``` elements floating next to each other in the middle of nowhere which brought about some interesting layout challenges in CSS. The site loaded extremely slow because of all the external assets I was pulling. I also had the wonderfully brilliant idea of embedding a bunch of soundcloud players and rendering them in an ```<iframe>``` when you clicked on a specific link. All of this made sense for me at the time but it also resulted in a very choppy experience. Frankly, it was not even a fully realized website. It was a static landing page that just happened to have a bunch of links to other places.
 
 Fast forward a year or so and we arrive at v2:
 
 ![effulgence.io v2](./v2.jpg)
-Check it out live [here.](http://effulgence.io/v2)
+*Check it out live [here](http://effulgence.io/v2).*
 
 Still not a full site. It's a single page with a bunch of jQuery spaghetti handling clicks and hiding/showing things on cue. Regardless, I got more experience making other sites (and apps). v2 harnesses the power of inline SVGs, meaning my whole graphic is embedded into my page as a bunch of numbers that the browser knows how to draw. Working with SVG allowed me to be meticulous about the design. It gave me full control of the sizing, curvature of lines, relative placement of the blocks, all with added benefit of not having to write any custom CSS to achieve the same layout. And if I wanted to change something I could simply pop back into Illustrator, make my changes, and copy-paste the new numbers into my HTML. I embedded my navigation links wrapping the ```<path>``` tags of the SVG. And search engines would still crawl through it, because in the end, it's all just markup. Brilliant, thank you W3C.
 
@@ -39,7 +39,7 @@ After a lot of research, I ran into an awesome new framework called [gatsby.js](
 Finally, we arrive at v3:
 
 ![effulgence.io v3](./v3.jpg)
-Awwww yeee. WebGL FTW.
+*Awwww yeee. WebGL FTW.*
 
 It's not perfect, but it's a step in the right direction. I'm still working on optimizing it and adding more functionality, but it's a good start for now. Big ups to the creators of gatsby.js and React. The web just gets better and faster everyday.
 

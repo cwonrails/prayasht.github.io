@@ -17,7 +17,7 @@ const songs = [
 
 export default function Music() {
   return (
-    <section>
+    <section className="content">
       <Helmet title="effulgence // music" />
       <Player songs={songs} />
     </section>

@@ -16,7 +16,7 @@ export default class Template extends Component {
 
     return (
       <main className={route === '/' ? 'home' : 'notHome'}>
-        <Header left={route === '/' ? '' : route} />
+        <Header breadcrumb={route === '/' ? '' : route} />
 
         {this.props.children()}
       </main>

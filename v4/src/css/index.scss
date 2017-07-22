@@ -79,8 +79,8 @@ body#container {
   }
 
   .notHome {
-    #header .logo h1 a {
-      // left: 50%;
+    #header .logo h1 {
+      padding-right: 0;
     }
 
     canvas {
@@ -169,12 +169,15 @@ header#header {
     justify-content: space-between;
     padding: 0 4em;
 
+    @media only screen and (max-width: 476px) {
+      padding: 0 2em;
+    }
+
     &.hide {
       display: none;
     }
 
     h1 {
-      text-align: center;
       margin: 0;
       font-size: 1.5em;
       font-weight: 500;
@@ -184,7 +187,6 @@ header#header {
 
       a {
         position: relative;
-        // left: 25%;
       }
     }
 
