@@ -21,7 +21,9 @@
     "gatsby-source-filesystem": "^1.0.0-beta.6",
     "gatsby-transformer-remark": "^1.0.0-beta.6",
     "react-share": "^1.15.0",
-    "react-youtube": "^7.4.0"
+    "react-youtube": "^7.4.0",
+    "three": "^0.86.0",
+    "tween.js": "^16.6.0"
   },
   "devDependencies": {
     "gh-pages": "^0.12.0"

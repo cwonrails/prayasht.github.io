@@ -28,7 +28,7 @@ export default class Bio extends Component {
           <br />
           <p>
             I build software for a living and currently reside in{' '}
-            <a href="https://goo.gl/maps/dRHoHcJc5WJ2">
+            <a href="https://goo.gl/maps/dRHoHcJc5WJ2" target="_blank">
               <del>Kathmandu, Nepal</del>
             </a>{' '}
             Boulder, CO.

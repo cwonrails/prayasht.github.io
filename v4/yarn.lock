@@ -7915,6 +7915,10 @@ tempfile@^2.0.0:
     temp-dir "^1.0.0"
     uuid "^3.0.1"
 
+three@^0.86.0:
+  version "0.86.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.86.0.tgz#1c33e476a1537e9a8a18f5792d024b1046cd2000"
+
 through2-filter@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/through2-filter/-/through2-filter-2.0.0.tgz#60bc55a0dacb76085db1f9dae99ab43f83d622ec"
@@ -8083,6 +8087,10 @@ tunnel-agent@^0.6.0:
   resolved "https://registry.yarnpkg.com/tunnel-agent/-/tunnel-agent-0.6.0.tgz#27a5dea06b36b04a0a9966774b290868f0fc40fd"
   dependencies:
     safe-buffer "^5.0.1"
+
+tween.js@^16.6.0:
+  version "16.6.0"
+  resolved "https://registry.yarnpkg.com/tween.js/-/tween.js-16.6.0.tgz#739104c9336cc4f11ee53f9ce7cede51e6723624"
 
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 import Header from '../components/Header'
+import Waves from '../components/Waves'
 import '../css/typography.css'
 import '../css/index.scss'
 
@@ -17,6 +18,8 @@ export default class Template extends Component {
     return (
       <main className={route === '/' ? 'home' : 'notHome'}>
         <Header breadcrumb={route === '/' ? '' : route} />
+
+        <Waves cameraZoom={route === '/' ? 7 : 10} key="waves" />
 
         {this.props.children()}
       </main>
