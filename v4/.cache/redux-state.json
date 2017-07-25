@@ -1,0 +1,2422 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "path": "/dev-404-page/",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-page-creator": {
+      "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "name": "component-page-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "packageJson": {
+        "name": "component-page-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/pages",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin component-page-creator",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "9cbaf30525941f126137aa0f08b7293e",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin internal-data-bridge": {
+      "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin internal-data-bridge",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "ad3f2cec4709a7353b12c4d9c7eb73cb",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin dev-404-page",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "5e8a0109ed5239a9375e73e357bd75f8",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin prod-404": {
+      "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin prod-404",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "e0af3977d0ce6ca35c2d5051141ed88c",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin query-runner": {
+      "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin query-runner",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "a85c24dfb5c31043ea1b231d6e21a91f",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-react-helmet": {
+      "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-plugin-react-helmet",
+      "name": "gatsby-plugin-react-helmet",
+      "version": "1.0.1",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-plugin-react-helmet",
+      "packageJson": {
+        "name": "gatsby-plugin-react-helmet",
+        "description": "Stub description for gatsby-plugin-react-helmet",
+        "version": "1.0.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby"
+        ],
+        "author": "Kyle Mathews &lt;mathews.kyle@gmail.com&gt;",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "react-helmet",
+            "version": "^5.1.3"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin gatsby-plugin-react-helmet",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "27aca5a21d8ddd2565f55510ef7d9d28",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-sass": {
+      "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-plugin-sass",
+      "name": "gatsby-plugin-sass",
+      "version": "1.0.1",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-plugin-sass",
+      "packageJson": {
+        "name": "gatsby-plugin-sass",
+        "description": "Gatsby plugin to handle scss/sass files",
+        "version": "1.0.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "sass",
+          "scss"
+        ],
+        "author": "Daniel Farrell <daniel@mobelux.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "extract-text-webpack-plugin",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "node-sass",
+            "version": "^4.5.2"
+          },
+          {
+            "name": "sass-loader",
+            "version": "^4.1.1"
+          },
+          {
+            "name": "webpack",
+            "version": "^1.13.3"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin gatsby-plugin-sass",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "093ee09bccadac0495bfe1fa9338958f",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-source-filesystem": {
+      "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-source-filesystem",
+      "name": "gatsby-source-filesystem",
+      "version": "1.0.1",
+      "pluginOptions": {
+        "plugins": [],
+        "name": "pages",
+        "path": "/Users/prayash/dev/effulgence.io/v4/src/pages/"
+      },
+      "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-source-filesystem",
+      "packageJson": {
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "1.0.1",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          }
+        ],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin gatsby-source-filesystem",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "8b50efd0aea0147084b0a592c0b8fc68",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-remark": {
+      "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-transformer-remark",
+      "name": "gatsby-transformer-remark",
+      "version": "1.1.0",
+      "pluginOptions": {
+        "plugins": [
+          {
+            "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-images",
+            "name": "gatsby-remark-images",
+            "version": "1.2.0",
+            "pluginOptions": {
+              "plugins": [],
+              "maxWidth": 690,
+              "wrapperStyle": "",
+              "backgroundColor": "white",
+              "linkImagesToOriginal": true,
+              "quality": 50,
+              "jpegProgressive": true,
+              "pngCompressionLevel": 9,
+              "grayscale": false,
+              "duotone": false,
+              "pathPrefix": "",
+              "toFormat": "",
+              "sizes": "(max-width: 690px) 100vw, 690px"
+            },
+            "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-images"
+          },
+          {
+            "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-responsive-iframe",
+            "name": "gatsby-remark-responsive-iframe",
+            "version": "1.0.1",
+            "pluginOptions": {
+              "plugins": [],
+              "wrapperStyle": ""
+            },
+            "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-responsive-iframe"
+          },
+          {
+            "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-prismjs",
+            "name": "gatsby-remark-prismjs",
+            "version": "1.2.0",
+            "pluginOptions": {
+              "plugins": []
+            },
+            "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-prismjs"
+          },
+          {
+            "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-copy-linked-files",
+            "name": "gatsby-remark-copy-linked-files",
+            "version": "1.0.1",
+            "pluginOptions": {
+              "plugins": []
+            },
+            "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-copy-linked-files"
+          },
+          {
+            "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-smartypants",
+            "name": "gatsby-remark-smartypants",
+            "version": "1.0.1",
+            "pluginOptions": {
+              "plugins": []
+            },
+            "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-smartypants"
+          }
+        ]
+      },
+      "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-transformer-remark",
+      "packageJson": {
+        "name": "gatsby-transformer-remark",
+        "description": "Gatsby transformer plugin for Markdown using the Remark library and ecosystem",
+        "version": "1.1.0",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "markdown",
+          "remark"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "gray-matter",
+            "version": "^2.1.0"
+          },
+          {
+            "name": "hast-util-to-html",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "mdast-util-to-hast",
+            "version": "^2.4.0"
+          },
+          {
+            "name": "remark",
+            "version": "^7.0.1"
+          },
+          {
+            "name": "sanitize-html",
+            "version": "^1.14.1"
+          },
+          {
+            "name": "underscore.string",
+            "version": "^3.3.4"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          },
+          {
+            "name": "babel-plugin-transform-object-rest-spread",
+            "version": "^6.20.2"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin gatsby-transformer-remark",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "52e44377f92314d0f215d2591a56ffd6",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-images": {
+      "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-images",
+      "name": "gatsby-remark-images",
+      "version": "1.2.0",
+      "pluginOptions": {
+        "plugins": [],
+        "maxWidth": 690,
+        "wrapperStyle": "",
+        "backgroundColor": "white",
+        "linkImagesToOriginal": true,
+        "quality": 50,
+        "jpegProgressive": true,
+        "pngCompressionLevel": 9,
+        "grayscale": false,
+        "duotone": false,
+        "pathPrefix": "",
+        "toFormat": "",
+        "sizes": "(max-width: 690px) 100vw, 690px"
+      },
+      "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-images",
+      "packageJson": {
+        "name": "gatsby-remark-images",
+        "description": "Processes images in markdown so they can be used in the production build.",
+        "version": "1.2.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "markdown",
+          "remark",
+          "image",
+          "responsive images"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.1"
+          },
+          {
+            "name": "image-size",
+            "version": "^0.5.1"
+          },
+          {
+            "name": "is-relative-url",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin gatsby-remark-images",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "31066201023bff27d9c865b07d00fdb2",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-responsive-iframe": {
+      "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-responsive-iframe",
+      "name": "gatsby-remark-responsive-iframe",
+      "version": "1.0.1",
+      "pluginOptions": {
+        "plugins": [],
+        "wrapperStyle": ""
+      },
+      "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-responsive-iframe",
+      "packageJson": {
+        "name": "gatsby-remark-responsive-iframe",
+        "description": "Make iframes in Markdown processed by Remark responsive",
+        "version": "1.0.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "remark"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "cheerio",
+            "version": "^0.22.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin gatsby-remark-responsive-iframe",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "035ce3109c3dfc5b6f0703868a3a1d07",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-prismjs": {
+      "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-prismjs",
+      "name": "gatsby-remark-prismjs",
+      "version": "1.2.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-prismjs",
+      "packageJson": {
+        "name": "gatsby-remark-prismjs",
+        "description": "Adds syntax highlighting to code blocks at build time using PrismJS",
+        "version": "1.2.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "prismjs",
+          "remark"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "parse-numeric-range",
+            "version": "^0.0.2"
+          },
+          {
+            "name": "prismjs",
+            "version": "^1.6.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          },
+          {
+            "name": "remark",
+            "version": "^7.0.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin gatsby-remark-prismjs",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "9da88a5f4aa1c26da2caccceab8966fa",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-copy-linked-files": {
+      "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-copy-linked-files",
+      "name": "gatsby-remark-copy-linked-files",
+      "version": "1.0.1",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-copy-linked-files",
+      "packageJson": {
+        "name": "gatsby-remark-copy-linked-files",
+        "description": "Find files which are linked to from markdown and copy them to the public directory",
+        "version": "1.0.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "prismjs",
+          "remark"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.1"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^3.0.1"
+          },
+          {
+            "name": "is-relative-url",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin gatsby-remark-copy-linked-files",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "43a484b89c37160f0b2248de4c69f863",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-smartypants": {
+      "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-smartypants",
+      "name": "gatsby-remark-smartypants",
+      "version": "1.0.1",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-remark-smartypants",
+      "packageJson": {
+        "name": "gatsby-remark-smartypants",
+        "description": "Use retext-smartypants to auto-enhance typography of markdown",
+        "version": "1.0.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "smartypants"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "retext",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "retext-smartypants",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin gatsby-remark-smartypants",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "b07a4b04dbbc20be2aa73b9f99763381",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-sharp": {
+      "resolve": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-plugin-sharp",
+      "name": "gatsby-plugin-sharp",
+      "version": "1.0.1",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4/node_modules/gatsby-plugin-sharp",
+      "packageJson": {
+        "name": "gatsby-plugin-sharp",
+        "description": "Wrapper of the Sharp image manipulation library for Gatsby plugins",
+        "version": "1.0.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "image",
+          "sharp"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "async",
+            "version": "^2.4.1"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "image-size",
+            "version": "^0.5.1"
+          },
+          {
+            "name": "imagemin",
+            "version": "^5.2.2"
+          },
+          {
+            "name": "imagemin-pngquant",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "progress",
+            "version": "^1.1.8"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.17.3"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin gatsby-plugin-sharp",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "9aa12e0984de7349bf40d85a3a4bc568",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/Users/prayash/dev/effulgence.io/v4",
+      "name": "default-site-plugin",
+      "version": "0625092eb42b816703fa3ea7da8bdfbf",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/prayash/dev/effulgence.io/v4",
+      "packageJson": {
+        "name": "effulgence.io",
+        "description": "Portfolio Website.",
+        "version": "4.0.0",
+        "main": "n/a",
+        "keywords": [
+          "effulgence",
+          "prayash thapa",
+          "portfolio",
+          "blog",
+          "gatsby",
+          "react"
+        ],
+        "author": "Prayash Thapa <prayash@effulgence.io>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "classnames",
+            "version": "^2.2.5"
+          },
+          {
+            "name": "gatsby",
+            "version": "^1.2.0"
+          },
+          {
+            "name": "gatsby-link",
+            "version": "^1.0.9"
+          },
+          {
+            "name": "gatsby-plugin-react-helmet",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "gatsby-plugin-sass",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^1.0.0-beta.7"
+          },
+          {
+            "name": "gatsby-remark-copy-linked-files",
+            "version": "^1.0.0-beta.6"
+          },
+          {
+            "name": "gatsby-remark-images",
+            "version": "^1.0.0-beta.6"
+          },
+          {
+            "name": "gatsby-remark-prismjs",
+            "version": "^1.0.0-beta.6"
+          },
+          {
+            "name": "gatsby-remark-responsive-iframe",
+            "version": "^1.0.0-beta.6"
+          },
+          {
+            "name": "gatsby-remark-smartypants",
+            "version": "^1.0.0-beta.6"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^1.0.0-beta.6"
+          },
+          {
+            "name": "gatsby-transformer-remark",
+            "version": "^1.0.0-beta.6"
+          },
+          {
+            "name": "react-share",
+            "version": "^1.15.0"
+          },
+          {
+            "name": "react-youtube",
+            "version": "^7.4.0"
+          },
+          {
+            "name": "three",
+            "version": "^0.86.0"
+          },
+          {
+            "name": "tween.js",
+            "version": "^16.6.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "gh-pages",
+            "version": "^0.12.0"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin default-site-plugin",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "bce7649759b8881cf8e9ed7dcf77a4a0",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {
+        "title": "effulgence // prayash thapa"
+      },
+      "pathPrefix": "",
+      "buildTime": "2017-07-25T16:43:42.490Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "721906d63a9cbfe30dcdbacbe92266ea",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/.DS_Store absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/.DS_Store absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "3cd492de7661ecee0b68abc62bcc8e25",
+        "mediaType": "application/octet-stream",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/.DS_Store",
+      "relativePath": ".DS_Store",
+      "extension": "",
+      "size": 6148,
+      "prettySize": "6.15 kB",
+      "modifiedTime": "2017-07-16T03:23:21.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:23:21.000Z",
+      "birthTime": "2017-07-16T03:23:07.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages",
+      "base": ".DS_Store",
+      "ext": "",
+      "name": ".DS_Store",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201137,
+      "blocks": 16,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1500175401000,
+      "ctimeMs": 1500175401000,
+      "birthtimeMs": 1500175387000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-07-16T03:23:21.000Z",
+      "ctime": "2017-07-16T03:23:21.000Z",
+      "birthtime": "2017-07-16T03:23:07.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/404.js absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/404.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "42fd22c835ca04fae81309c2bedc5231",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/404.js",
+      "relativePath": "404.js",
+      "extension": "js",
+      "size": 155,
+      "prettySize": "155 B",
+      "modifiedTime": "2017-07-16T01:04:31.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T01:04:31.000Z",
+      "birthTime": "2017-07-16T01:04:31.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages",
+      "base": "404.js",
+      "ext": ".js",
+      "name": "404",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4082427,
+      "blocks": 8,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1500167071000,
+      "ctimeMs": 1500167071000,
+      "birthtimeMs": 1500167071000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-07-16T01:04:31.000Z",
+      "ctime": "2017-07-16T01:04:31.000Z",
+      "birthtime": "2017-07-16T01:04:31.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/CNAME absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/CNAME absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "64e3db455f13d34bc52bbc042d70e503",
+        "mediaType": "application/octet-stream",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/CNAME",
+      "relativePath": "CNAME",
+      "extension": "",
+      "size": 14,
+      "prettySize": "14 B",
+      "modifiedTime": "2017-06-16T18:12:27.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T18:36:56.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages",
+      "base": "CNAME",
+      "ext": "",
+      "name": "CNAME",
+      "dev": 16777219,
+      "mode": 33261,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4331619,
+      "blocks": 8,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1497636747000,
+      "ctimeMs": 1500230216000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-06-16T18:12:27.000Z",
+      "ctime": "2017-07-16T18:36:56.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/about.js absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/about.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "eeb3fb5ef2f55e8d9fb4a9a751a295ac",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/about.js",
+      "relativePath": "about.js",
+      "extension": "js",
+      "size": 256,
+      "prettySize": "256 B",
+      "modifiedTime": "2017-07-16T03:10:43.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:10:43.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages",
+      "base": "about.js",
+      "ext": ".js",
+      "name": "about",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4147757,
+      "blocks": 8,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1500174643000,
+      "ctimeMs": 1500174643000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-07-16T03:10:43.000Z",
+      "ctime": "2017-07-16T03:10:43.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/index.js absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/index.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "2449c058efb32823e788456c16f2e9c9",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/index.js",
+      "relativePath": "index.js",
+      "extension": "js",
+      "size": 228,
+      "prettySize": "228 B",
+      "modifiedTime": "2017-07-16T03:47:45.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:47:45.000Z",
+      "birthTime": "2017-07-16T01:04:31.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages",
+      "base": "index.js",
+      "ext": ".js",
+      "name": "index",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4082428,
+      "blocks": 8,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1500176865000,
+      "ctimeMs": 1500176865000,
+      "birthtimeMs": 1500167071000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-07-16T03:47:45.000Z",
+      "ctime": "2017-07-16T03:47:45.000Z",
+      "birthtime": "2017-07-16T01:04:31.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/favicon.ico absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/favicon.ico absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "e080b3e2d21d9e3523b8080c01689704",
+        "mediaType": "image/x-icon",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/favicon.ico",
+      "relativePath": "favicon.ico",
+      "extension": "ico",
+      "size": 2398,
+      "prettySize": "2.4 kB",
+      "modifiedTime": "2017-06-16T18:12:27.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T18:36:56.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages",
+      "base": "favicon.ico",
+      "ext": ".ico",
+      "name": "favicon",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4331620,
+      "blocks": 8,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1497636747000,
+      "ctimeMs": 1500230216000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-06-16T18:12:27.000Z",
+      "ctime": "2017-07-16T18:36:56.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/work.js absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/work.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "bca0e67897f8f9ef4bb4fef212795d3a",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/work.js",
+      "relativePath": "work.js",
+      "extension": "js",
+      "size": 272,
+      "prettySize": "272 B",
+      "modifiedTime": "2017-07-16T03:10:38.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:10:38.000Z",
+      "birthTime": "2017-07-16T03:02:20.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages",
+      "base": "work.js",
+      "ext": ".js",
+      "name": "work",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4200084,
+      "blocks": 8,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1500174638000,
+      "ctimeMs": 1500174638000,
+      "birthtimeMs": 1500174140000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-07-16T03:10:38.000Z",
+      "ctime": "2017-07-16T03:10:38.000Z",
+      "birthtime": "2017-07-16T03:02:20.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/music.js absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/music.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "ad98b99f41b6865920b2f33255fa71f8",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/music.js",
+      "relativePath": "music.js",
+      "extension": "js",
+      "size": 587,
+      "prettySize": "587 B",
+      "modifiedTime": "2017-07-16T20:51:00.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T20:51:00.000Z",
+      "birthTime": "2017-07-16T01:04:31.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages",
+      "base": "music.js",
+      "ext": ".js",
+      "name": "music",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4082429,
+      "blocks": 8,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1500238260000,
+      "ctimeMs": 1500238260000,
+      "birthtimeMs": 1500167071000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-07-16T20:51:00.000Z",
+      "ctime": "2017-07-16T20:51:00.000Z",
+      "birthtime": "2017-07-16T01:04:31.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/index.js absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/index.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "1878d3444bcba017c9ad04ce9a3669c9",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/index.js",
+      "relativePath": "blog/index.js",
+      "extension": "js",
+      "size": 1931,
+      "prettySize": "1.93 kB",
+      "modifiedTime": "2017-07-16T20:28:41.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T20:28:41.000Z",
+      "birthTime": "2017-07-16T03:16:08.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog",
+      "base": "index.js",
+      "ext": ".js",
+      "name": "index",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4200915,
+      "blocks": 8,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1500236921000,
+      "ctimeMs": 1500236921000,
+      "birthtimeMs": 1500174968000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-07-16T20:28:41.000Z",
+      "ctime": "2017-07-16T20:28:41.000Z",
+      "birthtime": "2017-07-16T03:16:08.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/.DS_Store absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/.DS_Store absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "015782e6d85f80eb29d6173e529ab7f2",
+        "mediaType": "application/octet-stream",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/.DS_Store",
+      "relativePath": "blog/.DS_Store",
+      "extension": "",
+      "size": 6148,
+      "prettySize": "6.15 kB",
+      "modifiedTime": "2017-07-16T03:23:16.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:23:16.000Z",
+      "birthTime": "2017-07-16T03:23:16.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog",
+      "base": ".DS_Store",
+      "ext": "",
+      "name": ".DS_Store",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201169,
+      "blocks": 16,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1500175396000,
+      "ctimeMs": 1500175396000,
+      "birthtimeMs": 1500175396000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-07-16T03:23:16.000Z",
+      "ctime": "2017-07-16T03:23:16.000Z",
+      "birthtime": "2017-07-16T03:23:16.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/on-creativity/index.md absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/on-creativity/index.md absPath of file",
+      "children": [
+        "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/on-creativity/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "80e10efe813746d4dbf471a21c835b30",
+        "mediaType": "text/x-markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/on-creativity/index.md",
+      "relativePath": "blog/on-creativity/index.md",
+      "extension": "md",
+      "size": 1002,
+      "prettySize": "1 kB",
+      "modifiedTime": "2017-06-16T18:12:27.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:23:10.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/on-creativity",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201151,
+      "blocks": 8,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1497636747000,
+      "ctimeMs": 1500175390000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-06-16T18:12:27.000Z",
+      "ctime": "2017-07-16T03:23:10.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/graphics.jpg absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/graphics.jpg absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "b9447f14439e7bf32a637fdd9a642d99",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/graphics.jpg",
+      "relativePath": "blog/origins/graphics.jpg",
+      "extension": "jpg",
+      "size": 39457,
+      "prettySize": "39.5 kB",
+      "modifiedTime": "2017-06-16T18:12:27.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:23:10.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins",
+      "base": "graphics.jpg",
+      "ext": ".jpg",
+      "name": "graphics",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201152,
+      "blocks": 80,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1497636747000,
+      "ctimeMs": 1500175390000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-06-16T18:12:27.000Z",
+      "ctime": "2017-07-16T03:23:10.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/guitar.jpg absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/guitar.jpg absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "495c9702061941ac1f289c345cf6325b",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/guitar.jpg",
+      "relativePath": "blog/origins/guitar.jpg",
+      "extension": "jpg",
+      "size": 45015,
+      "prettySize": "45 kB",
+      "modifiedTime": "2017-06-16T18:12:27.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:23:10.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins",
+      "base": "guitar.jpg",
+      "ext": ".jpg",
+      "name": "guitar",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201153,
+      "blocks": 88,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1497636747000,
+      "ctimeMs": 1500175390000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-06-16T18:12:27.000Z",
+      "ctime": "2017-07-16T03:23:10.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/index.md absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/index.md absPath of file",
+      "children": [
+        "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "0d84a239675356286ba1562629e2822d",
+        "mediaType": "text/x-markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/index.md",
+      "relativePath": "blog/origins/index.md",
+      "extension": "md",
+      "size": 5223,
+      "prettySize": "5.22 kB",
+      "modifiedTime": "2017-07-22T16:21:37.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-22T16:21:37.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201154,
+      "blocks": 16,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1500740497000,
+      "ctimeMs": 1500740497000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-07-22T16:21:37.000Z",
+      "ctime": "2017-07-22T16:21:37.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/index.md absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/index.md absPath of file",
+      "children": [
+        "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "0b70fc63c7d9927ef178ad5ee6c3f522",
+        "mediaType": "text/x-markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/index.md",
+      "relativePath": "blog/undiscovered-colors/index.md",
+      "extension": "md",
+      "size": 4492,
+      "prettySize": "4.49 kB",
+      "modifiedTime": "2017-06-16T18:12:27.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:23:10.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201160,
+      "blocks": 16,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1497636747000,
+      "ctimeMs": 1500175390000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-06-16T18:12:27.000Z",
+      "ctime": "2017-07-16T03:23:10.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/bandera.jpg absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/bandera.jpg absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "f8f92ddf5b4a2562b58922aba26b2018",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/bandera.jpg",
+      "relativePath": "blog/undiscovered-colors/bandera.jpg",
+      "extension": "jpg",
+      "size": 54667,
+      "prettySize": "54.7 kB",
+      "modifiedTime": "2017-06-16T18:12:27.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:23:10.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors",
+      "base": "bandera.jpg",
+      "ext": ".jpg",
+      "name": "bandera",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201157,
+      "blocks": 112,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1497636747000,
+      "ctimeMs": 1500175390000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-06-16T18:12:27.000Z",
+      "ctime": "2017-07-16T03:23:10.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/index.md absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/index.md absPath of file",
+      "children": [
+        "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "a1b5b7575de6aa46bb564dc055beab53",
+        "mediaType": "text/x-markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/index.md",
+      "relativePath": "blog/evolution-of-effulgence/index.md",
+      "extension": "md",
+      "size": 6322,
+      "prettySize": "6.32 kB",
+      "modifiedTime": "2017-07-22T16:26:08.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-22T16:26:08.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201146,
+      "blocks": 16,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1500740768000,
+      "ctimeMs": 1500740768000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-07-22T16:26:08.000Z",
+      "ctime": "2017-07-22T16:26:08.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/mockup.jpg absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/mockup.jpg absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "cc787b58303261b3b0dcdac6bd369d63",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/mockup.jpg",
+      "relativePath": "blog/evolution-of-effulgence/mockup.jpg",
+      "extension": "jpg",
+      "size": 43446,
+      "prettySize": "43.4 kB",
+      "modifiedTime": "2017-06-16T18:12:27.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:23:10.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence",
+      "base": "mockup.jpg",
+      "ext": ".jpg",
+      "name": "mockup",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201147,
+      "blocks": 88,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1497636747000,
+      "ctimeMs": 1500175390000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-06-16T18:12:27.000Z",
+      "ctime": "2017-07-16T03:23:10.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/v1.jpg absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/v1.jpg absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "e8ab893d43b7bfbd45847d2a50e0ef53",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/v1.jpg",
+      "relativePath": "blog/evolution-of-effulgence/v1.jpg",
+      "extension": "jpg",
+      "size": 53222,
+      "prettySize": "53.2 kB",
+      "modifiedTime": "2017-06-16T18:12:27.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:23:10.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence",
+      "base": "v1.jpg",
+      "ext": ".jpg",
+      "name": "v1",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201148,
+      "blocks": 104,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1497636747000,
+      "ctimeMs": 1500175390000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-06-16T18:12:27.000Z",
+      "ctime": "2017-07-16T03:23:10.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/v2.jpg absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/v2.jpg absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "2f446cc6d55dd724daf702193d410652",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/v2.jpg",
+      "relativePath": "blog/evolution-of-effulgence/v2.jpg",
+      "extension": "jpg",
+      "size": 55427,
+      "prettySize": "55.4 kB",
+      "modifiedTime": "2017-06-16T18:12:27.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:23:10.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence",
+      "base": "v2.jpg",
+      "ext": ".jpg",
+      "name": "v2",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201149,
+      "blocks": 112,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1497636747000,
+      "ctimeMs": 1500175390000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-06-16T18:12:27.000Z",
+      "ctime": "2017-07-16T03:23:10.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/v3.jpg absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/v3.jpg absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "c6e126fcc20068595b2f2a7e80943bf6",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/v3.jpg",
+      "relativePath": "blog/evolution-of-effulgence/v3.jpg",
+      "extension": "jpg",
+      "size": 61556,
+      "prettySize": "61.6 kB",
+      "modifiedTime": "2017-06-16T18:12:27.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:23:10.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence",
+      "base": "v3.jpg",
+      "ext": ".jpg",
+      "name": "v3",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201150,
+      "blocks": 128,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1497636747000,
+      "ctimeMs": 1500175390000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-06-16T18:12:27.000Z",
+      "ctime": "2017-07-16T03:23:10.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/nujabes.jpg absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/nujabes.jpg absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "ead2c1b1ac12ffbcc226064243d02793",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/nujabes.jpg",
+      "relativePath": "blog/origins/nujabes.jpg",
+      "extension": "jpg",
+      "size": 75058,
+      "prettySize": "75.1 kB",
+      "modifiedTime": "2017-06-16T18:12:27.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:23:10.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins",
+      "base": "nujabes.jpg",
+      "ext": ".jpg",
+      "name": "nujabes",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201155,
+      "blocks": 152,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1497636747000,
+      "ctimeMs": 1500175390000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-06-16T18:12:27.000Z",
+      "ctime": "2017-07-16T03:23:10.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/patio.jpg absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/patio.jpg absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "754d7a11ee2ae08b64b7caf305f03fe7",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/patio.jpg",
+      "relativePath": "blog/undiscovered-colors/patio.jpg",
+      "extension": "jpg",
+      "size": 125474,
+      "prettySize": "125 kB",
+      "modifiedTime": "2017-06-16T18:12:27.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:23:10.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors",
+      "base": "patio.jpg",
+      "ext": ".jpg",
+      "name": "patio",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201161,
+      "blocks": 248,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1497636747000,
+      "ctimeMs": 1500175390000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-06-16T18:12:27.000Z",
+      "ctime": "2017-07-16T03:23:10.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/fitz.jpg absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/fitz.jpg absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "7323fe9a0ccbaf1240b109d73d77b06e",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/fitz.jpg",
+      "relativePath": "blog/undiscovered-colors/fitz.jpg",
+      "extension": "jpg",
+      "size": 85539,
+      "prettySize": "85.5 kB",
+      "modifiedTime": "2017-06-16T18:12:27.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:23:10.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors",
+      "base": "fitz.jpg",
+      "ext": ".jpg",
+      "name": "fitz",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201159,
+      "blocks": 168,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1497636747000,
+      "ctimeMs": 1500175390000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-06-16T18:12:27.000Z",
+      "ctime": "2017-07-16T03:23:10.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/casa.jpg absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/casa.jpg absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "eb9cc65ad78c511c98a8eba3bfbd3933",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/casa.jpg",
+      "relativePath": "blog/undiscovered-colors/casa.jpg",
+      "extension": "jpg",
+      "size": 106494,
+      "prettySize": "106 kB",
+      "modifiedTime": "2017-06-16T18:12:27.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:23:10.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors",
+      "base": "casa.jpg",
+      "ext": ".jpg",
+      "name": "casa",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201158,
+      "blocks": 208,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1497636747000,
+      "ctimeMs": 1500175390000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-06-16T18:12:27.000Z",
+      "ctime": "2017-07-16T03:23:10.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/paper.jpg absPath of file": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/paper.jpg absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "73f7a99bab0c8f41e75d1f9185aa5bf8",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/paper.jpg",
+      "relativePath": "blog/origins/paper.jpg",
+      "extension": "jpg",
+      "size": 356921,
+      "prettySize": "357 kB",
+      "modifiedTime": "2017-06-16T18:12:27.000Z",
+      "accessTime": "2017-07-25T16:43:44.000Z",
+      "changeTime": "2017-07-16T03:23:10.000Z",
+      "birthTime": "2017-06-16T18:12:27.000Z",
+      "root": "/",
+      "dir": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins",
+      "base": "paper.jpg",
+      "ext": ".jpg",
+      "name": "paper",
+      "dev": 16777219,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 4201156,
+      "blocks": 704,
+      "atimeMs": 1501001024000,
+      "mtimeMs": 1497636747000,
+      "ctimeMs": 1500175390000,
+      "birthtimeMs": 1497636747000,
+      "atime": "2017-07-25T16:43:44.000Z",
+      "mtime": "2017-06-16T18:12:27.000Z",
+      "ctime": "2017-07-16T03:23:10.000Z",
+      "birthtime": "2017-06-16T18:12:27.000Z"
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/on-creativity/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/on-creativity/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/on-creativity/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: On Creativity\ndate: 11/28/2016\ndescription: \"The journey from beginner to amateur.\"\ndraft: true\n---\n\n*This post is going to be a little hard to read for those that don't speak latin.*\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel neque dignissim mi maximus interdum. Cras dictum quam et ex molestie facilisis. Proin dapibus sed sapien nec gravida. Praesent at leo ut erat varius rhoncus at non mi. Quisque cursus non leo et varius. Maecenas porttitor scelerisque sapien at venenatis. Proin pellentesque gravida elementum. Nam eget porttitor ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean nec commodo lacus, eu mollis nisi. Nullam felis mi, tempus ac ipsum a, venenatis blandit magna. Sed mattis magna est, quis tincidunt massa aliquam vitae. Ut in ipsum blandit, ultrices lacus a, condimentum nibh. Sed commodo, lorem eget interdum molestie, lacus nisi lacinia velit, tempus commodo lacus erat porttitor dolor.\n",
+        "contentDigest": "09f826c0b4fc581a8759f8fa646f3f6f",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "On Creativity",
+        "date": "11/28/2016",
+        "description": "The journey from beginner to amateur.",
+        "draft": true,
+        "parent": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/on-creativity/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/on-creativity/index.md",
+      "fields": {
+        "slug": "/blog/on-creativity/"
+      }
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: Origins\ndate: September 18, 2016\ndescription: \"Hello, Pixels.\"\ndraft: false\n---\n\nef-ful-gence\nnoun - a brilliant radiance\n\nMany people ask me what 'effulgence' means, and oftentimes they're puzzled when I tell them it's an english word. I admit that it's not the most common word so I don't expect people to know what it means anyway. I stumbled upon it when I was looking for english translations of the Sanskrit word 'jyoti' which means light. This was around 2011 when I was in search of an alias to release my [music](/music/) with. Plus, it wasn't taken by anyone else on SoundCloud! It's stuck ever since and in many ways, it feels like it's evolved to something much more than just a musical endeavor. I like to think of it as a pseudonym for creative output.\n\nMy journey in art began when I was 7 years old. At that time, I was living in [Kathmandu, Nepal](https://goo.gl/maps/dRHoHcJc5WJ2) (where I was born). My father bought me a water color set and some paint brushes for my birthday. I was hooked. Painting brought so much color to my life, literally. I looked forward to getting home from school every day so I could go crazy on the back pages of my school notebook. The nuances of the paint brush taught me a lot. It forced me to loosen my hands up and to avoid being stiff, and in many ways that taught me a lot about life. At some point, I got a set of color pencils and started outlining my paintings with them. That's when drawing started to take precedence over painting. It was a nice break from all the splatter. I started being precise and bold with each stroke. It was the perfectly opposite thing for me to learn. I was so into it that I even got published on the local newspaper!\n\n![Prayash Thapa Effulgence Art Newspaper](./paper.jpg)\n*Look ma, that's me! The title literally translates to 'Prayash's Prayash.' My name means attempt. So, I guess it's an eloquent way of saying 'The attempt of Attempt.'*\n\nThe sad part is, they never published the actual drawing. Just a profile on me.. lame. But, the validation felt assuring, and I promised myself to push farther and harder. But my dedicated slowly waned. I kept up as much crafts as possible, but I got too busy being a hooligan and playing video games to care enough about it.\n\nFast forward to 11 years old when I heard my uncle strum the chords of *Hotel California* by The Eagles in the other room. I walked over to see a massive dreadnought guitar in his embrace. There was something about those steel strings ringing together that caught my attention. Seeing my curious face, he generously offered to teach me a few chords. I learned the typical G -> D -> C progression while he sang *Knockin on Heaven's Door*. That felt so good. I was hooked! I couldn't put the guitar down after that.\n\n![Prayash Thapa Effulgence First Guitar](./guitar.jpg)\n*My first guitar that I bought in 2013, and still play to this day.*\n\nI kept creating the occasional drawing or two in high school year, and art class was definitely the one I looked forward to the most. My teacher was amazing and encouraged me to pursue it in college, and so I did. I admitted into college as a Studio Art major with an emphasis on drawing and painting, I loved every bit of it. It felt like I was re-discovering my 7 year old self.\n\n![Prayash Thapa Effulgence Nujabes Drawing](./nujabes.jpg)\n*I was obsessed with the freehanded geometric aesthetic. This was a tribute to [Nujabes](https://youtu.be/WrO9PTpuSSs?t=7m50s), a jazz-hop legend.*\n\nSometime around my second year in college, I decided to enroll in an introductory programming course. I had always been the computer nerd in my family, so I thought why not? The bulky white box that dad brought home with a Windows 95 disc had me so engaged when I was a child, so I saw no harm in trying out something new. I learned programming by writing super basic programs and text-based games. One lecture specifically caught my attention: [Cellular Automata](https://en.wikipedia.org/wiki/Cellular_automaton). Seeing a bunch of random pixels interact with their on-screen neighbors consciously based on a few basic rules lit up a different part of my brain. Such a simple algorithm with such an entrancing visual. Maybe I can still draw and paint, but use code as my brush?\n\nWell, no doubt. That's when I stumbled down the rabbit hole of Computer Graphics. The revelation that I could still creatively express myself through code and make beautiful things turned my world upside down. It was the perfect definition of lazy man's art. I define a simple set of constraints and let the computer pseudo-randomly run wild, yet somehow it can still produce something impressively artistic while I sit back and watch? Mind = blown.\n\n![Prayash Thapa Effulgence Code Graphics Visual Art](./graphics.jpg)\n*[Nucleactor](http://effulgence.io/Nucleactor), an audio-visualizer I coded during a hackathon.*\n\nSo there it was, all in front of me. Music, visual art, and code. It was the definition of a holy trinity. The perfect blend of three worlds combined into one beautiful melting pot of logic and creativity. Nothing could be more perfect. At that point, I realized that this is what I want to do for the rest of my life: Art.\n",
+        "contentDigest": "458b35911368ea8a3b8f12e343643e58",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Origins",
+        "date": "September 18, 2016",
+        "description": "Hello, Pixels.",
+        "draft": false,
+        "parent": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/index.md",
+      "fields": {
+        "slug": "/blog/origins/"
+      }
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: \"Undiscovered Colors\"\ndate: 11/28/2016\ndescription: \"A memoir to a brief excursion in Argentina.\"\ndraft: true\n---\n\nOn April 27th, 2016, I bought a plane ticket to Argentina. I was set to spend 5 weeks on a study abroad program studying Argentina history, culture and literature, and 2 weeks with not sure what. Swelling with mixtures of excitement and anxiety, I repeatedly asked myself: \"What's it going to be like?\" I had never visited a foreign country other than Nepal (my birthplace) and USA (my current home).\n\n![The Argentine flag in Iguazú](./bandera.jpg)\nThe Argentine flag in Iguazú.\n\nAfter a 26-hour flight delay in Texas, I luckily caught a flight as a standby passenger and arrived in Buenos Aires 10 hours later. On arrival, while waiting for my luggage, it slowly dawned upon me that there was something amiss. My baggage had been mishandled and was stuck in Texas along with a thousand others. My trip was already off to a bad start with the weather-induced flight delay, and the last thing I wanted was to lose my stuff. I walked up to the baggage claim and expressed my concern (in Spanish) and immediately realized that I did not understand a single word that was spoken back to me. The accent was so thick, and with words blended together seamlessly, it sounded like a cacaophony of unrecognizable Spanish words layered with a heavy Italian accent. There goes my confidence. I asked to speak to someone in English and they promptly filed my claim. I hung around the airport waiting for my 5-hour bus ride to Rosario (~200km away). During this time, I also got to experience my first meal in Argentina: McDonalds. And so began the long ride to Rosario.\n\n![La casa de Pueyrrédon](./casa.jpg)\nHome for the next 5 weeks.\n\nI arrived late at night in Rosario with my phone dead and an address of my host family's home. The bus driver let me know that we had arrived at my destination. I asked him to assist me in finding the exact door since it was my first time in the country and I'm a student with an assigned home. He happily got out and made sure that someone was home expecting me. We rang the doorbell and my host mother cheerily popped her head out the window with excitement. The bus driver wished me luck and went on his way. The door opened and there she was, a short, jolly, middle-age woman with a sweet, raspy voice. She embraced me at first sight and welcome me. We clicked right away. She showed me my room, gave me a tour of her lovely house, and served me some warm dinner (pastel del carne) with a refreshing glass of wine. We conversed about the whole fiasco I had just experienced. She could not speak English, so lucky for me, I was forced to speak in Spanish the whole time. She spoke slowly and with clarity, which helped me understand her much better and also helped me regain my previously lost confidence in my Spanish skills. I got extremely lucky with my host mom, she was everything I wanted. While I was bummed that I didn't have a perfect family to live with, I was gifted with the hospitality of the most affectionate and amiable host-mom I could asked for. We developed an incredibly strong bond, and every single night of dinner consisted of lively conversations spanning a variety of topics ranging from adversity, love, family, dreams, tragedy, politics, history, consciousness and spirituality amongst other things.\n\n![Rosario, Santa Fe, Argentina](./patio.jpg)\nThe view from the backyard.\n\nRosario is a beautiful city. It's rich in history and culture, and the nightlife is booming. Partying until 7am made me feel sick constantly.\n\nTowards the end of my 5 week study abroad program, I started to think about where I would go for the next 2 weeks. Having seen Fitz Roy in rock climbing films, I started to think that exploring Patagonia is definitely possible. I couldn't find anyone else to go with, so I decided to go on my own. Was I nervous? Of course. Did I doubt myself? No doubt about it. But something inside of my felt that it was the right thing to do. I knew it would help me grow as a person if I traveled alone, and it would definitely take me out of my comfort zone.\n\n![The majestic Cerro Fitz Roy](./fitz.jpg)\nThe majestic Cerro Fitz Roy. Hover your mouse over it!\n\n<figure>\n\t<blockquote>\n\t\t<p>It is a press, certainly, but a press from which shall flow in inexhaustible streams… Through it, god will spread his word.</p>\n\t\t<footer>\n\t\t\t<cite>—Johannes Gutenberg</cite>\n\t\t</footer>\n\t</blockquote>\n</figure>\n",
+        "contentDigest": "4ca5d89e06d9b3be8b863459b3ea4c36",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Undiscovered Colors",
+        "date": "11/28/2016",
+        "description": "A memoir to a brief excursion in Argentina.",
+        "draft": true,
+        "parent": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/index.md",
+      "fields": {
+        "slug": "/blog/undiscovered-colors/"
+      }
+    },
+    "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: Evolution of effulgence.io\ndate: February 22, 2017\ndescription: \"A short overview of how I built this site.\"\ndraft: false\n---\n\ntl;dr What started out as a school project eventually turned into effulgence.io.\n\nWhen I started this project, I started to think about what it would mean for my website to be different. I knew I wanted to stray away from the generic patterns that are employed on so many webpages out there. But I didn't want to stray too far from these familiar patterns that it felt foreign to the average visitor. I wanted the interface of my site to have a fresh look to bring something different to the table, but still have a sense of intuitiveness to it so that people could curiously click through without hesitation.\n\nAfter a few hours of brainstorming and trying out various designs, I came up with this:\n\n![effulgence.io v1 mockup](./mockup.jpg)\n*Super basic sketch of the homepage layout.*\n\nIt resembles an abstract P (to me at least, most people didn't see it at first glance), and is emblematic in nature. I love the simple geometry behind it. I felt very strongly about having visual elements much more than textual ones, so I decided to embed pictures into the 4 blocks and use those as my main navigation links. Something about your eyes interpreting colors and visual stimuli in a parallel manner vs interpreting text in a serial manner. Yeah...  that's cool. Let's formalize that on a webpage:\n\n![effulgence.io v2](./v1.jpg)\n*Check it out live [here](http://effulgence.io/v1).*\n\nNow, this was in no way perfect. The styling would crap itself on mobile. Gave it a nice harsh white background (cringe). I hardcoded all the markup and CSS. None of the images were optimized. It was a bunch of ```<div>``` elements floating next to each other in the middle of nowhere which brought about some interesting layout challenges in CSS. The site loaded extremely slow because of all the external assets I was pulling. I also had the wonderfully brilliant idea of embedding a bunch of soundcloud players and rendering them in an ```<iframe>``` when you clicked on a specific link. All of this made sense for me at the time but it also resulted in a very choppy experience. Frankly, it was not even a fully realized website. It was a static landing page that just happened to have a bunch of links to other places.\n\nFast forward a year or so and we arrive at v2:\n\n![effulgence.io v2](./v2.jpg)\n*Check it out live [here](http://effulgence.io/v2).*\n\nStill not a full site. It's a single page with a bunch of jQuery spaghetti handling clicks and hiding/showing things on cue. Regardless, I got more experience making other sites (and apps). v2 harnesses the power of inline SVGs, meaning my whole graphic is embedded into my page as a bunch of numbers that the browser knows how to draw. Working with SVG allowed me to be meticulous about the design. It gave me full control of the sizing, curvature of lines, relative placement of the blocks, all with added benefit of not having to write any custom CSS to achieve the same layout. And if I wanted to change something I could simply pop back into Illustrator, make my changes, and copy-paste the new numbers into my HTML. I embedded my navigation links wrapping the ```<path>``` tags of the SVG. And search engines would still crawl through it, because in the end, it's all just markup. Brilliant, thank you W3C.\n\nYou might have also noticed that v2 has an animation running in the back. Shortly after v1 and v2, I started spending more time exploring the realm of [creative coding](https://en.wikipedia.org/wiki/Creative_coding). I started a project where I coded a graphic everyday for the year (I failed halfway through but that's another story). But the 100+ pieces that I did do taught me a lot. It became clear to me that I needed to incorporate this into my website. And off I went trying to integrate a ```<canvas>``` element into my site because animations are cool. They add so much to the visual experience. I was an art-major.. of course I was going to add this to my site. Who am I kidding?\n\nv2 gave me a much clearer direction as to where I wanted my site to go. I was happy that I had something unique, and it had a cool animation with some content, but the experience wasn't satisfying enough to me. I hated using some hacky jQuery just to get the single page application feeling, and I didn't want to remake the whole thing using some hot new JavaScript framework that come out this morning to accomplish that. And I certainly didn't want my whole page to be rendered dynamically on load, even though Google does index pages that use JavaScript to render their UI. I also wanted to start a blog, so I could post more content. Also the page had no sense of history, meaning that you were stuck on one page and could not navigate using the back and forward buttons. Not a good user experience. There had to be another way.\n\nI considered using Jekyll (a static site/blog generator), but I REALLY wanted the single page design to work. I did not want the page to refresh every time the user navigated to another page on the site. I wanted it to be a unified, cohesive experience from one part of the site to another, no jitters and no refreshes. The Web has come so far, why not utilize it to its fullest?\n\nAfter a lot of research, I ran into an awesome new framework called [gatsby.js](https://github.com/gatsbyjs/gatsby), a static site generator that transforms plain text into dynamic blogs and websites using React (an amazing library that lets you create functional UIs). It has no page reloads, supports global page transitions, and leverages server-side rendering so all the components are rendered into raw markup for production builds. You mean I can blog, create a static site, and embed all the interactivity I want without having to compromise the user experience? I'll take it.\n\nFinally, we arrive at v3:\n\n![effulgence.io v3](./v3.jpg)\n*Awwww yeee. WebGL FTW.*\n\nIt's not perfect, but it's a step in the right direction. I'm still working on optimizing it and adding more functionality, but it's a good start for now. Big ups to the creators of gatsby.js and React. The web just gets better and faster everyday.\n\nYou can check out the source code for this website [here](https://github.com/prayasht/prayasht.github.io).\n",
+        "contentDigest": "6e1ce93098f36f7733e490e8238b8c52",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Evolution of effulgence.io",
+        "date": "February 22, 2017",
+        "description": "A short overview of how I built this site.",
+        "draft": false,
+        "parent": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/index.md",
+      "fields": {
+        "slug": "/blog/evolution-of-effulgence/"
+      }
+    },
+    "SitePage /blog/on-creativity/": {
+      "path": "/blog/on-creativity/",
+      "component": "/Users/prayash/dev/effulgence.io/v4/src/templates/blog-post.js",
+      "context": {
+        "slug": "/blog/on-creativity/"
+      },
+      "componentChunkName": "page-component---src-templates-blog-post-js",
+      "jsonName": "blog-on-creativity.json",
+      "internalComponentName": "ComponentBlogOnCreativity",
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "id": "SitePage /blog/on-creativity/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f70707608a316ab28ddb573318e4b5a4",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /blog/origins/": {
+      "path": "/blog/origins/",
+      "component": "/Users/prayash/dev/effulgence.io/v4/src/templates/blog-post.js",
+      "context": {
+        "slug": "/blog/origins/"
+      },
+      "componentChunkName": "page-component---src-templates-blog-post-js",
+      "jsonName": "blog-origins.json",
+      "internalComponentName": "ComponentBlogOrigins",
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "id": "SitePage /blog/origins/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "9ea35f55ce19fc857ac22f14172cc3ea",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /blog/undiscovered-colors/": {
+      "path": "/blog/undiscovered-colors/",
+      "component": "/Users/prayash/dev/effulgence.io/v4/src/templates/blog-post.js",
+      "context": {
+        "slug": "/blog/undiscovered-colors/"
+      },
+      "componentChunkName": "page-component---src-templates-blog-post-js",
+      "jsonName": "blog-undiscovered-colors.json",
+      "internalComponentName": "ComponentBlogUndiscoveredColors",
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "id": "SitePage /blog/undiscovered-colors/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "7c565df4f884f16d67423f26917a57ec",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /blog/evolution-of-effulgence/": {
+      "path": "/blog/evolution-of-effulgence/",
+      "component": "/Users/prayash/dev/effulgence.io/v4/src/templates/blog-post.js",
+      "context": {
+        "slug": "/blog/evolution-of-effulgence/"
+      },
+      "componentChunkName": "page-component---src-templates-blog-post-js",
+      "jsonName": "blog-evolution-of-effulgence.json",
+      "internalComponentName": "ComponentBlogEvolutionOfEffulgence",
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "id": "SitePage /blog/evolution-of-effulgence/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "200a74a1c634dbada32232be30c1b491",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404/": {
+      "path": "/404/",
+      "component": "/Users/prayash/dev/effulgence.io/v4/src/pages/404.js",
+      "componentChunkName": "page-component---src-pages-404-js",
+      "jsonName": "404.json",
+      "internalComponentName": "Component404",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /404/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "aa5527527afe82dd70027e06be736252",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /about/": {
+      "path": "/about/",
+      "component": "/Users/prayash/dev/effulgence.io/v4/src/pages/about.js",
+      "componentChunkName": "page-component---src-pages-about-js",
+      "jsonName": "about.json",
+      "internalComponentName": "ComponentAbout",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /about/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "eed41bd852671acb5c9f755690539495",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "path": "/",
+      "component": "/Users/prayash/dev/effulgence.io/v4/src/pages/index.js",
+      "componentChunkName": "page-component---src-pages-index-js",
+      "jsonName": "index.json",
+      "internalComponentName": "ComponentIndex",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c424fc93bc9eec9541f8922f99143808",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /music/": {
+      "path": "/music/",
+      "component": "/Users/prayash/dev/effulgence.io/v4/src/pages/music.js",
+      "componentChunkName": "page-component---src-pages-music-js",
+      "jsonName": "music.json",
+      "internalComponentName": "ComponentMusic",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /music/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "7e520cde2abb1c8eb478035e33f41cab",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /work/": {
+      "path": "/work/",
+      "component": "/Users/prayash/dev/effulgence.io/v4/src/pages/work.js",
+      "componentChunkName": "page-component---src-pages-work-js",
+      "jsonName": "work.json",
+      "internalComponentName": "ComponentWork",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /work/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "321381cdbb4410eb529e8d504ea109c2",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404.html": {
+      "path": "/404.html",
+      "component": "/Users/prayash/dev/effulgence.io/v4/src/pages/404.js",
+      "componentChunkName": "page-component---src-pages-404-js",
+      "jsonName": "404-html.json",
+      "internalComponentName": "Component404Html",
+      "context": {},
+      "pluginCreator___NODE": "Plugin prod-404",
+      "id": "SitePage /404.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "b65ecd4c5a0feeafee44b38d27198f3d",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /blog/": {
+      "path": "/blog/",
+      "component": "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/index.js",
+      "componentChunkName": "page-component---src-pages-blog-index-js",
+      "jsonName": "blog.json",
+      "internalComponentName": "ComponentBlog",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /blog/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "23d8616034f21ee968d536b4353dffce",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "ce28deb2c6456e999c745c2372b280b3"
+  },
+  "pageDataDependencies": {
+    "nodes": {
+      "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/on-creativity/index.md absPath of file >>> MarkdownRemark": [
+        "/blog/on-creativity/"
+      ],
+      "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/origins/index.md absPath of file >>> MarkdownRemark": [
+        "/blog/origins/"
+      ],
+      "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/undiscovered-colors/index.md absPath of file >>> MarkdownRemark": [
+        "/blog/undiscovered-colors/"
+      ],
+      "/Users/prayash/dev/effulgence.io/v4/src/pages/blog/evolution-of-effulgence/index.md absPath of file >>> MarkdownRemark": [
+        "/blog/evolution-of-effulgence/"
+      ]
+    },
+    "connections": {
+      "MarkdownRemark": [
+        "/blog/"
+      ]
+    }
+  }
+}

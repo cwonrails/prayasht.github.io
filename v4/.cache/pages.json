@@ -1,0 +1,57 @@
+[
+    {
+        "componentChunkName": "page-component---src-templates-blog-post-js",
+        "jsonName": "blog-on-creativity.json",
+        "path": "/blog/on-creativity/"
+    },
+    {
+        "componentChunkName": "page-component---src-templates-blog-post-js",
+        "jsonName": "blog-origins.json",
+        "path": "/blog/origins/"
+    },
+    {
+        "componentChunkName": "page-component---src-templates-blog-post-js",
+        "jsonName": "blog-undiscovered-colors.json",
+        "path": "/blog/undiscovered-colors/"
+    },
+    {
+        "componentChunkName": "page-component---src-templates-blog-post-js",
+        "jsonName": "blog-evolution-of-effulgence.json",
+        "path": "/blog/evolution-of-effulgence/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-404-js",
+        "jsonName": "404.json",
+        "path": "/404/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-about-js",
+        "jsonName": "about.json",
+        "path": "/about/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-index-js",
+        "jsonName": "index.json",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-music-js",
+        "jsonName": "music.json",
+        "path": "/music/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-work-js",
+        "jsonName": "work.json",
+        "path": "/work/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-404-js",
+        "jsonName": "404-html.json",
+        "path": "/404.html"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-blog-index-js",
+        "jsonName": "blog.json",
+        "path": "/blog/"
+    }
+]
