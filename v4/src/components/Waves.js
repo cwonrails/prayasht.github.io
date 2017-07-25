@@ -40,7 +40,7 @@ export default class Waves extends Component {
   }
 
   componentDidUpdate() {
-    // this._zoom(camera.zoom, this.props.cameraZoom, 2000)
+    this._zoom(camera.zoom, this.props.cameraZoom, 2000)
   }
 
   _zoom(start, end, duration) {
