@@ -1,0 +1,88 @@
+{
+  "assetsByChunkName": {
+    "commons": [
+      "commons-258ca823cc229e14fe5d.js",
+      "commons-258ca823cc229e14fe5d.js.map"
+    ],
+    "page-component---src-pages-music-js": [
+      "page-component---src-pages-music-js-c5ea8dbfa0499608c4c4.js",
+      "page-component---src-pages-music-js-c5ea8dbfa0499608c4c4.js.map"
+    ],
+    "page-component---src-templates-blog-post-js": [
+      "page-component---src-templates-blog-post-js-e598d2357e5c62f5a63a.js",
+      "page-component---src-templates-blog-post-js-e598d2357e5c62f5a63a.js.map"
+    ],
+    "layout-component---index": [
+      "layout-component---index-369518bafb4391a7ecc1.js",
+      "layout-component---index-369518bafb4391a7ecc1.js.map"
+    ],
+    "page-component---src-pages-index-js": [
+      "page-component---src-pages-index-js-d28b9c3df516570a6feb.js",
+      "page-component---src-pages-index-js-d28b9c3df516570a6feb.js.map"
+    ],
+    "page-component---src-pages-work-js": [
+      "page-component---src-pages-work-js-1b6912719fba48b4fbe6.js",
+      "page-component---src-pages-work-js-1b6912719fba48b4fbe6.js.map"
+    ],
+    "page-component---src-pages-about-js": [
+      "page-component---src-pages-about-js-bd43d0b2ea5031f4c69b.js",
+      "page-component---src-pages-about-js-bd43d0b2ea5031f4c69b.js.map"
+    ],
+    "page-component---src-pages-blog-index-js": [
+      "page-component---src-pages-blog-index-js-f3b617432807a0700915.js",
+      "page-component---src-pages-blog-index-js-f3b617432807a0700915.js.map"
+    ],
+    "path---work": [
+      "path---work-586c7e095e534a3909ec.js",
+      "path---work-586c7e095e534a3909ec.js.map"
+    ],
+    "path---music": [
+      "path---music-586c7e095e534a3909ec.js",
+      "path---music-586c7e095e534a3909ec.js.map"
+    ],
+    "path---index": [
+      "path---index-586c7e095e534a3909ec.js",
+      "path---index-586c7e095e534a3909ec.js.map"
+    ],
+    "path---blog": [
+      "path---blog-9a06630e224c219bd6d3.js",
+      "path---blog-9a06630e224c219bd6d3.js.map"
+    ],
+    "path---blog-undiscovered-colors": [
+      "path---blog-undiscovered-colors-63cc244f21383a3cf155.js",
+      "path---blog-undiscovered-colors-63cc244f21383a3cf155.js.map"
+    ],
+    "path---blog-origins": [
+      "path---blog-origins-90088ffc054dc82de0b3.js",
+      "path---blog-origins-90088ffc054dc82de0b3.js.map"
+    ],
+    "path---blog-on-creativity": [
+      "path---blog-on-creativity-addf00cf91b6ea2425ae.js",
+      "path---blog-on-creativity-addf00cf91b6ea2425ae.js.map"
+    ],
+    "path---blog-evolution-of-effulgence": [
+      "path---blog-evolution-of-effulgence-b3097dd725c3c8c374b5.js",
+      "path---blog-evolution-of-effulgence-b3097dd725c3c8c374b5.js.map"
+    ],
+    "path---about": [
+      "path---about-586c7e095e534a3909ec.js",
+      "path---about-586c7e095e534a3909ec.js.map"
+    ],
+    "path---404": [
+      "path---404-586c7e095e534a3909ec.js",
+      "path---404-586c7e095e534a3909ec.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-586c7e095e534a3909ec.js",
+      "path---404-html-586c7e095e534a3909ec.js.map"
+    ],
+    "page-component---src-pages-404-js": [
+      "page-component---src-pages-404-js-ae41f074a8554abb9154.js",
+      "page-component---src-pages-404-js-ae41f074a8554abb9154.js.map"
+    ],
+    "app": [
+      "app-9752495f914a31944cba.js",
+      "app-9752495f914a31944cba.js.map"
+    ]
+  }
+}
