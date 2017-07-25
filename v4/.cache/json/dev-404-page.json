@@ -1,0 +1,65 @@
+{
+    "data": {
+        "allSitePage": {
+            "totalCount": 11,
+            "edges": [
+                {
+                    "node": {
+                        "path": "/blog/evolution-of-effulgence/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/blog/on-creativity/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/blog/origins/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/blog/undiscovered-colors/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/404/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/about/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/music/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/work/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/404.html"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/blog/"
+                    }
+                }
+            ]
+        }
+    },
+    "pathContext": {}
+}
