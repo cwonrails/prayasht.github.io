@@ -1,6 +1,10 @@
 module.exports = {
+  pathPrefix: '/',
   siteMetadata: {
-    title: 'effulgence // prayash thapa'
+    title: 'effulgence // prayash thapa',
+    author: 'Prayash Thapa <prayasht@gmail.com>',
+    description:
+      "Hi, I'm Prayash. I make music and write code that draws things."
   },
   plugins: [
     'gatsby-plugin-react-helmet',
